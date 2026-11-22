@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "remote",
+  "cat_id": 75,
+  "type": "NEW",
+  "n_gt": 62,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "remote",
+      "ap50": 0.2916238004948686,
+      "n_detections": 4604
+    },
+    "template": {
+      "text": "a photo of a remote",
+      "ap50": 0.32003558669893567,
+      "n_detections": 6455
+    },
+    "there_is": {
+      "text": "there is a remote",
+      "ap50": 0.3209683796726624,
+      "n_detections": 7856
+    }
+  },
+  "ap_bare": 0.2916238004948686,
+  "ap_template": 0.32003558669893567,
+  "ap_there_is": 0.3209683796726624,
+  "delta_bare": -0.02841178620406709,
+  "delta_len": 0.000932792973726726,
+  "ratio": -0.03283119783553765,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4604,
+  "inference_time_seconds": 85.32311654090881,
+  "timestamp": "2026-10-19T09:11:23"
+}

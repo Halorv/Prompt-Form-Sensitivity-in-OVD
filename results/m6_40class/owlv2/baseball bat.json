@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "baseball bat",
+  "cat_id": 39,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "baseball bat",
+      "ap50": 0.3630803150955716,
+      "n_detections": 7261
+    },
+    "template": {
+      "text": "a photo of a baseball bat",
+      "ap50": 0.3668562349856081,
+      "n_detections": 8986
+    },
+    "there_is": {
+      "text": "there is a baseball bat",
+      "ap50": 0.3563049908843225,
+      "n_detections": 11188
+    }
+  },
+  "ap_bare": 0.3630803150955716,
+  "ap_template": 0.3668562349856081,
+  "ap_there_is": 0.3563049908843225,
+  "delta_bare": -0.0037759198900365054,
+  "delta_len": -0.010551244101285606,
+  "ratio": 2.7943506241027793,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 7261,
+  "inference_time_seconds": 85.35161280632019,
+  "timestamp": "2026-10-19T09:46:59"
+}

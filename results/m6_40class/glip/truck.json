@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "truck",
+  "cat_id": 8,
+  "type": "NEW",
+  "n_gt": 53,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "truck",
+      "ap50": 0.05961246887105383,
+      "n_detections": 18421
+    },
+    "template": {
+      "text": "a photo of a truck",
+      "ap50": 0.013747724860192772,
+      "n_detections": 2263
+    },
+    "there_is": {
+      "text": "there is a truck",
+      "ap50": 0.05877158029073491,
+      "n_detections": 4810
+    }
+  },
+  "ap_bare": 0.05961246887105383,
+  "ap_template": 0.013747724860192772,
+  "ap_there_is": 0.05877158029073491,
+  "delta_bare": 0.045864744010861054,
+  "delta_len": 0.04502385543054214,
+  "ratio": 0.9816659048588653,
+  "inference_time_seconds": 213.12091064453125,
+  "timestamp": "2026-10-19T02:40:27"
+}

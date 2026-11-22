@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "cake",
+  "cat_id": 61,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "cake",
+      "ap50": 0.566379722630156,
+      "n_detections": 25480
+    },
+    "template": {
+      "text": "a photo of a cake",
+      "ap50": 0.010666480270480339,
+      "n_detections": 49969
+    },
+    "there_is": {
+      "text": "there is a cake",
+      "ap50": 0.07878478743317938,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.566379722630156,
+  "ap_template": 0.010666480270480339,
+  "ap_there_is": 0.07878478743317938,
+  "delta_bare": 0.5557132423596757,
+  "delta_len": 0.06811830716269904,
+  "ratio": 0.12257816076769079,
+  "inference_time_seconds": 425.78489351272583,
+  "timestamp": "2026-10-19T03:31:18"
+}

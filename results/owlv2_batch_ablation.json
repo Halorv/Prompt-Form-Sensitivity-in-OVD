@@ -1,0 +1,99 @@
+{
+  "model": "google/owlv2-base-patch16-ensemble",
+  "classes": [
+    "person"
+  ],
+  "n_images": 100,
+  "prompts": [
+    "person",
+    "a person",
+    "a photo of a person",
+    "a person in the scene",
+    "the person",
+    "there is a person",
+    "a person standing",
+    "an individual person",
+    "a large person",
+    "a small person"
+  ],
+  "logits": {
+    "max_abs_diff": 7.62939453125e-06,
+    "mean_abs_diff": 5.226168568128742e-07,
+    "n_elements": 3600000,
+    "n_gt_1e-3": 0,
+    "max_box_diff": 0.0,
+    "verdict": "两臂数值一致 → 结构预测成立，批量大小不影响单个 (位置, prompt) 的分数"
+  },
+  "ap50": [
+    {
+      "class": "person",
+      "prompt": "person",
+      "ap50_A_batched": 0.8346240878262562,
+      "ap50_B_single": 0.8346240878262562,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a person",
+      "ap50_A_batched": 0.8193824774396676,
+      "ap50_B_single": 0.8193824774396676,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a photo of a person",
+      "ap50_A_batched": 0.8290487679608186,
+      "ap50_B_single": 0.8290487679608186,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a person in the scene",
+      "ap50_A_batched": 0.7873550353652962,
+      "ap50_B_single": 0.7873550353652962,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "the person",
+      "ap50_A_batched": 0.8253234437810969,
+      "ap50_B_single": 0.8253234437810969,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "there is a person",
+      "ap50_A_batched": 0.8222551166048642,
+      "ap50_B_single": 0.8222551166048642,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a person standing",
+      "ap50_A_batched": 0.8074507424736083,
+      "ap50_B_single": 0.8074507424736083,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "an individual person",
+      "ap50_A_batched": 0.8311506153907393,
+      "ap50_B_single": 0.8311506153907393,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a large person",
+      "ap50_A_batched": 0.8448889773295806,
+      "ap50_B_single": 0.8448889773295806,
+      "delta": 0.0
+    },
+    {
+      "class": "person",
+      "prompt": "a small person",
+      "ap50_A_batched": 0.8445166625714096,
+      "ap50_B_single": 0.8445166625714096,
+      "delta": 0.0
+    }
+  ]
+}

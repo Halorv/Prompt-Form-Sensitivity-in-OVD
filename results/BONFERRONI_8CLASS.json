@@ -1,0 +1,235 @@
+{
+  "schema": "bonferroni_8class_v1",
+  "description": "Bonferroni-corrected (alpha/8 = 0.00625, 99.375%) confidence intervals for the 8-class comparison, used by the multiple-comparison claim in 03_methodology.tex.",
+  "sources": {
+    "GLIP": "results/archive_80query/v14_bonferroni_recalc.json (GLIP/GDino blocks only; asserted identical to CANONICAL)",
+    "GDino": "results/archive_80query/v14_bonferroni_recalc.json (GLIP/GDino blocks only; asserted identical to CANONICAL)",
+    "OWLv2": "results/m6_40class/owlv2_8class_bootstrap.json (single-query)"
+  },
+  "warning": "The OWLv2 block inside archive_80query/v14_bonferroni_recalc.json is the 80-query run and is NOT valid. Only the OWLv2 values in THIS file (single-query) may be compared against the paper.",
+  "correction": {
+    "family_size": 8,
+    "alpha": 0.00625,
+    "ci_level": 0.99375
+  },
+  "summary": {
+    "GLIP": {
+      "n_sig95": 8,
+      "n_sig_bonf": 8,
+      "lose_significance": []
+    },
+    "GDino": {
+      "n_sig95": 8,
+      "n_sig_bonf": 8,
+      "lose_significance": []
+    },
+    "OWLv2": {
+      "n_sig95": 3,
+      "n_sig_bonf": 1,
+      "lose_significance": [
+        "chair",
+        "book"
+      ]
+    }
+  },
+  "models": {
+    "GLIP": {
+      "person": {
+        "ci95_low": 0.31476234139324744,
+        "ci95_high": 0.3696979799457433,
+        "sig95": true,
+        "ci_bonf_low": 0.31258395166978975,
+        "ci_bonf_high": 0.3752968487352499,
+        "sig_bonf": true
+      },
+      "car": {
+        "ci95_low": 0.03489811246445172,
+        "ci95_high": 0.0702616491753973,
+        "sig95": true,
+        "ci_bonf_low": 0.031448596222386924,
+        "ci_bonf_high": 0.07625169153418346,
+        "sig_bonf": true
+      },
+      "dog": {
+        "ci95_low": 0.013828473220941653,
+        "ci95_high": 0.24709491962407615,
+        "sig95": true,
+        "ci_bonf_low": 0.010311959960056207,
+        "ci_bonf_high": 0.3668105082359872,
+        "sig_bonf": true
+      },
+      "cat": {
+        "ci95_low": 0.06831077600915607,
+        "ci95_high": 0.3100730501331235,
+        "sig95": true,
+        "ci_bonf_low": 0.04248100029342505,
+        "ci_bonf_high": 0.3677009182635031,
+        "sig_bonf": true
+      },
+      "chair": {
+        "ci95_low": 0.02999505447692552,
+        "ci95_high": 0.0783706077941307,
+        "sig95": true,
+        "ci_bonf_low": 0.022235299410510227,
+        "ci_bonf_high": 0.08171375623133507,
+        "sig_bonf": true
+      },
+      "cup": {
+        "ci95_low": 0.11999489564624263,
+        "ci95_high": 0.25502574475804685,
+        "sig95": true,
+        "ci_bonf_low": 0.09533431281526289,
+        "ci_bonf_high": 0.2694909057747941,
+        "sig_bonf": true
+      },
+      "bottle": {
+        "ci95_low": 0.02629767009114361,
+        "ci95_high": 0.08639435527053288,
+        "sig95": true,
+        "ci_bonf_low": 0.020318787655436918,
+        "ci_bonf_high": 0.10082204386050932,
+        "sig_bonf": true
+      },
+      "book": {
+        "ci95_low": 0.005000484188162451,
+        "ci95_high": 0.06799628832140367,
+        "sig95": true,
+        "ci_bonf_low": 0.002619511444757899,
+        "ci_bonf_high": 0.0720007288973159,
+        "sig_bonf": true
+      }
+    },
+    "GDino": {
+      "person": {
+        "ci95_low": 0.5069410738366622,
+        "ci95_high": 0.570681785159237,
+        "sig95": true,
+        "ci_bonf_low": 0.4952865127889357,
+        "ci_bonf_high": 0.5888039510240474,
+        "sig_bonf": true
+      },
+      "car": {
+        "ci95_low": 0.4632219760180745,
+        "ci95_high": 0.6363513906788917,
+        "sig95": true,
+        "ci_bonf_low": 0.43912508794473215,
+        "ci_bonf_high": 0.6609622342822249,
+        "sig_bonf": true
+      },
+      "dog": {
+        "ci95_low": 0.2989318403681989,
+        "ci95_high": 0.6759862428588821,
+        "sig95": true,
+        "ci_bonf_low": 0.24770584690257574,
+        "ci_bonf_high": 0.7612307212522657,
+        "sig_bonf": true
+      },
+      "cat": {
+        "ci95_low": 0.4910894875905057,
+        "ci95_high": 0.7370136924105595,
+        "sig95": true,
+        "ci_bonf_low": 0.42477890394266704,
+        "ci_bonf_high": 0.7894942071270278,
+        "sig_bonf": true
+      },
+      "chair": {
+        "ci95_low": 0.38353955726024164,
+        "ci95_high": 0.5473089804811656,
+        "sig95": true,
+        "ci_bonf_low": 0.3574178015165954,
+        "ci_bonf_high": 0.561789640891903,
+        "sig_bonf": true
+      },
+      "cup": {
+        "ci95_low": 0.5438374863613198,
+        "ci95_high": 0.7188326706915493,
+        "sig95": true,
+        "ci_bonf_low": 0.4882140398623047,
+        "ci_bonf_high": 0.7545956062276252,
+        "sig_bonf": true
+      },
+      "bottle": {
+        "ci95_low": 0.4369987258332399,
+        "ci95_high": 0.6124136569296872,
+        "sig95": true,
+        "ci_bonf_low": 0.40923906342515354,
+        "ci_bonf_high": 0.6359729535686159,
+        "sig_bonf": true
+      },
+      "book": {
+        "ci95_low": 0.042686729724218164,
+        "ci95_high": 0.15527495212861148,
+        "sig95": true,
+        "ci_bonf_low": 0.03787937992574754,
+        "ci_bonf_high": 0.17919507296171208,
+        "sig_bonf": true
+      }
+    },
+    "OWLv2": {
+      "person": {
+        "ci95_low": -0.006736679494382991,
+        "ci95_high": 0.019987321435748235,
+        "sig95": false,
+        "ci_bonf_low": -0.009081487232861982,
+        "ci_bonf_high": 0.02451698575287849,
+        "sig_bonf": false
+      },
+      "car": {
+        "ci95_low": 0.01756853353959493,
+        "ci95_high": 0.07152348989513134,
+        "sig95": true,
+        "ci_bonf_low": 0.0012295460388720009,
+        "ci_bonf_high": 0.07997304069970099,
+        "sig_bonf": true
+      },
+      "dog": {
+        "ci95_low": -0.07456532466752135,
+        "ci95_high": 0.046234334689049125,
+        "sig95": false,
+        "ci_bonf_low": -0.09535778874849961,
+        "ci_bonf_high": 0.08249703964893232,
+        "sig_bonf": false
+      },
+      "cat": {
+        "ci95_low": -0.012900334121287016,
+        "ci95_high": 0.01943518745370168,
+        "sig95": false,
+        "ci_bonf_low": -0.01601603831929084,
+        "ci_bonf_high": 0.03187821367573744,
+        "sig_bonf": false
+      },
+      "chair": {
+        "ci95_low": -0.07594614218086754,
+        "ci95_high": -0.009853051434446652,
+        "sig95": true,
+        "ci_bonf_low": -0.08282460050828792,
+        "ci_bonf_high": 0.0029857311642787904,
+        "sig_bonf": false
+      },
+      "cup": {
+        "ci95_low": -0.012036066223325844,
+        "ci95_high": 0.08973262416563994,
+        "sig95": false,
+        "ci_bonf_low": -0.029473004808465764,
+        "ci_bonf_high": 0.10973694473855702,
+        "sig_bonf": false
+      },
+      "bottle": {
+        "ci95_low": -0.038474835689907456,
+        "ci95_high": 0.04637323241004163,
+        "sig95": false,
+        "ci_bonf_low": -0.06055316422655305,
+        "ci_bonf_high": 0.053313682045541114,
+        "sig_bonf": false
+      },
+      "book": {
+        "ci95_low": -0.054443747768061074,
+        "ci95_high": -0.008033160528542258,
+        "sig95": true,
+        "ci_bonf_low": -0.06729335577770314,
+        "ci_bonf_high": 0.00251364944129714,
+        "sig_bonf": false
+      }
+    }
+  }
+}

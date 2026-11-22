@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "cup",
+  "cat_id": 47,
+  "type": "ORIG8",
+  "n_gt": 128,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "cup",
+      "ap50": 0.1896045404975447,
+      "n_detections": 34240
+    },
+    "template": {
+      "text": "a photo of a cup",
+      "ap50": 0.01651846320524243,
+      "n_detections": 1905
+    },
+    "there_is": {
+      "text": "there is a cup",
+      "ap50": 0.176201908896582,
+      "n_detections": 7057
+    }
+  },
+  "ap_bare": 0.1896045404975447,
+  "ap_template": 0.01651846320524243,
+  "ap_there_is": 0.176201908896582,
+  "delta_bare": 0.17308607729230224,
+  "delta_len": 0.15968344569133958,
+  "ratio": 0.9225666685002704,
+  "inference_time_seconds": 253.0639100074768,
+  "timestamp": "2026-10-19T01:52:24"
+}

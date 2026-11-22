@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "bird",
+  "cat_id": 16,
+  "type": "NEW",
+  "n_gt": 47,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bird",
+      "ap50": 0.003607247600103899,
+      "n_detections": 26254
+    },
+    "template": {
+      "text": "a photo of a bird",
+      "ap50": 0.0003221698220242192,
+      "n_detections": 2301
+    },
+    "there_is": {
+      "text": "there is a bird",
+      "ap50": 0.004034699224266028,
+      "n_detections": 6999
+    }
+  },
+  "ap_bare": 0.003607247600103899,
+  "ap_template": 0.0003221698220242192,
+  "ap_there_is": 0.004034699224266028,
+  "delta_bare": 0.0032850777780796796,
+  "delta_len": 0.0037125294022418084,
+  "ratio": 1.1301191792213818,
+  "inference_time_seconds": 213.36410784721375,
+  "timestamp": "2026-10-19T02:54:41"
+}

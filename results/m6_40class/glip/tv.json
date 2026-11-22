@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "tv",
+  "cat_id": 72,
+  "type": "NEW",
+  "n_gt": 43,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "tv",
+      "ap50": 0.4055091981344485,
+      "n_detections": 18780
+    },
+    "template": {
+      "text": "a photo of a tv",
+      "ap50": 0.040807637293931054,
+      "n_detections": 1887
+    },
+    "there_is": {
+      "text": "there is a tv",
+      "ap50": 0.3353271593805121,
+      "n_detections": 5229
+    }
+  },
+  "ap_bare": 0.4055091981344485,
+  "ap_template": 0.040807637293931054,
+  "ap_there_is": 0.3353271593805121,
+  "delta_bare": 0.36470156084051747,
+  "delta_len": 0.29451952208658105,
+  "ratio": 0.8075630973659947,
+  "inference_time_seconds": 213.14775252342224,
+  "timestamp": "2026-10-19T02:58:14"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "bottle",
+  "cat_id": 44,
+  "type": "ORIG8",
+  "n_gt": 136,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bottle",
+      "ap50": 0.05905516379240212,
+      "n_detections": 29549
+    },
+    "template": {
+      "text": "a photo of a bottle",
+      "ap50": 0.014139023118425766,
+      "n_detections": 3150
+    },
+    "there_is": {
+      "text": "there is a bottle",
+      "ap50": 0.04846827448302349,
+      "n_detections": 6536
+    }
+  },
+  "ap_bare": 0.05905516379240212,
+  "ap_template": 0.014139023118425766,
+  "ap_there_is": 0.04846827448302349,
+  "delta_bare": 0.044916140673976354,
+  "delta_len": 0.03432925136459772,
+  "ratio": 0.7642965501817368,
+  "inference_time_seconds": 323.3406798839569,
+  "timestamp": "2026-10-19T01:57:48"
+}

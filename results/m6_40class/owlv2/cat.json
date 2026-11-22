@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "cat",
+  "cat_id": 17,
+  "type": "ORIG8",
+  "n_gt": 25,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "cat",
+      "ap50": 0.9044395756902103,
+      "n_detections": 2860
+    },
+    "template": {
+      "text": "a photo of a cat",
+      "ap50": 0.9024471008973808,
+      "n_detections": 2325
+    },
+    "there_is": {
+      "text": "there is a cat",
+      "ap50": 0.9094819690801673,
+      "n_detections": 4235
+    }
+  },
+  "ap_bare": 0.9044395756902103,
+  "ap_template": 0.9024471008973808,
+  "ap_there_is": 0.9094819690801673,
+  "delta_bare": 0.0019924747928294906,
+  "delta_len": 0.007034868182786536,
+  "ratio": 3.5307187865580976,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2860,
+  "inference_time_seconds": 81.58729362487793,
+  "timestamp": "2026-10-19T10:56:19"
+}

@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "tv",
+  "cat_id": 72,
+  "type": "NEW",
+  "n_gt": 43,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "tv",
+      "ap50": 0.8461133105872488,
+      "n_detections": 4178
+    },
+    "template": {
+      "text": "a photo of a tv",
+      "ap50": 0.8628024801430483,
+      "n_detections": 6050
+    },
+    "there_is": {
+      "text": "there is a tv",
+      "ap50": 0.8739701820398382,
+      "n_detections": 7176
+    }
+  },
+  "ap_bare": 0.8461133105872488,
+  "ap_template": 0.8628024801430483,
+  "ap_there_is": 0.8739701820398382,
+  "delta_bare": -0.016689169555799466,
+  "delta_len": 0.01116770189678995,
+  "ratio": -0.6691586336546738,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4178,
+  "inference_time_seconds": 85.0731999874115,
+  "timestamp": "2026-10-19T09:27:03"
+}

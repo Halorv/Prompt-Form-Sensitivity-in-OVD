@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "pizza",
+  "cat_id": 59,
+  "type": "NEW",
+  "n_gt": 32,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "pizza",
+      "ap50": 0.4221819060968739,
+      "n_detections": 17684
+    },
+    "template": {
+      "text": "a photo of a pizza",
+      "ap50": 0.028464898532404432,
+      "n_detections": 49968
+    },
+    "there_is": {
+      "text": "there is a pizza",
+      "ap50": 0.1782892583933953,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.4221819060968739,
+  "ap_template": 0.028464898532404432,
+  "ap_there_is": 0.1782892583933953,
+  "delta_bare": 0.3937170075644695,
+  "delta_len": 0.14982435986099085,
+  "ratio": 0.3805381961724317,
+  "inference_time_seconds": 150.70008397102356,
+  "timestamp": "2026-10-19T04:41:52"
+}

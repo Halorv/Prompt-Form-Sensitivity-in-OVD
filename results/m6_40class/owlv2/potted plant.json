@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "potted plant",
+  "cat_id": 64,
+  "type": "NEW",
+  "n_gt": 37,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "potted plant",
+      "ap50": 0.39241894254314635,
+      "n_detections": 2433
+    },
+    "template": {
+      "text": "a photo of a potted plant",
+      "ap50": 0.3984089901772592,
+      "n_detections": 6596
+    },
+    "there_is": {
+      "text": "there is a potted plant",
+      "ap50": 0.4171956632823661,
+      "n_detections": 8140
+    }
+  },
+  "ap_bare": 0.39241894254314635,
+  "ap_template": 0.3984089901772592,
+  "ap_there_is": 0.4171956632823661,
+  "delta_bare": -0.005990047634112872,
+  "delta_len": 0.0187866731051069,
+  "ratio": -3.136314475717723,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2433,
+  "inference_time_seconds": 85.47695422172546,
+  "timestamp": "2026-10-19T09:37:00"
+}

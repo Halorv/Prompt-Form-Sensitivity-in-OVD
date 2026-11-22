@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "laptop",
+  "cat_id": 73,
+  "type": "NEW",
+  "n_gt": 38,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "laptop",
+      "ap50": 0.8578133163590216,
+      "n_detections": 26440
+    },
+    "template": {
+      "text": "a photo of a laptop",
+      "ap50": 0.0631072073250221,
+      "n_detections": 49975
+    },
+    "there_is": {
+      "text": "there is a laptop",
+      "ap50": 0.4554221181846521,
+      "n_detections": 49936
+    }
+  },
+  "ap_bare": 0.8578133163590216,
+  "ap_template": 0.0631072073250221,
+  "ap_there_is": 0.4554221181846521,
+  "delta_bare": 0.7947061090339995,
+  "delta_len": 0.39231491085963,
+  "ratio": 0.4936603687827518,
+  "inference_time_seconds": 151.09943914413452,
+  "timestamp": "2026-10-19T04:24:14"
+}

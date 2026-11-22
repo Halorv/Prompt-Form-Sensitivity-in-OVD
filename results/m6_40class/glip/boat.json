@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "boat",
+  "cat_id": 9,
+  "type": "NEW",
+  "n_gt": 39,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "boat",
+      "ap50": 0.010728422260100772,
+      "n_detections": 18145
+    },
+    "template": {
+      "text": "a photo of a boat",
+      "ap50": 0.00270019358741395,
+      "n_detections": 1812
+    },
+    "there_is": {
+      "text": "there is a boat",
+      "ap50": 0.009688666628629813,
+      "n_detections": 4602
+    }
+  },
+  "ap_bare": 0.010728422260100772,
+  "ap_template": 0.00270019358741395,
+  "ap_there_is": 0.009688666628629813,
+  "delta_bare": 0.008028228672686821,
+  "delta_len": 0.0069884730412158634,
+  "ratio": 0.8704875416655289,
+  "inference_time_seconds": 213.0997953414917,
+  "timestamp": "2026-10-19T03:05:20"
+}

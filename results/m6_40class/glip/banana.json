@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "banana",
+  "cat_id": 52,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "banana",
+      "ap50": 0.0038576891545559094,
+      "n_detections": 26734
+    },
+    "template": {
+      "text": "a photo of a banana",
+      "ap50": 0.0008511731574796027,
+      "n_detections": 5548
+    },
+    "there_is": {
+      "text": "there is a banana",
+      "ap50": 0.0032920458860309053,
+      "n_detections": 6680
+    }
+  },
+  "ap_bare": 0.0038576891545559094,
+  "ap_template": 0.0008511731574796027,
+  "ap_there_is": 0.0032920458860309053,
+  "delta_bare": 0.0030065159970763065,
+  "delta_len": 0.002440872728551303,
+  "ratio": 0.8118608818063616,
+  "inference_time_seconds": 213.1583981513977,
+  "timestamp": "2026-10-19T02:22:41"
+}

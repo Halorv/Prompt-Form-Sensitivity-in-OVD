@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "car",
+  "cat_id": 3,
+  "type": "ORIG8",
+  "n_gt": 239,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "car",
+      "ap50": 0.06493788230206686,
+      "n_detections": 28057
+    },
+    "template": {
+      "text": "a photo of a car",
+      "ap50": 0.019375459617356487,
+      "n_detections": 1859
+    },
+    "there_is": {
+      "text": "there is a car",
+      "ap50": 0.06027462134813545,
+      "n_detections": 6765
+    }
+  },
+  "ap_bare": 0.06493788230206686,
+  "ap_template": 0.019375459617356487,
+  "ap_there_is": 0.06027462134813545,
+  "delta_bare": 0.04556242268471038,
+  "delta_len": 0.04089916173077897,
+  "ratio": 0.8976511634115478,
+  "inference_time_seconds": 302.69136238098145,
+  "timestamp": "2026-10-19T01:32:29"
+}

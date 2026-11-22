@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "person",
+  "cat_id": 1,
+  "type": "ORIG8",
+  "n_gt": 1520,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "person",
+      "ap50": 0.6719366994179921,
+      "n_detections": 15470
+    },
+    "template": {
+      "text": "a photo of a person",
+      "ap50": 0.6645665539330353,
+      "n_detections": 21588
+    },
+    "there_is": {
+      "text": "there is a person",
+      "ap50": 0.6430267383800073,
+      "n_detections": 23827
+    }
+  },
+  "ap_bare": 0.6719366994179921,
+  "ap_template": 0.6645665539330353,
+  "ap_there_is": 0.6430267383800073,
+  "delta_bare": 0.007370145484956736,
+  "delta_len": -0.021539815553027974,
+  "ratio": -2.9225767112729413,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 15470,
+  "inference_time_seconds": 82.44800162315369,
+  "timestamp": "2026-10-19T10:52:14"
+}

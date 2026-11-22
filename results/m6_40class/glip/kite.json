@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "kite",
+  "cat_id": 38,
+  "type": "NEW",
+  "n_gt": 53,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "kite",
+      "ap50": 0.006238363619536336,
+      "n_detections": 34063
+    },
+    "template": {
+      "text": "a photo of a kite",
+      "ap50": 0.0036793589759897822,
+      "n_detections": 1767
+    },
+    "there_is": {
+      "text": "there is a kite",
+      "ap50": 0.007439585060994526,
+      "n_detections": 5717
+    }
+  },
+  "ap_bare": 0.006238363619536336,
+  "ap_template": 0.0036793589759897822,
+  "ap_there_is": 0.007439585060994526,
+  "delta_bare": 0.0025590046435465534,
+  "delta_len": 0.0037602260850047435,
+  "ratio": 1.4694096372538832,
+  "inference_time_seconds": 213.03615713119507,
+  "timestamp": "2026-10-19T02:44:00"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "suitcase",
+  "cat_id": 33,
+  "type": "LOW_N_NEW",
+  "n_gt": 29,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "suitcase",
+      "ap50": 0.3711049951769727,
+      "n_detections": 20546
+    },
+    "template": {
+      "text": "a photo of a suitcase",
+      "ap50": 0.0051113301335301495,
+      "n_detections": 49981
+    },
+    "there_is": {
+      "text": "there is a suitcase",
+      "ap50": 0.011777420204028726,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.3711049951769727,
+  "ap_template": 0.0051113301335301495,
+  "ap_there_is": 0.011777420204028726,
+  "delta_bare": 0.36599366504344255,
+  "delta_len": 0.006666090070498577,
+  "ratio": 0.018213676102036707,
+  "inference_time_seconds": 150.82146215438843,
+  "timestamp": "2026-10-19T04:51:56"
+}

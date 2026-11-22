@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "couch",
+  "cat_id": 63,
+  "type": "NEW",
+  "n_gt": 35,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "couch",
+      "ap50": 0.22692437396396167,
+      "n_detections": 18946
+    },
+    "template": {
+      "text": "a photo of a couch",
+      "ap50": 0.026351066342958213,
+      "n_detections": 2062
+    },
+    "there_is": {
+      "text": "there is a couch",
+      "ap50": 0.12099729616629318,
+      "n_detections": 5893
+    }
+  },
+  "ap_bare": 0.22692437396396167,
+  "ap_template": 0.026351066342958213,
+  "ap_there_is": 0.12099729616629318,
+  "delta_bare": 0.20057330762100345,
+  "delta_len": 0.09464622982333497,
+  "ratio": 0.471878491440024,
+  "inference_time_seconds": 213.1695568561554,
+  "timestamp": "2026-10-19T03:26:40"
+}

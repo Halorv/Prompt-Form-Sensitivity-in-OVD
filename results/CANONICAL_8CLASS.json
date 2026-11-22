@@ -1,0 +1,444 @@
+{
+  "schema": "canonical_8class_v1",
+  "description": "SINGLE SOURCE OF TRUTH for Table 1 and all 8-class OWLv2/GLIP/GDino claims. Do not substitute any other results/*.json for these numbers.",
+  "protocol": {
+    "GLIP": "default model pipeline",
+    "GDino": "default model pipeline",
+    "OWLv2": "SINGLE-QUERY: one text query per forward pass (NOT 80-query batching)"
+  },
+  "bootstrap": {
+    "B": 200,
+    "seed": 42,
+    "ci": "95% percentile, paired image-level resampling, weighted AP50",
+    "effective_unique_per_resample_mean": 316.625
+  },
+  "sources": {
+    "GLIP": "results/archive_superseded/v14_bootstrap_weighted_v2.json",
+    "GDino": "results/archive_superseded/v14_bootstrap_weighted_v2.json",
+    "OWLv2": "results/m6_40class/owlv2_8class_bootstrap.json"
+  },
+  "definitions": {
+    "delta_bare": "AP50(bare class name) - AP50('a photo of a X')",
+    "delta_len": "AP50('there is a X') - AP50('a photo of a X')",
+    "ratio": "delta_len / delta_bare; N/A when |delta_bare| < 0.01"
+  },
+  "means": {
+    "GLIP": {
+      "mean_delta_bare": 0.11341870437050217,
+      "mean_delta_len": 0.09836799277014814,
+      "n_sig_delta_bare": 8,
+      "n_sig_delta_len": 8,
+      "ratio_of_means": 0.8672995632961189
+    },
+    "GDino": {
+      "mean_delta_bare": 0.4911913708468752,
+      "mean_delta_len": 0.19741004831472783,
+      "n_sig_delta_bare": 8,
+      "n_sig_delta_len": 8,
+      "ratio_of_means": 0.40190048122052363
+    },
+    "OWLv2": {
+      "mean_delta_bare": 0.0014173000106750336,
+      "mean_delta_len": 0.01716791999509658,
+      "n_sig_delta_bare": 3,
+      "n_sig_delta_len": 4,
+      "ratio_of_means": null
+    }
+  },
+  "models": {
+    "GLIP": {
+      "person": {
+        "delta_bare": 0.33811549972057187,
+        "ci_low": 0.31476234139324744,
+        "ci_high": 0.3696979799457433,
+        "ci_contains_zero": false,
+        "delta_len": 0.35172893504044433,
+        "delta_len_ci_low": 0.32291646885297,
+        "delta_len_ci_high": 0.38209014807866604,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 1.040262677490748,
+        "ap50": {
+          "bare": 0.5380752748771541,
+          "template": 0.19995977515658228,
+          "there_is": 0.5516887101970266
+        }
+      },
+      "car": {
+        "delta_bare": 0.04556242268471038,
+        "ci_low": 0.03489811246445172,
+        "ci_high": 0.0702616491753973,
+        "ci_contains_zero": false,
+        "delta_len": 0.04089916173077897,
+        "delta_len_ci_low": 0.030564767391568493,
+        "delta_len_ci_high": 0.06789833540925318,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.8976511634115478,
+        "ap50": {
+          "bare": 0.06493788230206686,
+          "template": 0.019375459617356487,
+          "there_is": 0.06027462134813545
+        }
+      },
+      "dog": {
+        "delta_bare": 0.08295371097115986,
+        "ci_low": 0.013828473220941653,
+        "ci_high": 0.24709491962407615,
+        "ci_contains_zero": false,
+        "delta_len": 0.04252019867181536,
+        "delta_len_ci_low": 0.007235889765284593,
+        "delta_len_ci_high": 0.14439396462907653,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.5125774142473043,
+        "ap50": {
+          "bare": 0.0974522094547035,
+          "template": 0.014498498483543638,
+          "there_is": 0.057018697155359
+        }
+      },
+      "cat": {
+        "delta_bare": 0.15005361243668014,
+        "ci_low": 0.06831077600915607,
+        "ci_high": 0.3100730501331235,
+        "ci_contains_zero": false,
+        "delta_len": 0.0825669777960736,
+        "delta_len_ci_low": 0.04275477317968194,
+        "delta_len_ci_high": 0.16806251175579673,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.5502498504054032,
+        "ap50": {
+          "bare": 0.1786476192767894,
+          "template": 0.02859400684010926,
+          "there_is": 0.11116098463618286
+        }
+      },
+      "chair": {
+        "delta_bare": 0.046356873230367655,
+        "ci_low": 0.02999505447692552,
+        "ci_high": 0.0783706077941307,
+        "ci_contains_zero": false,
+        "delta_len": 0.06542697600919836,
+        "delta_len_ci_low": 0.04831525098912205,
+        "delta_len_ci_high": 0.09700683509458183,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 1.4113759503162129,
+        "ap50": {
+          "bare": 0.06272984294363,
+          "template": 0.016372969713262346,
+          "there_is": 0.08179994572246072
+        }
+      },
+      "cup": {
+        "delta_bare": 0.17308607729230224,
+        "ci_low": 0.11999489564624263,
+        "ci_high": 0.25502574475804685,
+        "ci_contains_zero": false,
+        "delta_len": 0.15968344569133958,
+        "delta_len_ci_low": 0.10383388545704587,
+        "delta_len_ci_high": 0.23307616533742648,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.9225666685002704,
+        "ap50": {
+          "bare": 0.1896045404975447,
+          "template": 0.01651846320524243,
+          "there_is": 0.176201908896582
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.044916140673976354,
+        "ci_low": 0.02629767009114361,
+        "ci_high": 0.08639435527053288,
+        "ci_contains_zero": false,
+        "delta_len": 0.03432925136459772,
+        "delta_len_ci_low": 0.01998221191225008,
+        "delta_len_ci_high": 0.061569354180918585,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.7642965501817368,
+        "ap50": {
+          "bare": 0.05905516379240212,
+          "template": 0.014139023118425766,
+          "there_is": 0.04846827448302349
+        }
+      },
+      "book": {
+        "delta_bare": 0.02630529795424883,
+        "ci_low": 0.005000484188162451,
+        "ci_high": 0.06799628832140367,
+        "ci_contains_zero": false,
+        "delta_len": 0.009788995856937259,
+        "delta_len_ci_low": 0.004148563416622139,
+        "delta_len_ci_high": 0.03083784595735982,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.372130202591229,
+        "ap50": {
+          "bare": 0.02862159995231262,
+          "template": 0.00231631113155586,
+          "there_is": 0.012105306988493119
+        }
+      }
+    },
+    "GDino": {
+      "person": {
+        "delta_bare": 0.5413552226461685,
+        "ci_low": 0.5069410738366622,
+        "ci_high": 0.570681785159237,
+        "ci_contains_zero": false,
+        "delta_len": 0.4820929356644603,
+        "delta_len_ci_low": 0.44819660037871256,
+        "delta_len_ci_high": 0.5097339442440205,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.8905297584605696,
+        "ap50": {
+          "bare": 0.7610398813253,
+          "template": 0.21968465867913142,
+          "there_is": 0.7017775943435918
+        }
+      },
+      "car": {
+        "delta_bare": 0.5445424128135258,
+        "ci_low": 0.4632219760180745,
+        "ci_high": 0.6363513906788917,
+        "ci_contains_zero": false,
+        "delta_len": 0.09359832766845155,
+        "delta_len_ci_low": 0.06679245512021037,
+        "delta_len_ci_high": 0.13319748803140793,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.17188436651766106,
+        "ap50": {
+          "bare": 0.5767231097559159,
+          "template": 0.03218069176020304,
+          "there_is": 0.12577902461084162
+        }
+      },
+      "dog": {
+        "delta_bare": 0.48180077486211337,
+        "ci_low": 0.2989318403681989,
+        "ci_high": 0.6759862428588821,
+        "ci_contains_zero": false,
+        "delta_len": 0.2512748127701613,
+        "delta_len_ci_low": 0.09096820457113813,
+        "delta_len_ci_high": 0.4432550821544788,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.5215326040977698,
+        "ap50": {
+          "bare": 0.6496232700105824,
+          "template": 0.167822495148469,
+          "there_is": 0.4190973079186303
+        }
+      },
+      "cat": {
+        "delta_bare": 0.6457127388820172,
+        "ci_low": 0.4910894875905057,
+        "ci_high": 0.7370136924105595,
+        "ci_contains_zero": false,
+        "delta_len": 0.25287857584917417,
+        "delta_len_ci_low": 0.11268536913902401,
+        "delta_len_ci_high": 0.40229332391834866,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.39162705119772995,
+        "ap50": {
+          "bare": 0.8343845214014489,
+          "template": 0.1886717825194317,
+          "there_is": 0.4415503583686059
+        }
+      },
+      "chair": {
+        "delta_bare": 0.46973268615379465,
+        "ci_low": 0.38353955726024164,
+        "ci_high": 0.5473089804811656,
+        "ci_contains_zero": false,
+        "delta_len": 0.12398430440506752,
+        "delta_len_ci_low": 0.09137196138923355,
+        "delta_len_ci_high": 0.16842844245820573,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.26394651268631103,
+        "ap50": {
+          "bare": 0.5093025542970526,
+          "template": 0.039569868143257976,
+          "there_is": 0.1635541725483255
+        }
+      },
+      "cup": {
+        "delta_bare": 0.629244893653349,
+        "ci_low": 0.5438374863613198,
+        "ci_high": 0.7188326706915493,
+        "ci_contains_zero": false,
+        "delta_len": 0.19908392748919818,
+        "delta_len_ci_low": 0.14517649912117747,
+        "delta_len_ci_high": 0.27331453793739735,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.3163854478553361,
+        "ap50": {
+          "bare": 0.6877364313726521,
+          "template": 0.05849153771930304,
+          "there_is": 0.2575754652085012
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.5252814165781844,
+        "ci_low": 0.4369987258332399,
+        "ci_high": 0.6124136569296872,
+        "ci_contains_zero": false,
+        "delta_len": 0.1433987178010206,
+        "delta_len_ci_low": 0.10787966633771297,
+        "delta_len_ci_high": 0.20430083414217892,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.2729940814109816,
+        "ap50": {
+          "bare": 0.5829825458451887,
+          "template": 0.05770112926700429,
+          "there_is": 0.2010998470680249
+        }
+      },
+      "book": {
+        "delta_bare": 0.09186082118584868,
+        "ci_low": 0.042686729724218164,
+        "ci_high": 0.15527495212861148,
+        "ci_contains_zero": false,
+        "delta_len": 0.03296878487028909,
+        "delta_len_ci_low": 0.010192454190246784,
+        "delta_len_ci_high": 0.06746615551395406,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 0.35889930489069033,
+        "ap50": {
+          "bare": 0.09577542273268294,
+          "template": 0.003914607279051703,
+          "there_is": 0.03688338641712335
+        }
+      }
+    },
+    "OWLv2": {
+      "person": {
+        "delta_bare": 0.007370145484956736,
+        "ci_low": -0.006736679494382991,
+        "ci_high": 0.019987321435748235,
+        "ci_contains_zero": true,
+        "delta_len": -0.021539815553027974,
+        "delta_len_ci_low": -0.03201516731860013,
+        "delta_len_ci_high": -0.007828883085674062,
+        "delta_len_ci_contains_zero": false,
+        "ratio": null,
+        "ratio_note": "N/A: |delta_bare| < 0.01, ratio numerically unstable",
+        "ap50": {
+          "bare": 0.6719366994179921,
+          "template": 0.6645665539330353,
+          "there_is": 0.6430267383800073
+        }
+      },
+      "car": {
+        "delta_bare": 0.04443420979383955,
+        "ci_low": 0.01756853353959493,
+        "ci_high": 0.07152348989513134,
+        "ci_contains_zero": false,
+        "delta_len": 0.046779932261878876,
+        "delta_len_ci_low": 0.019889877291494426,
+        "delta_len_ci_high": 0.07733454066827632,
+        "delta_len_ci_contains_zero": false,
+        "ratio": 1.0527909122030688,
+        "ap50": {
+          "bare": 0.5117118672910468,
+          "template": 0.46727765749720723,
+          "there_is": 0.5140575897590861
+        }
+      },
+      "dog": {
+        "delta_bare": -0.00794661623789783,
+        "ci_low": -0.07456532466752135,
+        "ci_high": 0.046234334689049125,
+        "ci_contains_zero": true,
+        "delta_len": 0.022658105991882893,
+        "delta_len_ci_low": -0.016717140024824755,
+        "delta_len_ci_high": 0.10002170187859998,
+        "delta_len_ci_contains_zero": true,
+        "ratio": null,
+        "ratio_note": "N/A: |delta_bare| < 0.01, ratio numerically unstable",
+        "ap50": {
+          "bare": 0.8011379891247404,
+          "template": 0.8090846053626383,
+          "there_is": 0.8317427113545212
+        }
+      },
+      "cat": {
+        "delta_bare": 0.0019924747928294906,
+        "ci_low": -0.012900334121287016,
+        "ci_high": 0.01943518745370168,
+        "ci_contains_zero": true,
+        "delta_len": 0.007034868182786536,
+        "delta_len_ci_low": 0.0,
+        "delta_len_ci_high": 0.02478327088791688,
+        "delta_len_ci_contains_zero": true,
+        "ratio": null,
+        "ratio_note": "N/A: |delta_bare| < 0.01, ratio numerically unstable",
+        "ap50": {
+          "bare": 0.9044395756902103,
+          "template": 0.9024471008973808,
+          "there_is": 0.9094819690801673
+        }
+      },
+      "chair": {
+        "delta_bare": -0.04146671060840629,
+        "ci_low": -0.07594614218086754,
+        "ci_high": -0.009853051434446652,
+        "ci_contains_zero": false,
+        "delta_len": 0.02901369776635826,
+        "delta_len_ci_low": 0.01146693141041964,
+        "delta_len_ci_high": 0.042575183991625,
+        "delta_len_ci_contains_zero": false,
+        "ratio": -0.6996865037198415,
+        "ap50": {
+          "bare": 0.45194384273454213,
+          "template": 0.4934105533429484,
+          "there_is": 0.5224242511093067
+        }
+      },
+      "cup": {
+        "delta_bare": 0.03596082417464119,
+        "ci_low": -0.012036066223325844,
+        "ci_high": 0.08973262416563994,
+        "ci_contains_zero": true,
+        "delta_len": 0.014369685980216595,
+        "delta_len_ci_low": -0.008631792129066935,
+        "delta_len_ci_high": 0.034415535606263946,
+        "delta_len_ci_contains_zero": true,
+        "ratio": 0.39959278770784656,
+        "ap50": {
+          "bare": 0.6954911089786298,
+          "template": 0.6595302848039886,
+          "there_is": 0.6738999707842052
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.004327564994238087,
+        "ci_low": -0.038474835689907456,
+        "ci_high": 0.04637323241004163,
+        "ci_contains_zero": true,
+        "delta_len": 0.03694451314186592,
+        "delta_len_ci_low": 0.01018933120503002,
+        "delta_len_ci_high": 0.059228318436580114,
+        "delta_len_ci_contains_zero": false,
+        "ratio": null,
+        "ratio_note": "N/A: |delta_bare| < 0.01, ratio numerically unstable",
+        "ap50": {
+          "bare": 0.48456005856686946,
+          "template": 0.48023249357263137,
+          "there_is": 0.5171770067144973
+        }
+      },
+      "book": {
+        "delta_bare": -0.03333349230880067,
+        "ci_low": -0.054443747768061074,
+        "ci_high": -0.008033160528542258,
+        "ci_contains_zero": false,
+        "delta_len": 0.002082372188811521,
+        "delta_len_ci_low": -0.008842347749179098,
+        "delta_len_ci_high": 0.017939003557375,
+        "delta_len_ci_contains_zero": true,
+        "ratio": -0.06247086772428388,
+        "ap50": {
+          "bare": 0.13619889293506454,
+          "template": 0.1695323852438652,
+          "there_is": 0.17161475743267673
+        }
+      }
+    }
+  }
+}

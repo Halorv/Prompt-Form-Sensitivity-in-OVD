@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "dining table",
+  "cat_id": 67,
+  "type": "NEW",
+  "n_gt": 81,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "dining table",
+      "ap50": 0.3472290086449664,
+      "n_detections": 2406
+    },
+    "template": {
+      "text": "a photo of a dining table",
+      "ap50": 0.349182825709615,
+      "n_detections": 4124
+    },
+    "there_is": {
+      "text": "there is a dining table",
+      "ap50": 0.34374497844280744,
+      "n_detections": 4422
+    }
+  },
+  "ap_bare": 0.3472290086449664,
+  "ap_template": 0.349182825709615,
+  "ap_there_is": 0.34374497844280744,
+  "delta_bare": -0.0019538170646485886,
+  "delta_len": -0.005437847266807572,
+  "ratio": 2.7831916125605223,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2406,
+  "inference_time_seconds": 85.0867567062378,
+  "timestamp": "2026-10-19T09:07:07"
+}

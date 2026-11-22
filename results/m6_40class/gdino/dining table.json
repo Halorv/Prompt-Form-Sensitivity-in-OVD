@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "dining table",
+  "cat_id": 67,
+  "type": "NEW",
+  "n_gt": 81,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "dining table",
+      "ap50": 0.2267472201200064,
+      "n_detections": 45227
+    },
+    "template": {
+      "text": "a photo of a dining table",
+      "ap50": 0.04875080061708469,
+      "n_detections": 49675
+    },
+    "there_is": {
+      "text": "there is a dining table",
+      "ap50": 0.16939859709706456,
+      "n_detections": 49962
+    }
+  },
+  "ap_bare": 0.2267472201200064,
+  "ap_template": 0.04875080061708469,
+  "ap_there_is": 0.16939859709706456,
+  "delta_bare": 0.1779964195029217,
+  "delta_len": 0.12064779647997986,
+  "ratio": 0.6778102436942531,
+  "inference_time_seconds": 425.2576367855072,
+  "timestamp": "2026-10-19T02:55:48"
+}

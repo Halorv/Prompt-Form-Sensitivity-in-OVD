@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "wine glass",
+  "cat_id": 46,
+  "type": "NEW",
+  "n_gt": 51,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "wine glass",
+      "ap50": 0.051361945222692926,
+      "n_detections": 25733
+    },
+    "template": {
+      "text": "a photo of a wine glass",
+      "ap50": 0.0006103350061033501,
+      "n_detections": 1228
+    },
+    "there_is": {
+      "text": "there is a wine glass",
+      "ap50": 0.01840767149251248,
+      "n_detections": 11820
+    }
+  },
+  "ap_bare": 0.051361945222692926,
+  "ap_template": 0.0006103350061033501,
+  "ap_there_is": 0.01840767149251248,
+  "delta_bare": 0.050751610216589575,
+  "delta_len": 0.01779733648640913,
+  "ratio": 0.35067530686132936,
+  "inference_time_seconds": 213.18935298919678,
+  "timestamp": "2026-10-19T02:47:34"
+}

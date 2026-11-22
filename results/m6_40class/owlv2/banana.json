@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "banana",
+  "cat_id": 52,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "banana",
+      "ap50": 0.4669876166538487,
+      "n_detections": 3832
+    },
+    "template": {
+      "text": "a photo of a banana",
+      "ap50": 0.4639708273247299,
+      "n_detections": 4282
+    },
+    "there_is": {
+      "text": "there is a banana",
+      "ap50": 0.47133369549537857,
+      "n_detections": 4839
+    }
+  },
+  "ap_bare": 0.4669876166538487,
+  "ap_template": 0.4639708273247299,
+  "ap_there_is": 0.47133369549537857,
+  "delta_bare": 0.0030167893291188075,
+  "delta_len": 0.007362868170648684,
+  "ratio": 2.440630540416075,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 3832,
+  "inference_time_seconds": 85.2524836063385,
+  "timestamp": "2026-10-19T09:12:48"
+}

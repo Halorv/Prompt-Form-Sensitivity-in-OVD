@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+
+# Local data and model files
+data/
+weights/
+third_party/
+results/raw/
+
+# Logs and build artifacts
+*.log
+*.aux
+*.blg
+*.out
+*.toc

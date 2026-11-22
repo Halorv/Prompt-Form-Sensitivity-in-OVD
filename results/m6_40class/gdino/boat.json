@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "boat",
+  "cat_id": 9,
+  "type": "NEW",
+  "n_gt": 39,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "boat",
+      "ap50": 0.20485382850819472,
+      "n_detections": 27135
+    },
+    "template": {
+      "text": "a photo of a boat",
+      "ap50": 0.00679258668820735,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a boat",
+      "ap50": 0.022699577091459852,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.20485382850819472,
+  "ap_template": 0.00679258668820735,
+  "ap_there_is": 0.022699577091459852,
+  "delta_bare": 0.19806124181998738,
+  "delta_len": 0.015906990403252504,
+  "ratio": 0.08031349423583815,
+  "inference_time_seconds": 150.90938782691956,
+  "timestamp": "2026-10-19T04:16:40"
+}

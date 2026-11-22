@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "tv",
+  "cat_id": 72,
+  "type": "NEW",
+  "n_gt": 43,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "tv",
+      "ap50": 0.8445877278183511,
+      "n_detections": 34830
+    },
+    "template": {
+      "text": "a photo of a tv",
+      "ap50": 0.18322004885371748,
+      "n_detections": 49980
+    },
+    "there_is": {
+      "text": "there is a tv",
+      "ap50": 0.6043471052150748,
+      "n_detections": 49950
+    }
+  },
+  "ap_bare": 0.8445877278183511,
+  "ap_template": 0.18322004885371748,
+  "ap_there_is": 0.6043471052150748,
+  "delta_bare": 0.6613676789646337,
+  "delta_len": 0.4211270563613574,
+  "ratio": 0.6367517944339657,
+  "inference_time_seconds": 151.09222269058228,
+  "timestamp": "2026-10-19T04:11:38"
+}

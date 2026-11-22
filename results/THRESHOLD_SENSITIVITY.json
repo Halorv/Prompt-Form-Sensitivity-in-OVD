@@ -1,0 +1,171 @@
+{
+  "schema": "threshold_sensitivity_v1",
+  "description": "Mechanism-label counts under three threshold settings, supporting the sensitivity paragraph in the appendix. Rule: |delta_bare| < 0.01 -> N/A; delta_bare <= -0.01 -> NEX; otherwise ratio = delta_len/delta_bare is binned as <lo -> TAG, [lo,hi] -> MIX, >hi -> TS.",
+  "source": "results/CANONICAL_8CLASS.json",
+  "thresholds": [
+    "0.30/0.70",
+    "0.25/0.75",
+    "0.20/0.80"
+  ],
+  "results": {
+    "0.30/0.70": {
+      "GLIP": {
+        "counts": {
+          "TS": 5,
+          "MIX": 3
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TS",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "TS",
+          "cup": "TS",
+          "bottle": "TS",
+          "book": "MIX"
+        }
+      },
+      "GDino": {
+        "counts": {
+          "TS": 1,
+          "TAG": 3,
+          "MIX": 4
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TAG",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "TAG",
+          "cup": "MIX",
+          "bottle": "TAG",
+          "book": "MIX"
+        }
+      },
+      "OWLv2": {
+        "counts": {
+          "N/A": 4,
+          "TS": 1,
+          "NEX": 2,
+          "MIX": 1
+        },
+        "per_class": {
+          "person": "N/A",
+          "car": "TS",
+          "dog": "N/A",
+          "cat": "N/A",
+          "chair": "NEX",
+          "cup": "MIX",
+          "bottle": "N/A",
+          "book": "NEX"
+        }
+      }
+    },
+    "0.25/0.75": {
+      "GLIP": {
+        "counts": {
+          "TS": 5,
+          "MIX": 3
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TS",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "TS",
+          "cup": "TS",
+          "bottle": "TS",
+          "book": "MIX"
+        }
+      },
+      "GDino": {
+        "counts": {
+          "TS": 1,
+          "TAG": 1,
+          "MIX": 6
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TAG",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "MIX",
+          "cup": "MIX",
+          "bottle": "MIX",
+          "book": "MIX"
+        }
+      },
+      "OWLv2": {
+        "counts": {
+          "N/A": 4,
+          "TS": 1,
+          "NEX": 2,
+          "MIX": 1
+        },
+        "per_class": {
+          "person": "N/A",
+          "car": "TS",
+          "dog": "N/A",
+          "cat": "N/A",
+          "chair": "NEX",
+          "cup": "MIX",
+          "bottle": "N/A",
+          "book": "NEX"
+        }
+      }
+    },
+    "0.20/0.80": {
+      "GLIP": {
+        "counts": {
+          "TS": 4,
+          "MIX": 4
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TS",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "TS",
+          "cup": "TS",
+          "bottle": "MIX",
+          "book": "MIX"
+        }
+      },
+      "GDino": {
+        "counts": {
+          "TS": 1,
+          "TAG": 1,
+          "MIX": 6
+        },
+        "per_class": {
+          "person": "TS",
+          "car": "TAG",
+          "dog": "MIX",
+          "cat": "MIX",
+          "chair": "MIX",
+          "cup": "MIX",
+          "bottle": "MIX",
+          "book": "MIX"
+        }
+      },
+      "OWLv2": {
+        "counts": {
+          "N/A": 4,
+          "TS": 1,
+          "NEX": 2,
+          "MIX": 1
+        },
+        "per_class": {
+          "person": "N/A",
+          "car": "TS",
+          "dog": "N/A",
+          "cat": "N/A",
+          "chair": "NEX",
+          "cup": "MIX",
+          "bottle": "N/A",
+          "book": "NEX"
+        }
+      }
+    }
+  }
+}

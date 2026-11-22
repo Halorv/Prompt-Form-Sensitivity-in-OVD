@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "umbrella",
+  "cat_id": 28,
+  "type": "NEW",
+  "n_gt": 70,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "umbrella",
+      "ap50": 0.029200975318072364,
+      "n_detections": 24992
+    },
+    "template": {
+      "text": "a photo of a umbrella",
+      "ap50": 0.006647543989544988,
+      "n_detections": 2759
+    },
+    "there_is": {
+      "text": "there is a umbrella",
+      "ap50": 0.027397887019736323,
+      "n_detections": 6271
+    }
+  },
+  "ap_bare": 0.029200975318072364,
+  "ap_template": 0.006647543989544988,
+  "ap_there_is": 0.027397887019736323,
+  "delta_bare": 0.022553431328527378,
+  "delta_len": 0.020750343030191333,
+  "ratio": 0.9200525954533865,
+  "inference_time_seconds": 213.46375513076782,
+  "timestamp": "2026-10-19T02:12:01"
+}

@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "knife",
+  "cat_id": 49,
+  "type": "NEW",
+  "n_gt": 32,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "knife",
+      "ap50": 0.23290494068544446,
+      "n_detections": 5198
+    },
+    "template": {
+      "text": "a photo of a knife",
+      "ap50": 0.23285579308256427,
+      "n_detections": 6427
+    },
+    "there_is": {
+      "text": "there is a knife",
+      "ap50": 0.23867314490438193,
+      "n_detections": 7737
+    }
+  },
+  "ap_bare": 0.23290494068544446,
+  "ap_template": 0.23285579308256427,
+  "ap_there_is": 0.23867314490438193,
+  "delta_bare": 4.91476028801896e-05,
+  "delta_len": 0.005817351821817668,
+  "ratio": 118.36491468361164,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5198,
+  "inference_time_seconds": 85.15314388275146,
+  "timestamp": "2026-10-19T09:42:42"
+}

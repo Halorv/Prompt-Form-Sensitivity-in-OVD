@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "truck",
+  "cat_id": 8,
+  "type": "NEW",
+  "n_gt": 53,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "truck",
+      "ap50": 0.315906412413147,
+      "n_detections": 5155
+    },
+    "template": {
+      "text": "a photo of a truck",
+      "ap50": 0.3317873412281076,
+      "n_detections": 6402
+    },
+    "there_is": {
+      "text": "there is a truck",
+      "ap50": 0.3152784418690039,
+      "n_detections": 8208
+    }
+  },
+  "ap_bare": 0.315906412413147,
+  "ap_template": 0.3317873412281076,
+  "ap_there_is": 0.3152784418690039,
+  "delta_bare": -0.015880928814960615,
+  "delta_len": -0.016508899359103713,
+  "ratio": 1.0395424317720963,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5155,
+  "inference_time_seconds": 85.61640691757202,
+  "timestamp": "2026-10-19T09:19:56"
+}

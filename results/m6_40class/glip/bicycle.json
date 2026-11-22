@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "bicycle",
+  "cat_id": 2,
+  "type": "LOW_N_NEW",
+  "n_gt": 29,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bicycle",
+      "ap50": 0.1942031074260275,
+      "n_detections": 33068
+    },
+    "template": {
+      "text": "a photo of a bicycle",
+      "ap50": 0.008405701350963066,
+      "n_detections": 1676
+    },
+    "there_is": {
+      "text": "there is a bicycle",
+      "ap50": 0.1619465643234749,
+      "n_detections": 9881
+    }
+  },
+  "ap_bare": 0.1942031074260275,
+  "ap_template": 0.008405701350963066,
+  "ap_there_is": 0.1619465643234749,
+  "delta_bare": 0.18579740607506445,
+  "delta_len": 0.15354086297251185,
+  "ratio": 0.826388625202224,
+  "inference_time_seconds": 213.15328884124756,
+  "timestamp": "2026-10-19T03:58:40"
+}

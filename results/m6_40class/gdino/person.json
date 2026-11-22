@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "person",
+  "cat_id": 1,
+  "type": "ORIG8",
+  "n_gt": 1520,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "person",
+      "ap50": 0.7610398813253,
+      "n_detections": 45995
+    },
+    "template": {
+      "text": "a photo of a person",
+      "ap50": 0.21968465867913142,
+      "n_detections": 49942
+    },
+    "there_is": {
+      "text": "there is a person",
+      "ap50": 0.7017775943435918,
+      "n_detections": 49582
+    }
+  },
+  "ap_bare": 0.7610398813253,
+  "ap_template": 0.21968465867913142,
+  "ap_there_is": 0.7017775943435918,
+  "delta_bare": 0.5413552226461685,
+  "delta_len": 0.4820929356644603,
+  "ratio": 0.8905297584605696,
+  "inference_time_seconds": 624.7144412994385,
+  "timestamp": "2026-10-19T01:38:10"
+}

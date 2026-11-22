@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "bus",
+  "cat_id": 6,
+  "type": "NEW",
+  "n_gt": 37,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bus",
+      "ap50": 0.23853334596355522,
+      "n_detections": 23615
+    },
+    "template": {
+      "text": "a photo of a bus",
+      "ap50": 0.02267670036254329,
+      "n_detections": 1737
+    },
+    "there_is": {
+      "text": "there is a bus",
+      "ap50": 0.12464782253842173,
+      "n_detections": 5174
+    }
+  },
+  "ap_bare": 0.23853334596355522,
+  "ap_template": 0.02267670036254329,
+  "ap_there_is": 0.12464782253842173,
+  "delta_bare": 0.21585664560101192,
+  "delta_len": 0.10197112217587843,
+  "ratio": 0.4724020513334633,
+  "inference_time_seconds": 213.12934160232544,
+  "timestamp": "2026-10-19T03:19:33"
+}

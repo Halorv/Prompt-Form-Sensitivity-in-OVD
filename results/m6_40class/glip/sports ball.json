@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "sports ball",
+  "cat_id": 37,
+  "type": "NEW",
+  "n_gt": 41,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "sports ball",
+      "ap50": 0.016939522756171357,
+      "n_detections": 12747
+    },
+    "template": {
+      "text": "a photo of a sports ball",
+      "ap50": 0.0013428684095535496,
+      "n_detections": 975
+    },
+    "there_is": {
+      "text": "there is a sports ball",
+      "ap50": 0.044314379022271866,
+      "n_detections": 5971
+    }
+  },
+  "ap_bare": 0.016939522756171357,
+  "ap_template": 0.0013428684095535496,
+  "ap_there_is": 0.044314379022271866,
+  "delta_bare": 0.015596654346617807,
+  "delta_len": 0.04297151061271832,
+  "ratio": 2.7551749021120577,
+  "inference_time_seconds": 213.04587578773499,
+  "timestamp": "2026-10-19T03:01:47"
+}

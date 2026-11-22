@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "laptop",
+  "cat_id": 73,
+  "type": "NEW",
+  "n_gt": 38,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "laptop",
+      "ap50": 0.8739469082654872,
+      "n_detections": 3871
+    },
+    "template": {
+      "text": "a photo of a laptop",
+      "ap50": 0.8645481744000838,
+      "n_detections": 3985
+    },
+    "there_is": {
+      "text": "there is a laptop",
+      "ap50": 0.8675195468408238,
+      "n_detections": 5217
+    }
+  },
+  "ap_bare": 0.8739469082654872,
+  "ap_template": 0.8645481744000838,
+  "ap_there_is": 0.8675195468408238,
+  "delta_bare": 0.009398733865403353,
+  "delta_len": 0.002971372440739972,
+  "ratio": 0.3161460344863647,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 3871,
+  "inference_time_seconds": 85.17915940284729,
+  "timestamp": "2026-10-19T09:34:09"
+}

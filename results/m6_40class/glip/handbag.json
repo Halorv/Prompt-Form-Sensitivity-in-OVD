@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "handbag",
+  "cat_id": 31,
+  "type": "NEW",
+  "n_gt": 67,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "handbag",
+      "ap50": 0.04805714756829435,
+      "n_detections": 37813
+    },
+    "template": {
+      "text": "a photo of a handbag",
+      "ap50": 0.015445764488656656,
+      "n_detections": 3544
+    },
+    "there_is": {
+      "text": "there is a handbag",
+      "ap50": 0.05469113294908536,
+      "n_detections": 14432
+    }
+  },
+  "ap_bare": 0.04805714756829435,
+  "ap_template": 0.015445764488656656,
+  "ap_there_is": 0.05469113294908536,
+  "delta_bare": 0.03261138307963769,
+  "delta_len": 0.039245368460428705,
+  "ratio": 1.2034254531490025,
+  "inference_time_seconds": 213.1915717124939,
+  "timestamp": "2026-10-19T02:15:34"
+}

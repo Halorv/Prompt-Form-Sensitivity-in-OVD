@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "fork",
+  "cat_id": 48,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "fork",
+      "ap50": 0.45608146035650543,
+      "n_detections": 4096
+    },
+    "template": {
+      "text": "a photo of a fork",
+      "ap50": 0.4483449908083076,
+      "n_detections": 6090
+    },
+    "there_is": {
+      "text": "there is a fork",
+      "ap50": 0.460500249353507,
+      "n_detections": 7617
+    }
+  },
+  "ap_bare": 0.45608146035650543,
+  "ap_template": 0.4483449908083076,
+  "ap_there_is": 0.460500249353507,
+  "delta_bare": 0.007736469548197844,
+  "delta_len": 0.012155258545199388,
+  "ratio": 1.5711634964078505,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4096,
+  "inference_time_seconds": 85.41858410835266,
+  "timestamp": "2026-10-19T09:48:24"
+}

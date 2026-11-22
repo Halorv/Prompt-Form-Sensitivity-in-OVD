@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "chair",
+  "cat_id": 62,
+  "type": "ORIG8",
+  "n_gt": 241,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "chair",
+      "ap50": 0.5093025542970526,
+      "n_detections": 47864
+    },
+    "template": {
+      "text": "a photo of a chair",
+      "ap50": 0.039569868143257976,
+      "n_detections": 49957
+    },
+    "there_is": {
+      "text": "there is a chair",
+      "ap50": 0.1635541725483255,
+      "n_detections": 49877
+    }
+  },
+  "ap_bare": 0.5093025542970526,
+  "ap_template": 0.039569868143257976,
+  "ap_there_is": 0.1635541725483255,
+  "delta_bare": 0.46973268615379465,
+  "delta_len": 0.12398430440506752,
+  "ratio": 0.26394651268631103,
+  "inference_time_seconds": 426.31198263168335,
+  "timestamp": "2026-10-19T02:20:19"
+}

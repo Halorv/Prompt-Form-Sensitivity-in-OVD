@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the associated manuscript."
+title: "Prompt-Form Sensitivity in Open-Vocabulary Detection: The CLIP Template Is a Poor Default"
+authors:
+  - family-names: Li
+    given-names: Fadong
+  - family-names: Liu
+    given-names: Bing
+  - family-names: Liu
+    given-names: Mingming
+  - family-names: Zhou
+    given-names: Yong
+  - family-names: Liu
+    given-names: Peng
+  - family-names: Qiao
+    given-names: Ning
+repository-code: "https://github.com/Halorv/Prompt-Form-Sensitivity-in-OVD"
+license: MIT
+year: 2026
+preferred-citation:
+  type: article
+  title: "Prompt-Form Sensitivity in Open-Vocabulary Detection: The CLIP Template Is a Poor Default"
+  authors:
+    - family-names: Li
+      given-names: Fadong
+    - family-names: Liu
+      given-names: Bing
+    - family-names: Liu
+      given-names: Mingming
+    - family-names: Zhou
+      given-names: Yong
+    - family-names: Liu
+      given-names: Peng
+    - family-names: Qiao
+      given-names: Ning
+  journal: "Computer Vision and Image Understanding"
+  year: 2026

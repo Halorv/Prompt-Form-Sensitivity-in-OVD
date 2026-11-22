@@ -1,0 +1,293 @@
+{
+  "schema": "per_prompt_ap50_v1",
+  "description": "AP50 of every prompt form per class, used only to verify the 'CLIP template is the worst prompt form' claim in the introduction. Point estimates only -- no confidence intervals, no deltas. Table 1 numbers come from CANONICAL_8CLASS.json, never from here.",
+  "sources": {
+    "GLIP": "results/glip_8class_ap50_summary.json (10 prompts)",
+    "GDino": "results/archive_superseded/gdino_v11_summary.json (10 prompts)",
+    "OWLv2": "results/m6_40class/owlv2_8class_bootstrap.json (single-query, 3 prompts only)"
+  },
+  "template_worst_claim": {
+    "paper": {
+      "GLIP": {
+        "n_worst": 7,
+        "n_worst_or_second": 7,
+        "of": 8
+      },
+      "GDino": {
+        "n_worst": 5,
+        "n_worst_or_second": 6,
+        "of": 8
+      }
+    },
+    "computed": {
+      "GLIP": {
+        "n_worst": 7,
+        "n_worst_or_second": 7,
+        "ranks": {
+          "person": 1,
+          "car": 1,
+          "dog": 1,
+          "cat": 1,
+          "chair": 1,
+          "cup": 1,
+          "bottle": 3,
+          "book": 1
+        }
+      },
+      "GDino": {
+        "n_worst": 5,
+        "n_worst_or_second": 6,
+        "ranks": {
+          "person": 1,
+          "car": 2,
+          "dog": 1,
+          "cat": 1,
+          "chair": 1,
+          "cup": 1,
+          "bottle": 3,
+          "book": 3
+        }
+      }
+    }
+  },
+  "ap50": {
+    "GLIP": {
+      "person": {
+        "person": 0.5380752748771541,
+        "a person": 0.5218127688805284,
+        "a photo of a person": 0.19995977515658228,
+        "a person in the scene": 0.5051384284423517,
+        "people": 0.291177267421843,
+        "human": 0.5099061982936096,
+        "there is a person": 0.5516887101970266,
+        "a human standing": 0.5183952277570456,
+        "an individual person": 0.5689307110910701,
+        "a pedestrian": 0.4729168520356858
+      },
+      "car": {
+        "car": 0.06493788230206686,
+        "a car": 0.061088000523853034,
+        "a photo of a car": 0.019375459617356487,
+        "a car in the scene": 0.04101628677814143,
+        "vehicle": 0.03711846584605147,
+        "automobile": 0.060103780183473725,
+        "there is a car": 0.06027462134813545,
+        "a car parked": 0.06513344020444391,
+        "a sedan": 0.0735618094063089,
+        "a motorcar": 0.03946018642220717
+      },
+      "dog": {
+        "dog": 0.0974522094547035,
+        "a dog": 0.08563072826217048,
+        "a photo of a dog": 0.014498498483543638,
+        "a dog in the scene": 0.05321994024769638,
+        "puppy": 0.055773253623041065,
+        "canine": 0.09022940480715838,
+        "there is a dog": 0.057018697155359,
+        "a dog standing": 0.074986975555248,
+        "a pet dog": 0.08070444538472633,
+        "a dog running": 0.07382870915894404
+      },
+      "cat": {
+        "cat": 0.1786476192767894,
+        "a cat": 0.16885709201801827,
+        "a photo of a cat": 0.02859400684010926,
+        "a cat in the scene": 0.10133327897825767,
+        "kitten": 0.15934862023856544,
+        "feline": 0.06281223175334749,
+        "there is a cat": 0.11116098463618286,
+        "a cat sitting": 0.16028657192454832,
+        "a pet cat": 0.1565571033604877,
+        "a cat lying down": 0.11727083281257937
+      },
+      "chair": {
+        "chair": 0.06272984294363,
+        "a chair": 0.08143482087228401,
+        "a photo of a chair": 0.016372969713262346,
+        "a chair in the scene": 0.061314186620780115,
+        "seat": 0.032562044279223205,
+        "furniture": 0.018832825615348374,
+        "there is a chair": 0.08179994572246072,
+        "a wooden chair": 0.0943507889045899,
+        "an empty chair": 0.07646991562728042,
+        "a chair nearby": 0.0919019120581547
+      },
+      "cup": {
+        "cup": 0.1896045404975447,
+        "a cup": 0.17389932099889102,
+        "a photo of a cup": 0.01651846320524243,
+        "a cup in the scene": 0.10589151015395928,
+        "mug": 0.1683030059007027,
+        "drinking cup": 0.06795716816086846,
+        "there is a cup": 0.176201908896582,
+        "a cup on the table": 0.10802587401952551,
+        "a teacup": 0.06571260634303615,
+        "a coffee cup": 0.13269624651206136
+      },
+      "bottle": {
+        "bottle": 0.05905516379240212,
+        "a bottle": 0.05153281431069388,
+        "a photo of a bottle": 0.014139023118425766,
+        "a bottle in the scene": 0.039739835992288954,
+        "flask": 0.013626425116065632,
+        "container": 0.007180406832884518,
+        "there is a bottle": 0.04846827448302349,
+        "a glass bottle": 0.03746760010381851,
+        "a water bottle": 0.04223029168886111,
+        "a plastic bottle": 0.05780079850976553
+      },
+      "book": {
+        "book": 0.02862159995231262,
+        "a book": 0.014428157057433765,
+        "a photo of a book": 0.00231631113155586,
+        "a book in the scene": 0.007579463642470241,
+        "volume": 0.0042879638753610975,
+        "publication": 0.004896669361058693,
+        "there is a book": 0.012105306988493119,
+        "a book on the shelf": 0.01646581863533023,
+        "a paperback": 0.017365141993868207,
+        "a hardcover book": 0.02690601018998739
+      }
+    },
+    "GDino": {
+      "person": {
+        "person": 0.7610398813253,
+        "a person": 0.6527525779991956,
+        "a photo of a person": 0.21968465867913142,
+        "a person in the scene": 0.5947996462752702,
+        "people": 0.6208554873055909,
+        "human": 0.573408449097261,
+        "there is a person": 0.7017775943435918,
+        "a human standing": 0.4172116236903684,
+        "an individual person": 0.5882268362850587,
+        "a pedestrian": 0.5387583181511495
+      },
+      "car": {
+        "car": 0.5767231097559159,
+        "a car": 0.11650989000464729,
+        "a photo of a car": 0.03218069176020304,
+        "a car in the scene": 0.11548354105598833,
+        "vehicle": 0.042869114986706494,
+        "automobile": 0.08961557815431846,
+        "there is a car": 0.12577902461084162,
+        "a car parked": 0.13322174507973852,
+        "a sedan": 0.08090438226163814,
+        "a motorcar": 0.027458310413090773
+      },
+      "dog": {
+        "dog": 0.6496232700105824,
+        "a dog": 0.262505796898451,
+        "a photo of a dog": 0.167822495148469,
+        "a dog in the scene": 0.3723881147999978,
+        "puppy": 0.22862711766417934,
+        "canine": 0.20484319301692588,
+        "there is a dog": 0.4190973079186303,
+        "a dog standing": 0.28735800219851126,
+        "a pet dog": 0.27395428084816714,
+        "a dog running": 0.34047981562761354
+      },
+      "cat": {
+        "cat": 0.8343845214014489,
+        "a cat": 0.34227337793032914,
+        "a photo of a cat": 0.1886717825194317,
+        "a cat in the scene": 0.3981895740606541,
+        "kitten": 0.5526711395141873,
+        "feline": 0.4154256669821758,
+        "there is a cat": 0.4415503583686059,
+        "a cat sitting": 0.4554218240536751,
+        "a pet cat": 0.3477581614422176,
+        "a cat lying down": 0.48101127571100355
+      },
+      "chair": {
+        "chair": 0.5093025542970526,
+        "a chair": 0.15081164162856317,
+        "a photo of a chair": 0.039569868143257976,
+        "a chair in the scene": 0.14794511052285245,
+        "seat": 0.13969043438798204,
+        "furniture": 0.09181736430620913,
+        "there is a chair": 0.1635541725483255,
+        "a wooden chair": 0.1493679587372926,
+        "an empty chair": 0.16777904690491416,
+        "a chair nearby": 0.1723257142168523
+      },
+      "cup": {
+        "cup": 0.6877364313726521,
+        "a cup": 0.25242037509849824,
+        "a photo of a cup": 0.05849153771930304,
+        "a cup in the scene": 0.24145255930162543,
+        "mug": 0.6929616144818034,
+        "drinking cup": 0.29977270783080323,
+        "there is a cup": 0.2575754652085012,
+        "a cup on the table": 0.22203788702077115,
+        "a teacup": 0.21379472787787127,
+        "a coffee cup": 0.20582350565137822
+      },
+      "bottle": {
+        "bottle": 0.5829825458451887,
+        "a bottle": 0.2162042015582502,
+        "a photo of a bottle": 0.05770112926700429,
+        "a bottle in the scene": 0.15890948259675278,
+        "flask": 0.001202518881242779,
+        "container": 0.0191150973303574,
+        "there is a bottle": 0.2010998470680249,
+        "a glass bottle": 0.19313634607728203,
+        "a water bottle": 0.16936166973207217,
+        "a plastic bottle": 0.18445259881971265
+      },
+      "book": {
+        "book": 0.09577542273268294,
+        "a book": 0.033559877294427116,
+        "a photo of a book": 0.003914607279051703,
+        "a book in the scene": 0.028605763168552352,
+        "volume": 0.004847842337675996,
+        "publication": 0.0014671153997119683,
+        "there is a book": 0.03688338641712335,
+        "a book on the shelf": 0.04085823061627243,
+        "a paperback": 0.0039050746971769977,
+        "a hardcover book": 0.035359938389940136
+      }
+    },
+    "OWLv2": {
+      "person": {
+        "bare": 0.6719366994179921,
+        "a photo of a person": 0.6645665539330353,
+        "there is a person": 0.6430267383800073
+      },
+      "car": {
+        "bare": 0.5117118672910468,
+        "a photo of a car": 0.46727765749720723,
+        "there is a car": 0.5140575897590861
+      },
+      "dog": {
+        "bare": 0.8011379891247404,
+        "a photo of a dog": 0.8090846053626383,
+        "there is a dog": 0.8317427113545212
+      },
+      "cat": {
+        "bare": 0.9044395756902103,
+        "a photo of a cat": 0.9024471008973808,
+        "there is a cat": 0.9094819690801673
+      },
+      "chair": {
+        "bare": 0.45194384273454213,
+        "a photo of a chair": 0.4934105533429484,
+        "there is a chair": 0.5224242511093067
+      },
+      "cup": {
+        "bare": 0.6954911089786298,
+        "a photo of a cup": 0.6595302848039886,
+        "there is a cup": 0.6738999707842052
+      },
+      "bottle": {
+        "bare": 0.48456005856686946,
+        "a photo of a bottle": 0.48023249357263137,
+        "there is a bottle": 0.5171770067144973
+      },
+      "book": {
+        "bare": 0.13619889293506454,
+        "a photo of a book": 0.1695323852438652,
+        "there is a book": 0.17161475743267673
+      }
+    }
+  }
+}

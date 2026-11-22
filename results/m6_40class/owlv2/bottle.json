@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bottle",
+  "cat_id": 44,
+  "type": "ORIG8",
+  "n_gt": 136,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bottle",
+      "ap50": 0.48456005856686946,
+      "n_detections": 7218
+    },
+    "template": {
+      "text": "a photo of a bottle",
+      "ap50": 0.48023249357263137,
+      "n_detections": 9390
+    },
+    "there_is": {
+      "text": "there is a bottle",
+      "ap50": 0.5171770067144973,
+      "n_detections": 11862
+    }
+  },
+  "ap_bare": 0.48456005856686946,
+  "ap_template": 0.48023249357263137,
+  "ap_there_is": 0.5171770067144973,
+  "delta_bare": 0.004327564994238087,
+  "delta_len": 0.03694451314186592,
+  "ratio": 8.537020978553874,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 7218,
+  "inference_time_seconds": 81.60011148452759,
+  "timestamp": "2026-10-19T11:00:25"
+}

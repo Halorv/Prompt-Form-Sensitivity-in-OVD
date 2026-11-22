@@ -1,0 +1,91 @@
+{
+  "schema": "token_metric_annotation_v1",
+  "file_role": "audit_annotation",
+  "not_a_result_table": true,
+  "description": "READ ME FIRST for token-level claims. This file disambiguates two different token metrics in results/v14_step2_token_evidence.json. A zero-context paper-claim audit previously treated per_token_max as ground truth and flagged five correct Appendix Table 4 rows as mismatches. Do not repeat that error. This annotation is not a numerical source for any paper claim.",
+  "evidence_file": "results/v14_step2_token_evidence.json",
+  "key_convention": "Evidence JSON keys are <image_id>_<class> (e.g. '267537_car'). The 'case' labels below append the prompt type for readability (e.g. '267537_car/template'); they are not literal evidence keys.",
+  "verification_script": "experiments/v14_1_argmax_bug_fix.py",
+  "verification_log": [
+    "refine-logs/EXPERIMENT_RESULTS_v14.md lines 103-120 (full 8-position dump and dict-key-collision warning)",
+    "refine-logs/EXPERIMENT_RESULTS_v14.md lines 305-307 (12/12 max_token field is reliable; dicts are not)",
+    "refine-logs/EXPERIMENT_RESULTS_v14.md lines 319-328 (table computed from top5_queries[0].max_token_score)"
+  ],
+  "metrics": {
+    "A_position_indexed_argmax": {
+      "definition": "For each query, take the argmax over all token positions of the sigmoid logits. The winning position's token is the top-1 token; its probability is the query score.",
+      "json_fields": [
+        "top5_queries[i].max_token",
+        "top5_queries[i].max_token_idx",
+        "top5_queries[i].max_token_score"
+      ],
+      "reliability": "RELIABLE. Computed with numpy argmax over positions; unaffected by dict-key collisions.",
+      "used_by_paper": "Appendix Table 4 (label tab:token_evidence): 'Top-1 token and score ... via position-indexed argmax'."
+    },
+    "B_per_token_max_over_queries": {
+      "definition": "For each token string, take its maximum probability over queries. Stored in a Python dict keyed by token text.",
+      "json_fields": [
+        "per_token_max",
+        "all_token_scores"
+      ],
+      "reliability": "PARTIALLY CORRUPTED when a prompt contains the same token string twice. The later position overwrites the earlier position in the dict, so the token-identity keys can be wrong for repeated tokens such as 'a'.",
+      "used_by_paper": "Results section 4.2: 'photo achieves a mean per_token_max of 0.477 (range 0.376--0.551)'. Valid here because 'photo' appears exactly once in every template prompt."
+    }
+  },
+  "worked_example": {
+    "case": "267537_car/template",
+    "caption": "a photo of a car.",
+    "tokens": ["[CLS]", "a", "photo", "of", "a", "car", ".", "[SEP]"],
+    "positions": {
+      "1": {"token": "a", "prob": 0.5534, "note": "TRUE ARGMAX"},
+      "2": {"token": "photo", "prob": 0.5514, "note": "second highest"},
+      "4": {"token": "a", "prob": 0.0139, "note": "duplicate position; overwrites position 1 in per_token_max/all_token_scores"}
+    },
+    "reliable_fields": {
+      "max_token": "a",
+      "max_token_idx": 1,
+      "max_token_score": 0.553426
+    },
+    "corrupted_fields": {
+      "per_token_max.a": 0.019526,
+      "all_token_scores.a": 0.013909
+    },
+    "reliable_unique_token": {
+      "per_token_max.photo": 0.551352
+    }
+  },
+  "paper_mapping": {
+    "appendix_table_4": {
+      "metric": "A_position_indexed_argmax",
+      "rows": [
+        {"case": "267537_car/template", "paper": "a / 0.553", "expected": "a / 0.553426", "status": "CORRECT"},
+        {"case": "267537_cup/template", "paper": "a / 0.456", "expected": "a / 0.455650", "status": "CORRECT"},
+        {"case": "173371_car/template", "paper": "a / 0.523", "expected": "a / 0.523336", "status": "CORRECT"},
+        {"case": "173371_cup/template", "paper": "a / 0.383", "expected": "a / 0.383210", "status": "CORRECT"},
+        {"case": "2261_car/template", "paper": "a / 0.489", "expected": "a / 0.488929", "status": "CORRECT"},
+        {"case": "2261_cup/template", "paper": "photo / 0.487", "expected": "photo / 0.486742", "status": "CORRECT"}
+      ],
+      "audit_rule": "Do NOT compare these rows to per_token_max. Do NOT change 'a' to 'photo' or 0.553 to 0.551. The 'a' value is the true position-argmax at position 1."
+    },
+    "results_4_2": {
+      "metric": "B_per_token_max_over_queries",
+      "claim": "photo mean 0.477, range 0.376-0.551",
+      "status": "CORRECT because 'photo' is unique in all six template prompts",
+      "values": [0.551352, 0.442572, 0.517437, 0.376361, 0.485431, 0.486742]
+    }
+  },
+  "audit_rules": [
+    "1. For Appendix Table 4, use top5_queries[0].max_token / max_token_idx / max_token_score.",
+    "2. Never use per_token_max or all_token_scores to identify the top-1 token when the prompt contains duplicate token strings.",
+    "3. A mismatch between paper 'a / 0.553' and per_token_max['photo']=0.551 is NOT a mismatch; it compares two different metrics.",
+    "4. The five template rows with 'a' are verified correct: 0.553, 0.456, 0.523, 0.383, 0.489.",
+    "5. The sixth template row (2261 cup) is 'photo / 0.487' and is also correct."
+  ],
+  "prior_false_positive": {
+    "audit_run": ".aris/traces/paper-claim-audit/2026-11-06_run01/",
+    "claim_ids": [150, 152, 154, 156, 158],
+    "what_the_audit_did": "Compared Appendix Table 4 to per_token_max and concluded that 'a' was a stale pre-fix label and that 'photo' 0.551 was the corrected value.",
+    "why_it_is_wrong": "The dict-key collision corrupts per_token_max/all_token_scores, not top5_queries.max_token. The v14.1 full 8-position dump shows position 1 'a'=0.5534 is the true argmax; position 2 'photo'=0.5514 is second.",
+    "correct_resolution": "Keep Appendix Table 4 unchanged. The five claims are false positives."
+  }
+}

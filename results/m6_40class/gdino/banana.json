@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "banana",
+  "cat_id": 52,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "banana",
+      "ap50": 0.2335732842386871,
+      "n_detections": 27549
+    },
+    "template": {
+      "text": "a photo of a banana",
+      "ap50": 0.004115667000966808,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a banana",
+      "ap50": 0.018984804535395684,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.2335732842386871,
+  "ap_template": 0.004115667000966808,
+  "ap_there_is": 0.018984804535395684,
+  "delta_bare": 0.2294576172377203,
+  "delta_len": 0.014869137534428875,
+  "ratio": 0.06480123742862852,
+  "inference_time_seconds": 425.3893277645111,
+  "timestamp": "2026-10-19T03:24:12"
+}

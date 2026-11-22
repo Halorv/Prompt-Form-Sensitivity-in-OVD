@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bicycle",
+  "cat_id": 2,
+  "type": "LOW_N_NEW",
+  "n_gt": 29,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bicycle",
+      "ap50": 0.6830074984860658,
+      "n_detections": 9219
+    },
+    "template": {
+      "text": "a photo of a bicycle",
+      "ap50": 0.6942380185813959,
+      "n_detections": 8583
+    },
+    "there_is": {
+      "text": "there is a bicycle",
+      "ap50": 0.7051282068154922,
+      "n_detections": 10291
+    }
+  },
+  "ap_bare": 0.6830074984860658,
+  "ap_template": 0.6942380185813959,
+  "ap_there_is": 0.7051282068154922,
+  "delta_bare": -0.011230520095330099,
+  "delta_len": 0.010890188234096265,
+  "ratio": -0.9696958058625129,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 9219,
+  "inference_time_seconds": 85.32664084434509,
+  "timestamp": "2026-10-19T09:51:15"
+}

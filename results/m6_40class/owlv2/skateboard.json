@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "skateboard",
+  "cat_id": 41,
+  "type": "NEW",
+  "n_gt": 33,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "skateboard",
+      "ap50": 0.630852222990801,
+      "n_detections": 9984
+    },
+    "template": {
+      "text": "a photo of a skateboard",
+      "ap50": 0.6328190549854222,
+      "n_detections": 10685
+    },
+    "there_is": {
+      "text": "there is a skateboard",
+      "ap50": 0.6325867283967882,
+      "n_detections": 12566
+    }
+  },
+  "ap_bare": 0.630852222990801,
+  "ap_template": 0.6328190549854222,
+  "ap_there_is": 0.6325867283967882,
+  "delta_bare": -0.001966831994621221,
+  "delta_len": -0.00023232658863403532,
+  "ratio": 0.11812223375935958,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 9984,
+  "inference_time_seconds": 85.53825354576111,
+  "timestamp": "2026-10-19T09:41:17"
+}

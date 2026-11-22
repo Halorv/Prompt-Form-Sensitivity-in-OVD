@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "dog",
+  "cat_id": 18,
+  "type": "ORIG8",
+  "n_gt": 20,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "dog",
+      "ap50": 0.8011379891247404,
+      "n_detections": 6966
+    },
+    "template": {
+      "text": "a photo of a dog",
+      "ap50": 0.8090846053626383,
+      "n_detections": 4901
+    },
+    "there_is": {
+      "text": "there is a dog",
+      "ap50": 0.8317427113545212,
+      "n_detections": 8968
+    }
+  },
+  "ap_bare": 0.8011379891247404,
+  "ap_template": 0.8090846053626383,
+  "ap_there_is": 0.8317427113545212,
+  "delta_bare": -0.00794661623789783,
+  "delta_len": 0.022658105991882893,
+  "ratio": -2.8512898211725886,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 6966,
+  "inference_time_seconds": 81.40019345283508,
+  "timestamp": "2026-10-19T10:54:57"
+}

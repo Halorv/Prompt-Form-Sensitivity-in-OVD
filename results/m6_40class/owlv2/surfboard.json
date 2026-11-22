@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "surfboard",
+  "cat_id": 42,
+  "type": "NEW",
+  "n_gt": 54,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "surfboard",
+      "ap50": 0.38304247956272947,
+      "n_detections": 6415
+    },
+    "template": {
+      "text": "a photo of a surfboard",
+      "ap50": 0.374011420779602,
+      "n_detections": 7697
+    },
+    "there_is": {
+      "text": "there is a surfboard",
+      "ap50": 0.382567318112452,
+      "n_detections": 11042
+    }
+  },
+  "ap_bare": 0.38304247956272947,
+  "ap_template": 0.374011420779602,
+  "ap_there_is": 0.382567318112452,
+  "delta_bare": 0.009031058783127488,
+  "delta_len": 0.008555897332850004,
+  "ratio": 0.9473858534543905,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 6415,
+  "inference_time_seconds": 85.65707588195801,
+  "timestamp": "2026-10-19T09:18:30"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "potted plant",
+  "cat_id": 64,
+  "type": "NEW",
+  "n_gt": 37,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "potted plant",
+      "ap50": 0.534621030950713,
+      "n_detections": 25853
+    },
+    "template": {
+      "text": "a photo of a potted plant",
+      "ap50": 0.015896303671932413,
+      "n_detections": 49968
+    },
+    "there_is": {
+      "text": "there is a potted plant",
+      "ap50": 0.2083392594979469,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.534621030950713,
+  "ap_template": 0.015896303671932413,
+  "ap_there_is": 0.2083392594979469,
+  "delta_bare": 0.5187247272787806,
+  "delta_len": 0.1924429558260145,
+  "ratio": 0.3709924468717085,
+  "inference_time_seconds": 150.9597795009613,
+  "timestamp": "2026-10-19T04:29:16"
+}

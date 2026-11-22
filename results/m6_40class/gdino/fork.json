@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "fork",
+  "cat_id": 48,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "fork",
+      "ap50": 0.432738593272241,
+      "n_detections": 22790
+    },
+    "template": {
+      "text": "a photo of a fork",
+      "ap50": 0.06115346781895521,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a fork",
+      "ap50": 0.15857737127932398,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.432738593272241,
+  "ap_template": 0.06115346781895521,
+  "ap_there_is": 0.15857737127932398,
+  "delta_bare": 0.3715851254532858,
+  "delta_len": 0.09742390346036876,
+  "ratio": 0.2621846160863522,
+  "inference_time_seconds": 150.803777217865,
+  "timestamp": "2026-10-19T04:49:25"
+}

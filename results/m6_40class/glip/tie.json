@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "tie",
+  "cat_id": 32,
+  "type": "NEW",
+  "n_gt": 33,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "tie",
+      "ap50": 0.25419124347887895,
+      "n_detections": 41567
+    },
+    "template": {
+      "text": "a photo of a tie",
+      "ap50": 0.005982207921179473,
+      "n_detections": 4693
+    },
+    "there_is": {
+      "text": "there is a tie",
+      "ap50": 0.18854071027331268,
+      "n_detections": 13421
+    }
+  },
+  "ap_bare": 0.25419124347887895,
+  "ap_template": 0.005982207921179473,
+  "ap_there_is": 0.18854071027331268,
+  "delta_bare": 0.24820903555769946,
+  "delta_len": 0.1825585023521332,
+  "ratio": 0.7355030486377885,
+  "inference_time_seconds": 213.28290629386902,
+  "timestamp": "2026-10-19T03:30:13"
+}

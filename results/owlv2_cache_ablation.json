@@ -1,0 +1,26 @@
+{
+  "cache(projection+norm)": {
+    "max": 0.0,
+    "sum": 0.0,
+    "n": 72000,
+    "max_box_diff": 0.0
+  },
+  "cache(projection only)": {
+    "max": 7.62939453125e-06,
+    "sum": 0.10907900333404541,
+    "n": 72000,
+    "max_box_diff": 0.0
+  },
+  "cache(norm only)      ": {
+    "max": 8.83483600616455,
+    "sum": 138390.05126953125,
+    "n": 72000,
+    "max_box_diff": 0.0
+  },
+  "cache(neither)        ": {
+    "max": 8.834837913513184,
+    "sum": 138390.06909179688,
+    "n": 72000,
+    "max_box_diff": 0.0
+  }
+}

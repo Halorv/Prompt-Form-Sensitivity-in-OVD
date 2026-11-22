@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bus",
+  "cat_id": 6,
+  "type": "NEW",
+  "n_gt": 37,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bus",
+      "ap50": 0.621510563737435,
+      "n_detections": 5711
+    },
+    "template": {
+      "text": "a photo of a bus",
+      "ap50": 0.6201835762130496,
+      "n_detections": 6103
+    },
+    "there_is": {
+      "text": "there is a bus",
+      "ap50": 0.6328894006019264,
+      "n_detections": 7398
+    }
+  },
+  "ap_bare": 0.621510563737435,
+  "ap_template": 0.6201835762130496,
+  "ap_there_is": 0.6328894006019264,
+  "delta_bare": 0.0013269875243853146,
+  "delta_len": 0.012705824388876796,
+  "ratio": 9.57493884108848,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5711,
+  "inference_time_seconds": 85.13907980918884,
+  "timestamp": "2026-10-19T09:35:34"
+}

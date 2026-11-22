@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "wine glass",
+  "cat_id": 46,
+  "type": "NEW",
+  "n_gt": 51,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "wine glass",
+      "ap50": 0.602130597720272,
+      "n_detections": 3146
+    },
+    "template": {
+      "text": "a photo of a wine glass",
+      "ap50": 0.6080065556716041,
+      "n_detections": 4603
+    },
+    "there_is": {
+      "text": "there is a wine glass",
+      "ap50": 0.6300188904165563,
+      "n_detections": 6817
+    }
+  },
+  "ap_bare": 0.602130597720272,
+  "ap_template": 0.6080065556716041,
+  "ap_there_is": 0.6300188904165563,
+  "delta_bare": -0.005875957951332111,
+  "delta_len": 0.022012334744952233,
+  "ratio": -3.7461695483988136,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 3146,
+  "inference_time_seconds": 85.73247051239014,
+  "timestamp": "2026-10-19T09:22:47"
+}

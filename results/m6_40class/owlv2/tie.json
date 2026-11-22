@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "tie",
+  "cat_id": 32,
+  "type": "NEW",
+  "n_gt": 33,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "tie",
+      "ap50": 0.6190404128722274,
+      "n_detections": 4286
+    },
+    "template": {
+      "text": "a photo of a tie",
+      "ap50": 0.6186005637814915,
+      "n_detections": 8104
+    },
+    "there_is": {
+      "text": "there is a tie",
+      "ap50": 0.6205997000811706,
+      "n_detections": 10814
+    }
+  },
+  "ap_bare": 0.6190404128722274,
+  "ap_template": 0.6186005637814915,
+  "ap_there_is": 0.6205997000811706,
+  "delta_bare": 0.00043984909073591094,
+  "delta_len": 0.001999136299679072,
+  "ratio": 4.54505043157943,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4286,
+  "inference_time_seconds": 86.08437657356262,
+  "timestamp": "2026-10-19T09:39:51"
+}

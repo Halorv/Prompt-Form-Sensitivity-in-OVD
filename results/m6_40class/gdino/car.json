@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "car",
+  "cat_id": 3,
+  "type": "ORIG8",
+  "n_gt": 239,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "car",
+      "ap50": 0.5767231097559159,
+      "n_detections": 40012
+    },
+    "template": {
+      "text": "a photo of a car",
+      "ap50": 0.03218069694239007,
+      "n_detections": 49967
+    },
+    "there_is": {
+      "text": "there is a car",
+      "ap50": 0.12577902461084162,
+      "n_detections": 49999
+    }
+  },
+  "ap_bare": 0.5767231097559159,
+  "ap_template": 0.03218069694239007,
+  "ap_there_is": 0.12577902461084162,
+  "delta_bare": 0.5445424128135258,
+  "delta_len": 0.09359832766845155,
+  "ratio": 0.17188436651766106,
+  "inference_time_seconds": 592.2045645713806,
+  "timestamp": "2026-10-19T01:59:02"
+}

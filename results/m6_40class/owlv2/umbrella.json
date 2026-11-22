@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "umbrella",
+  "cat_id": 28,
+  "type": "NEW",
+  "n_gt": 70,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "umbrella",
+      "ap50": 0.48735943066224935,
+      "n_detections": 8074
+    },
+    "template": {
+      "text": "a photo of a umbrella",
+      "ap50": 0.509887859177088,
+      "n_detections": 10913
+    },
+    "there_is": {
+      "text": "there is a umbrella",
+      "ap50": 0.5111220093666634,
+      "n_detections": 12567
+    }
+  },
+  "ap_bare": 0.48735943066224935,
+  "ap_template": 0.509887859177088,
+  "ap_there_is": 0.5111220093666634,
+  "delta_bare": -0.02252842851483866,
+  "delta_len": 0.0012341501895754003,
+  "ratio": -0.05478190317458274,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 8074,
+  "inference_time_seconds": 85.27628517150879,
+  "timestamp": "2026-10-19T09:08:32"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "knife",
+  "cat_id": 49,
+  "type": "NEW",
+  "n_gt": 32,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "knife",
+      "ap50": 0.0901840024395772,
+      "n_detections": 31456
+    },
+    "template": {
+      "text": "a photo of a knife",
+      "ap50": 0.009926531373532941,
+      "n_detections": 3568
+    },
+    "there_is": {
+      "text": "there is a knife",
+      "ap50": 0.0800990324858807,
+      "n_detections": 8415
+    }
+  },
+  "ap_bare": 0.0901840024395772,
+  "ap_template": 0.009926531373532941,
+  "ap_there_is": 0.0800990324858807,
+  "delta_bare": 0.08025747106604425,
+  "delta_len": 0.07017250111234775,
+  "ratio": 0.8743422908828322,
+  "inference_time_seconds": 213.26282691955566,
+  "timestamp": "2026-10-19T03:37:19"
+}

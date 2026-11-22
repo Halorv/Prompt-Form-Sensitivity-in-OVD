@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "pizza",
+  "cat_id": 59,
+  "type": "NEW",
+  "n_gt": 32,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "pizza",
+      "ap50": 0.7052003036691935,
+      "n_detections": 2739
+    },
+    "template": {
+      "text": "a photo of a pizza",
+      "ap50": 0.7025139636454691,
+      "n_detections": 2722
+    },
+    "there_is": {
+      "text": "there is a pizza",
+      "ap50": 0.6766759072150996,
+      "n_detections": 3433
+    }
+  },
+  "ap_bare": 0.7052003036691935,
+  "ap_template": 0.7025139636454691,
+  "ap_there_is": 0.6766759072150996,
+  "delta_bare": 0.002686340023724365,
+  "delta_len": -0.025838056430369516,
+  "ratio": -9.618311979191454,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2739,
+  "inference_time_seconds": 85.32168889045715,
+  "timestamp": "2026-10-19T09:44:07"
+}

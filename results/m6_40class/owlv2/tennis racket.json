@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "tennis racket",
+  "cat_id": 43,
+  "type": "NEW",
+  "n_gt": 38,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "tennis racket",
+      "ap50": 0.7131090061298971,
+      "n_detections": 5838
+    },
+    "template": {
+      "text": "a photo of a tennis racket",
+      "ap50": 0.7131542494436122,
+      "n_detections": 6137
+    },
+    "there_is": {
+      "text": "there is a tennis racket",
+      "ap50": 0.7108135167959018,
+      "n_detections": 7576
+    }
+  },
+  "ap_bare": 0.7131090061298971,
+  "ap_template": 0.7131542494436122,
+  "ap_there_is": 0.7108135167959018,
+  "delta_bare": -4.5243313715026545e-05,
+  "delta_len": -0.0023407326477103974,
+  "ratio": 51.7365430492987,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5838,
+  "inference_time_seconds": 85.17909359931946,
+  "timestamp": "2026-10-19T09:32:44"
+}

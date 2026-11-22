@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bowl",
+  "cat_id": 51,
+  "type": "NEW",
+  "n_gt": 89,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bowl",
+      "ap50": 0.6239504027483331,
+      "n_detections": 4279
+    },
+    "template": {
+      "text": "a photo of a bowl",
+      "ap50": 0.6247802091128113,
+      "n_detections": 6895
+    },
+    "there_is": {
+      "text": "there is a bowl",
+      "ap50": 0.6332295349266448,
+      "n_detections": 8474
+    }
+  },
+  "ap_bare": 0.6239504027483331,
+  "ap_template": 0.6247802091128113,
+  "ap_there_is": 0.6332295349266448,
+  "delta_bare": -0.0008298063644781584,
+  "delta_len": 0.008449325813833508,
+  "ratio": -10.18228610375512,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4279,
+  "inference_time_seconds": 84.99380874633789,
+  "timestamp": "2026-10-19T09:05:42"
+}

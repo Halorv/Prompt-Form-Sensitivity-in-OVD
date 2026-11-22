@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "dog",
+  "cat_id": 18,
+  "type": "ORIG8",
+  "n_gt": 20,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "dog",
+      "ap50": 0.6496232700105824,
+      "n_detections": 26811
+    },
+    "template": {
+      "text": "a photo of a dog",
+      "ap50": 0.167822495148469,
+      "n_detections": 49939
+    },
+    "there_is": {
+      "text": "there is a dog",
+      "ap50": 0.4190973079186303,
+      "n_detections": 49925
+    }
+  },
+  "ap_bare": 0.6496232700105824,
+  "ap_template": 0.167822495148469,
+  "ap_there_is": 0.4190973079186303,
+  "delta_bare": 0.48180077486211337,
+  "delta_len": 0.2512748127701613,
+  "ratio": 0.5215326040977698,
+  "inference_time_seconds": 425.1863520145416,
+  "timestamp": "2026-10-19T02:06:07"
+}

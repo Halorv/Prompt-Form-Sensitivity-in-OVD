@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "car",
+  "cat_id": 3,
+  "type": "ORIG8",
+  "n_gt": 239,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "car",
+      "ap50": 0.5117118672910468,
+      "n_detections": 8654
+    },
+    "template": {
+      "text": "a photo of a car",
+      "ap50": 0.46727765749720723,
+      "n_detections": 8048
+    },
+    "there_is": {
+      "text": "there is a car",
+      "ap50": 0.5140575897590861,
+      "n_detections": 9897
+    }
+  },
+  "ap_bare": 0.5117118672910468,
+  "ap_template": 0.46727765749720723,
+  "ap_there_is": 0.5140575897590861,
+  "delta_bare": 0.04443420979383955,
+  "delta_len": 0.046779932261878876,
+  "ratio": 1.0527909122030688,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 8654,
+  "inference_time_seconds": 81.47928977012634,
+  "timestamp": "2026-10-19T10:53:36"
+}

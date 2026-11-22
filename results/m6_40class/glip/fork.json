@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "fork",
+  "cat_id": 48,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "fork",
+      "ap50": 0.2646359509086685,
+      "n_detections": 41500
+    },
+    "template": {
+      "text": "a photo of a fork",
+      "ap50": 0.013508589856627267,
+      "n_detections": 4828
+    },
+    "there_is": {
+      "text": "there is a fork",
+      "ap50": 0.19684581533143614,
+      "n_detections": 11302
+    }
+  },
+  "ap_bare": 0.2646359509086685,
+  "ap_template": 0.013508589856627267,
+  "ap_there_is": 0.19684581533143614,
+  "delta_bare": 0.2511273610520412,
+  "delta_len": 0.18333722547480888,
+  "ratio": 0.7300567517086115,
+  "inference_time_seconds": 213.44381475448608,
+  "timestamp": "2026-10-19T03:51:33"
+}

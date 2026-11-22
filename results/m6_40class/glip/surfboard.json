@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "surfboard",
+  "cat_id": 42,
+  "type": "NEW",
+  "n_gt": 54,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "surfboard",
+      "ap50": 0.023857918229524384,
+      "n_detections": 16429
+    },
+    "template": {
+      "text": "a photo of a surfboard",
+      "ap50": 0.011854694127523715,
+      "n_detections": 4244
+    },
+    "there_is": {
+      "text": "there is a surfboard",
+      "ap50": 0.01735156283266634,
+      "n_detections": 6492
+    }
+  },
+  "ap_bare": 0.023857918229524384,
+  "ap_template": 0.011854694127523715,
+  "ap_there_is": 0.01735156283266634,
+  "delta_bare": 0.01200322410200067,
+  "delta_len": 0.005496868705142625,
+  "ratio": 0.45794935247659163,
+  "inference_time_seconds": 213.15777826309204,
+  "timestamp": "2026-10-19T02:36:54"
+}

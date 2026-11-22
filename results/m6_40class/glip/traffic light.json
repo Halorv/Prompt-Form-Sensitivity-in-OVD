@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "traffic light",
+  "cat_id": 10,
+  "type": "NEW",
+  "n_gt": 49,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "traffic light",
+      "ap50": 0.024421312751840323,
+      "n_detections": 30654
+    },
+    "template": {
+      "text": "a photo of a traffic light",
+      "ap50": 0.015659306516425702,
+      "n_detections": 983
+    },
+    "there_is": {
+      "text": "there is a traffic light",
+      "ap50": 0.013559337114632261,
+      "n_detections": 14768
+    }
+  },
+  "ap_bare": 0.024421312751840323,
+  "ap_template": 0.015659306516425702,
+  "ap_there_is": 0.013559337114632261,
+  "delta_bare": 0.008762006235414621,
+  "delta_len": -0.0020999694017934407,
+  "ratio": -0.23966764521414077,
+  "inference_time_seconds": 213.23651123046875,
+  "timestamp": "2026-10-19T02:51:07"
+}

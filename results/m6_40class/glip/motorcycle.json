@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "motorcycle",
+  "cat_id": 4,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "motorcycle",
+      "ap50": 0.06393872657285903,
+      "n_detections": 23892
+    },
+    "template": {
+      "text": "a photo of a motorcycle",
+      "ap50": 0.008863808633282204,
+      "n_detections": 1612
+    },
+    "there_is": {
+      "text": "there is a motorcycle",
+      "ap50": 0.07020294456561814,
+      "n_detections": 7234
+    }
+  },
+  "ap_bare": 0.06393872657285903,
+  "ap_template": 0.008863808633282204,
+  "ap_there_is": 0.07020294456561814,
+  "delta_bare": 0.05507491793957682,
+  "delta_len": 0.061339135932335934,
+  "ratio": 1.113739942375069,
+  "inference_time_seconds": 213.42149758338928,
+  "timestamp": "2026-10-19T03:44:26"
+}

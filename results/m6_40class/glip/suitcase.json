@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "suitcase",
+  "cat_id": 33,
+  "type": "LOW_N_NEW",
+  "n_gt": 29,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "suitcase",
+      "ap50": 0.0046942447985118315,
+      "n_detections": 25114
+    },
+    "template": {
+      "text": "a photo of a suitcase",
+      "ap50": 0.0003854174129424519,
+      "n_detections": 2218
+    },
+    "there_is": {
+      "text": "there is a suitcase",
+      "ap50": 0.00250990580815415,
+      "n_detections": 5420
+    }
+  },
+  "ap_bare": 0.0046942447985118315,
+  "ap_template": 0.0003854174129424519,
+  "ap_there_is": 0.00250990580815415,
+  "delta_bare": 0.00430882738556938,
+  "delta_len": 0.0021244883952116983,
+  "ratio": 0.49305488595964325,
+  "inference_time_seconds": 213.09395909309387,
+  "timestamp": "2026-10-19T03:55:06"
+}

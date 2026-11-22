@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "baseball bat",
+  "cat_id": 39,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "baseball bat",
+      "ap50": 0.21124728361176948,
+      "n_detections": 20477
+    },
+    "template": {
+      "text": "a photo of a baseball bat",
+      "ap50": 0.004592845851451822,
+      "n_detections": 49988
+    },
+    "there_is": {
+      "text": "there is a baseball bat",
+      "ap50": 0.047852937525032745,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.21124728361176948,
+  "ap_template": 0.004592845851451822,
+  "ap_there_is": 0.047852937525032745,
+  "delta_bare": 0.20665443776031767,
+  "delta_len": 0.04326009167358092,
+  "ratio": 0.2093354110486363,
+  "inference_time_seconds": 151.26375079154968,
+  "timestamp": "2026-10-19T04:46:54"
+}

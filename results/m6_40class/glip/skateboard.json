@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "skateboard",
+  "cat_id": 41,
+  "type": "NEW",
+  "n_gt": 33,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "skateboard",
+      "ap50": 0.1085528094737496,
+      "n_detections": 20718
+    },
+    "template": {
+      "text": "a photo of a skateboard",
+      "ap50": 0.012278109614122488,
+      "n_detections": 2531
+    },
+    "there_is": {
+      "text": "there is a skateboard",
+      "ap50": 0.07716235842871905,
+      "n_detections": 8763
+    }
+  },
+  "ap_bare": 0.1085528094737496,
+  "ap_template": 0.012278109614122488,
+  "ap_there_is": 0.07716235842871905,
+  "delta_bare": 0.09627469985962711,
+  "delta_len": 0.06488424881459656,
+  "ratio": 0.6739491154914089,
+  "inference_time_seconds": 213.18684339523315,
+  "timestamp": "2026-10-19T03:33:46"
+}

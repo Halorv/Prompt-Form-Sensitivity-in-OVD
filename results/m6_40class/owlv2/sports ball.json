@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "sports ball",
+  "cat_id": 37,
+  "type": "NEW",
+  "n_gt": 41,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "sports ball",
+      "ap50": 0.6379757571920348,
+      "n_detections": 5521
+    },
+    "template": {
+      "text": "a photo of a sports ball",
+      "ap50": 0.6422162319862531,
+      "n_detections": 6414
+    },
+    "there_is": {
+      "text": "there is a sports ball",
+      "ap50": 0.6456573854358832,
+      "n_detections": 8470
+    }
+  },
+  "ap_bare": 0.6379757571920348,
+  "ap_template": 0.6422162319862531,
+  "ap_there_is": 0.6456573854358832,
+  "delta_bare": -0.004240474794218296,
+  "delta_len": 0.003441153449630141,
+  "ratio": -0.8115019229266507,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5521,
+  "inference_time_seconds": 85.26089906692505,
+  "timestamp": "2026-10-19T09:28:28"
+}

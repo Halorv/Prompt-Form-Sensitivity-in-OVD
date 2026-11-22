@@ -1,0 +1,252 @@
+{
+  "classes": [
+    {
+      "name": "book",
+      "cat_id": 84,
+      "n_gt": 154,
+      "type": "ORIG8"
+    },
+    {
+      "name": "bottle",
+      "cat_id": 44,
+      "n_gt": 136,
+      "type": "ORIG8"
+    },
+    {
+      "name": "car",
+      "cat_id": 3,
+      "n_gt": 239,
+      "type": "ORIG8"
+    },
+    {
+      "name": "cat",
+      "cat_id": 17,
+      "n_gt": 25,
+      "type": "ORIG8"
+    },
+    {
+      "name": "chair",
+      "cat_id": 62,
+      "n_gt": 241,
+      "type": "ORIG8"
+    },
+    {
+      "name": "cup",
+      "cat_id": 47,
+      "n_gt": 128,
+      "type": "ORIG8"
+    },
+    {
+      "name": "dog",
+      "cat_id": 18,
+      "n_gt": 20,
+      "type": "ORIG8"
+    },
+    {
+      "name": "person",
+      "cat_id": 1,
+      "n_gt": 1520,
+      "type": "ORIG8"
+    },
+    {
+      "name": "bowl",
+      "cat_id": 51,
+      "n_gt": 89,
+      "type": "NEW"
+    },
+    {
+      "name": "dining table",
+      "cat_id": 67,
+      "n_gt": 81,
+      "type": "NEW"
+    },
+    {
+      "name": "umbrella",
+      "cat_id": 28,
+      "n_gt": 70,
+      "type": "NEW"
+    },
+    {
+      "name": "handbag",
+      "cat_id": 31,
+      "n_gt": 67,
+      "type": "NEW"
+    },
+    {
+      "name": "remote",
+      "cat_id": 75,
+      "n_gt": 62,
+      "type": "NEW"
+    },
+    {
+      "name": "banana",
+      "cat_id": 52,
+      "n_gt": 59,
+      "type": "NEW"
+    },
+    {
+      "name": "cake",
+      "cat_id": 61,
+      "n_gt": 59,
+      "type": "NEW"
+    },
+    {
+      "name": "backpack",
+      "cat_id": 27,
+      "n_gt": 58,
+      "type": "NEW"
+    },
+    {
+      "name": "bench",
+      "cat_id": 15,
+      "n_gt": 57,
+      "type": "NEW"
+    },
+    {
+      "name": "surfboard",
+      "cat_id": 42,
+      "n_gt": 54,
+      "type": "NEW"
+    },
+    {
+      "name": "truck",
+      "cat_id": 8,
+      "n_gt": 53,
+      "type": "NEW"
+    },
+    {
+      "name": "kite",
+      "cat_id": 38,
+      "n_gt": 53,
+      "type": "NEW"
+    },
+    {
+      "name": "wine glass",
+      "cat_id": 46,
+      "n_gt": 51,
+      "type": "NEW"
+    },
+    {
+      "name": "traffic light",
+      "cat_id": 10,
+      "n_gt": 49,
+      "type": "NEW"
+    },
+    {
+      "name": "bird",
+      "cat_id": 16,
+      "n_gt": 47,
+      "type": "NEW"
+    },
+    {
+      "name": "tv",
+      "cat_id": 72,
+      "n_gt": 43,
+      "type": "NEW"
+    },
+    {
+      "name": "sports ball",
+      "cat_id": 37,
+      "n_gt": 41,
+      "type": "NEW"
+    },
+    {
+      "name": "boat",
+      "cat_id": 9,
+      "n_gt": 39,
+      "type": "NEW"
+    },
+    {
+      "name": "skis",
+      "cat_id": 35,
+      "n_gt": 39,
+      "type": "NEW"
+    },
+    {
+      "name": "tennis racket",
+      "cat_id": 43,
+      "n_gt": 38,
+      "type": "NEW"
+    },
+    {
+      "name": "laptop",
+      "cat_id": 73,
+      "n_gt": 38,
+      "type": "NEW"
+    },
+    {
+      "name": "bus",
+      "cat_id": 6,
+      "n_gt": 37,
+      "type": "NEW"
+    },
+    {
+      "name": "potted plant",
+      "cat_id": 64,
+      "n_gt": 37,
+      "type": "NEW"
+    },
+    {
+      "name": "couch",
+      "cat_id": 63,
+      "n_gt": 35,
+      "type": "NEW"
+    },
+    {
+      "name": "tie",
+      "cat_id": 32,
+      "n_gt": 33,
+      "type": "NEW"
+    },
+    {
+      "name": "skateboard",
+      "cat_id": 41,
+      "n_gt": 33,
+      "type": "NEW"
+    },
+    {
+      "name": "knife",
+      "cat_id": 49,
+      "n_gt": 32,
+      "type": "NEW"
+    },
+    {
+      "name": "pizza",
+      "cat_id": 59,
+      "n_gt": 32,
+      "type": "NEW"
+    },
+    {
+      "name": "motorcycle",
+      "cat_id": 4,
+      "n_gt": 31,
+      "type": "NEW"
+    },
+    {
+      "name": "baseball bat",
+      "cat_id": 39,
+      "n_gt": 31,
+      "type": "NEW"
+    },
+    {
+      "name": "fork",
+      "cat_id": 48,
+      "n_gt": 31,
+      "type": "NEW"
+    },
+    {
+      "name": "suitcase",
+      "cat_id": 33,
+      "n_gt": 29,
+      "type": "LOW_N_NEW"
+    },
+    {
+      "name": "bicycle",
+      "cat_id": 2,
+      "n_gt": 29,
+      "type": "LOW_N_NEW"
+    }
+  ],
+  "num_images": 500,
+  "seed": 42
+}

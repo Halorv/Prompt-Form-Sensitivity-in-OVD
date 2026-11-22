@@ -1,0 +1,1745 @@
+{
+  "bootstrap_B": 1000,
+  "seed": 42,
+  "method": "weighted_ap50_single_query_and_80query_protocol_same_as_B200",
+  "note": "Same implementation and RNG stream as the B=200 runs (bootstrap_weighted_v2.py for GLIP/GDino, owlv2_8class_bootstrap.py for OWLv2); only B differs.",
+  "models": {
+    "GLIP": {
+      "person": {
+        "delta_bare": 0.33811549972057187,
+        "ci_low": 0.31370336808317095,
+        "ci_high": 0.3632436192897667,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.304759954068487,
+        "ci_bonf_high": 0.37342746048838155,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.35172893504044433,
+        "delta_len_ci_low": 0.3257176100091386,
+        "delta_len_ci_high": 0.3823637977424788,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.3134035699255328,
+        "delta_len_ci_bonf_high": 0.3926269635732095,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.5380752748771541,
+        "ap_template_point": 0.19995977515658228,
+        "ap_there_is_point": 0.5516887101970266,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "person",
+          "template": "a photo of a person",
+          "there_is": "there is a person"
+        }
+      },
+      "car": {
+        "delta_bare": 0.04556242268471038,
+        "ci_low": 0.035031409414626444,
+        "ci_high": 0.06843761902534636,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.03134417719621656,
+        "ci_bonf_high": 0.07616881228156971,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.04089916173077897,
+        "delta_len_ci_low": 0.030269333674748395,
+        "delta_len_ci_high": 0.06561078114946574,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.02573173448993403,
+        "delta_len_ci_bonf_high": 0.07318593712364546,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.06493788230206686,
+        "ap_template_point": 0.019375459617356487,
+        "ap_there_is_point": 0.06027462134813545,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "car",
+          "template": "a photo of a car",
+          "there_is": "there is a car"
+        }
+      },
+      "dog": {
+        "delta_bare": 0.08295371097115986,
+        "ci_low": 0.016892976902491787,
+        "ci_high": 0.2514233716240328,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.008260317904003006,
+        "ci_bonf_high": 0.3517958579061482,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.04252019867181536,
+        "delta_len_ci_low": 0.009040967352344342,
+        "delta_len_ci_high": 0.16427744135372857,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.0018651073943665212,
+        "delta_len_ci_bonf_high": 0.22851536699352187,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.0974522094547035,
+        "ap_template_point": 0.014498498483543638,
+        "ap_there_is_point": 0.057018697155359,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "dog",
+          "template": "a photo of a dog",
+          "there_is": "there is a dog"
+        }
+      },
+      "cat": {
+        "delta_bare": 0.15005361243668014,
+        "ci_low": 0.05936721820053758,
+        "ci_high": 0.29391762755055467,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.04171164980583009,
+        "ci_bonf_high": 0.36603689135200324,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.0825669777960736,
+        "delta_len_ci_low": 0.037550796395694135,
+        "delta_len_ci_high": 0.17211680362218357,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.02296302253089503,
+        "delta_len_ci_bonf_high": 0.20920066169692156,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.1786476192767894,
+        "ap_template_point": 0.02859400684010926,
+        "ap_there_is_point": 0.11116098463618286,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cat",
+          "template": "a photo of a cat",
+          "there_is": "there is a cat"
+        }
+      },
+      "chair": {
+        "delta_bare": 0.046356873230367655,
+        "ci_low": 0.02998370341496606,
+        "ci_high": 0.07972352454312272,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.02197009292665126,
+        "ci_bonf_high": 0.09250490322208041,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.06542697600919836,
+        "delta_len_ci_low": 0.04713086529226114,
+        "delta_len_ci_high": 0.09874637442301452,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.040965074760790574,
+        "delta_len_ci_bonf_high": 0.11535515428200346,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.06272984294363,
+        "ap_template_point": 0.016372969713262346,
+        "ap_there_is_point": 0.08179994572246072,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "chair",
+          "template": "a photo of a chair",
+          "there_is": "there is a chair"
+        }
+      },
+      "cup": {
+        "delta_bare": 0.17308607729230224,
+        "ci_low": 0.11648153787209918,
+        "ci_high": 0.26071770883415213,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.0960214296408951,
+        "ci_bonf_high": 0.29369739577148696,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.15968344569133958,
+        "delta_len_ci_low": 0.10385991437194125,
+        "delta_len_ci_high": 0.24140749844473317,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.08434422167387988,
+        "delta_len_ci_bonf_high": 0.2652182783419299,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.1896045404975447,
+        "ap_template_point": 0.01651846320524243,
+        "ap_there_is_point": 0.176201908896582,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cup",
+          "template": "a photo of a cup",
+          "there_is": "there is a cup"
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.044916140673976354,
+        "ci_low": 0.02603206815987359,
+        "ci_high": 0.09034811466821147,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.019777908280788598,
+        "ci_bonf_high": 0.10511604984904759,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.03432925136459772,
+        "delta_len_ci_low": 0.02061513813483756,
+        "delta_len_ci_high": 0.06169812289640955,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.01615893719933441,
+        "delta_len_ci_bonf_high": 0.07144526988416038,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.05905516379240212,
+        "ap_template_point": 0.014139023118425766,
+        "ap_there_is_point": 0.04846827448302349,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "bottle",
+          "template": "a photo of a bottle",
+          "there_is": "there is a bottle"
+        }
+      },
+      "book": {
+        "delta_bare": 0.02630529795424883,
+        "ci_low": 0.005680981330951773,
+        "ci_high": 0.06246230740635578,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.003113736768841205,
+        "ci_bonf_high": 0.08475702397130071,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.009788995856937259,
+        "delta_len_ci_low": 0.0034813315977771037,
+        "delta_len_ci_high": 0.030971739837645715,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.0021384053940197087,
+        "delta_len_ci_bonf_high": 0.044645980881166114,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.028621609085804692,
+        "ap_template_point": 0.00231631113155586,
+        "ap_there_is_point": 0.012105306988493119,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "book",
+          "template": "a photo of a book",
+          "there_is": "there is a book"
+        }
+      }
+    },
+    "GDino": {
+      "person": {
+        "delta_bare": 0.5413552226461685,
+        "ci_low": 0.5086049528776563,
+        "ci_high": 0.5713075566284425,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.49755031418137335,
+        "ci_bonf_high": 0.5803117900928559,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.4820929356644603,
+        "delta_len_ci_low": 0.4519979146641802,
+        "delta_len_ci_high": 0.5093148669137703,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.4394009935270254,
+        "delta_len_ci_bonf_high": 0.5198124435734636,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.7610398813253,
+        "ap_template_point": 0.21968465867913142,
+        "ap_there_is_point": 0.7017775943435918,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "person",
+          "template": "a photo of a person",
+          "there_is": "there is a person"
+        }
+      },
+      "car": {
+        "delta_bare": 0.5445424128135258,
+        "ci_low": 0.45830119805481645,
+        "ci_high": 0.6350717451849812,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.4219909632818282,
+        "ci_bonf_high": 0.6633958536072322,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.09359832766845155,
+        "delta_len_ci_low": 0.06736929532819738,
+        "delta_len_ci_high": 0.12977454860117235,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.05853400032273871,
+        "delta_len_ci_bonf_high": 0.14007133122995002,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.5767231097559159,
+        "ap_template_point": 0.03218069694239007,
+        "ap_there_is_point": 0.12577902461084162,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "car",
+          "template": "a photo of a car",
+          "there_is": "there is a car"
+        }
+      },
+      "dog": {
+        "delta_bare": 0.48180077486211337,
+        "ci_low": 0.28806728355084876,
+        "ci_high": 0.684176476796341,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.24522285272837366,
+        "ci_bonf_high": 0.7870491814645454,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.2512748127701613,
+        "delta_len_ci_low": 0.09984357881687617,
+        "delta_len_ci_high": 0.44816916699559617,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.05962384714979493,
+        "delta_len_ci_bonf_high": 0.5776466956411456,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.6496232700105824,
+        "ap_template_point": 0.167822495148469,
+        "ap_there_is_point": 0.4190973079186303,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "dog",
+          "template": "a photo of a dog",
+          "there_is": "there is a dog"
+        }
+      },
+      "cat": {
+        "delta_bare": 0.6457127388820172,
+        "ci_low": 0.47221848380591475,
+        "ci_high": 0.7398767243120007,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.4015747440836347,
+        "ci_bonf_high": 0.788461994252549,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.25287857584917417,
+        "delta_len_ci_low": 0.10927749064388302,
+        "delta_len_ci_high": 0.4326155933186203,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.05778403508102908,
+        "delta_len_ci_bonf_high": 0.4733359121565277,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.8343845214014489,
+        "ap_template_point": 0.1886717825194317,
+        "ap_there_is_point": 0.4415503583686059,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cat",
+          "template": "a photo of a cat",
+          "there_is": "there is a cat"
+        }
+      },
+      "chair": {
+        "delta_bare": 0.46973268615379465,
+        "ci_low": 0.3912790733600299,
+        "ci_high": 0.5472700750399141,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.3595470108516008,
+        "ci_bonf_high": 0.568917946361721,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.12398430440506752,
+        "delta_len_ci_low": 0.091501916085838,
+        "delta_len_ci_high": 0.1664621418261312,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.07716472498782966,
+        "delta_len_ci_bonf_high": 0.18415842072972613,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.5093025542970526,
+        "ap_template_point": 0.039569868143257976,
+        "ap_there_is_point": 0.1635541725483255,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "chair",
+          "template": "a photo of a chair",
+          "there_is": "there is a chair"
+        }
+      },
+      "cup": {
+        "delta_bare": 0.629244893653349,
+        "ci_low": 0.534228399614078,
+        "ci_high": 0.7193061069991098,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.4801308687009375,
+        "ci_bonf_high": 0.7540310145569199,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.19908392748919818,
+        "delta_len_ci_low": 0.13952637562210904,
+        "delta_len_ci_high": 0.28135783590019214,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.12515437344305178,
+        "delta_len_ci_bonf_high": 0.30552390969249077,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.6877364313726521,
+        "ap_template_point": 0.05849153771930304,
+        "ap_there_is_point": 0.2575754652085012,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cup",
+          "template": "a photo of a cup",
+          "there_is": "there is a cup"
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.5252814165781844,
+        "ci_low": 0.43177546535957373,
+        "ci_high": 0.6168295340565828,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.39971788088451166,
+        "ci_bonf_high": 0.6386089076616892,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.1433987178010206,
+        "delta_len_ci_low": 0.10040835635388502,
+        "delta_len_ci_high": 0.20921946357710697,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.08190376417057636,
+        "delta_len_ci_bonf_high": 0.23434903046028976,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.5829825458451887,
+        "ap_template_point": 0.05770112926700429,
+        "ap_there_is_point": 0.2010998470680249,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "bottle",
+          "template": "a photo of a bottle",
+          "there_is": "there is a bottle"
+        }
+      },
+      "book": {
+        "delta_bare": 0.09186082118584868,
+        "ci_low": 0.04912541498121535,
+        "ci_high": 0.1666816698544456,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.03685754214067112,
+        "ci_bonf_high": 0.21636553059883168,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.03296878487028909,
+        "delta_len_ci_low": 0.009722506435503988,
+        "delta_len_ci_high": 0.07147035117262734,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.005666780557775522,
+        "delta_len_ci_bonf_high": 0.09032054179815084,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.09577542273268294,
+        "ap_template_point": 0.003914601546834257,
+        "ap_there_is_point": 0.03688338641712335,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "book",
+          "template": "a photo of a book",
+          "there_is": "there is a book"
+        }
+      }
+    },
+    "OWLv2": {
+      "person": {
+        "delta_bare": 0.007370145484956736,
+        "ci_low": -0.007293764308411235,
+        "ci_high": 0.019640448043700697,
+        "ci_contains_zero": true,
+        "ci_bonf_low": -0.012743123879513336,
+        "ci_bonf_high": 0.02735997686522156,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": -0.021539815553027974,
+        "delta_len_ci_low": -0.0324210248290759,
+        "delta_len_ci_high": -0.006851754275123787,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": -0.037497390641242585,
+        "delta_len_ci_bonf_high": -0.002720148803311258,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.6719366994179921,
+        "ap_template_point": 0.6645665539330353,
+        "ap_there_is_point": 0.6430267383800073,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "person",
+          "template": "a photo of a person",
+          "there_is": "there is a person"
+        }
+      },
+      "car": {
+        "delta_bare": 0.04443420979383955,
+        "ci_low": 0.016260528584938667,
+        "ci_high": 0.07011341376918113,
+        "ci_contains_zero": false,
+        "ci_bonf_low": 0.007067825842651094,
+        "ci_bonf_high": 0.08019597478128929,
+        "ci_bonf_contains_zero": false,
+        "point_in_ci": true,
+        "delta_len": 0.046779932261878876,
+        "delta_len_ci_low": 0.017905769705652795,
+        "delta_len_ci_high": 0.07830615056233037,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.01158902633649551,
+        "delta_len_ci_bonf_high": 0.0915870822510668,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.5117118672910468,
+        "ap_template_point": 0.46727765749720723,
+        "ap_there_is_point": 0.5140575897590861,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "car",
+          "template": "a photo of a car",
+          "there_is": "there is a car"
+        }
+      },
+      "dog": {
+        "delta_bare": -0.00794661623789783,
+        "ci_low": -0.09433352253815232,
+        "ci_high": 0.04122531278525639,
+        "ci_contains_zero": true,
+        "ci_bonf_low": -0.14378174459983453,
+        "ci_bonf_high": 0.0807041941514624,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.022658105991882893,
+        "delta_len_ci_low": -0.02066428160382334,
+        "delta_len_ci_high": 0.09740852447238596,
+        "delta_len_ci_contains_zero": true,
+        "delta_len_ci_bonf_low": -0.03386387968356101,
+        "delta_len_ci_bonf_high": 0.13270062253810888,
+        "delta_len_ci_bonf_contains_zero": true,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.8011379891247404,
+        "ap_template_point": 0.8090846053626383,
+        "ap_there_is_point": 0.8317427113545212,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "dog",
+          "template": "a photo of a dog",
+          "there_is": "there is a dog"
+        }
+      },
+      "cat": {
+        "delta_bare": 0.0019924747928294906,
+        "ci_low": -0.011217258849630806,
+        "ci_high": 0.017875183245969962,
+        "ci_contains_zero": true,
+        "ci_bonf_low": -0.02528013979330574,
+        "ci_bonf_high": 0.03271014957114487,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.007034868182786536,
+        "delta_len_ci_low": 0.0,
+        "delta_len_ci_high": 0.025355136038377902,
+        "delta_len_ci_contains_zero": true,
+        "delta_len_ci_bonf_low": 0.0,
+        "delta_len_ci_bonf_high": 0.0386911202618904,
+        "delta_len_ci_bonf_contains_zero": true,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.9044395756902103,
+        "ap_template_point": 0.9024471008973808,
+        "ap_there_is_point": 0.9094819690801673,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cat",
+          "template": "a photo of a cat",
+          "there_is": "there is a cat"
+        }
+      },
+      "chair": {
+        "delta_bare": -0.04146671060840629,
+        "ci_low": -0.07537818955134032,
+        "ci_high": -0.007944592731852926,
+        "ci_contains_zero": false,
+        "ci_bonf_low": -0.08904822396745073,
+        "ci_bonf_high": 0.006703053189588446,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.02901369776635826,
+        "delta_len_ci_low": 0.009777987666381346,
+        "delta_len_ci_high": 0.04453707328106706,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.001432207598756517,
+        "delta_len_ci_bonf_high": 0.0516520246452593,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.45194384273454213,
+        "ap_template_point": 0.4934105533429484,
+        "ap_there_is_point": 0.5224242511093067,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "chair",
+          "template": "a photo of a chair",
+          "there_is": "there is a chair"
+        }
+      },
+      "cup": {
+        "delta_bare": 0.03596082417464119,
+        "ci_low": -0.01874652523987707,
+        "ci_high": 0.08796661007219068,
+        "ci_contains_zero": true,
+        "ci_bonf_low": -0.035107658117027825,
+        "ci_bonf_high": 0.10923128774893862,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.014369685980216595,
+        "delta_len_ci_low": -0.008557321929294176,
+        "delta_len_ci_high": 0.03439540689952192,
+        "delta_len_ci_contains_zero": true,
+        "delta_len_ci_bonf_low": -0.017446992930756643,
+        "delta_len_ci_bonf_high": 0.04400588471813335,
+        "delta_len_ci_bonf_contains_zero": true,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.6954911089786298,
+        "ap_template_point": 0.6595302848039886,
+        "ap_there_is_point": 0.6738999707842052,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "cup",
+          "template": "a photo of a cup",
+          "there_is": "there is a cup"
+        }
+      },
+      "bottle": {
+        "delta_bare": 0.004327564994238087,
+        "ci_low": -0.041748389172699484,
+        "ci_high": 0.049025544746632996,
+        "ci_contains_zero": true,
+        "ci_bonf_low": -0.06227547171104594,
+        "ci_bonf_high": 0.06324264497932304,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.03694451314186592,
+        "delta_len_ci_low": 0.010203144033200606,
+        "delta_len_ci_high": 0.05880200333451451,
+        "delta_len_ci_contains_zero": false,
+        "delta_len_ci_bonf_low": 0.004125807947925241,
+        "delta_len_ci_bonf_high": 0.068077132800345,
+        "delta_len_ci_bonf_contains_zero": false,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.48456005856686946,
+        "ap_template_point": 0.48023249357263137,
+        "ap_there_is_point": 0.5171770067144973,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "bottle",
+          "template": "a photo of a bottle",
+          "there_is": "there is a bottle"
+        }
+      },
+      "book": {
+        "delta_bare": -0.03333349230880067,
+        "ci_low": -0.05755616338545476,
+        "ci_high": -0.005855630386101618,
+        "ci_contains_zero": false,
+        "ci_bonf_low": -0.06792650773205855,
+        "ci_bonf_high": 0.0006962106158934344,
+        "ci_bonf_contains_zero": true,
+        "point_in_ci": true,
+        "delta_len": 0.002082372188811521,
+        "delta_len_ci_low": -0.009775955996325336,
+        "delta_len_ci_high": 0.018985862838968696,
+        "delta_len_ci_contains_zero": true,
+        "delta_len_ci_bonf_low": -0.018844777824848252,
+        "delta_len_ci_bonf_high": 0.026543820286168196,
+        "delta_len_ci_bonf_contains_zero": true,
+        "delta_len_point_in_ci": true,
+        "n_bootstrap_bare_valid": 1000,
+        "n_bootstrap_bare_nan": 0,
+        "n_bootstrap_len_valid": 1000,
+        "n_bootstrap_len_nan": 0,
+        "ap_bare_point": 0.13619889293506454,
+        "ap_template_point": 0.1695323852438652,
+        "ap_there_is_point": 0.17161475743267673,
+        "bootstrap_B": 1000,
+        "seed": 42,
+        "n_images": 500,
+        "mean_unique_images_per_resample": 315.971,
+        "prompt_strings": {
+          "bare": "book",
+          "template": "a photo of a book",
+          "there_is": "there is a book"
+        }
+      }
+    }
+  },
+  "point_estimate_max_diff_vs_canonical": 0.0,
+  "comparison_b200_vs_b1000": [
+    {
+      "model": "GLIP",
+      "class": "person",
+      "metric": "delta_bare",
+      "b200_point": 0.33811549972057187,
+      "b1000_point": 0.33811549972057187,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.31476234139324744,
+        0.3696979799457433
+      ],
+      "b1000_ci": [
+        0.31370336808317095,
+        0.3632436192897667
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "person",
+      "metric": "delta_len",
+      "b200_point": 0.35172893504044433,
+      "b1000_point": 0.35172893504044433,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.32291646885297,
+        0.38209014807866604
+      ],
+      "b1000_ci": [
+        0.3257176100091386,
+        0.3823637977424788
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "car",
+      "metric": "delta_bare",
+      "b200_point": 0.04556242268471038,
+      "b1000_point": 0.04556242268471038,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.03489811246445172,
+        0.0702616491753973
+      ],
+      "b1000_ci": [
+        0.035031409414626444,
+        0.06843761902534636
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "car",
+      "metric": "delta_len",
+      "b200_point": 0.04089916173077897,
+      "b1000_point": 0.04089916173077897,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.030564767391568493,
+        0.06789833540925318
+      ],
+      "b1000_ci": [
+        0.030269333674748395,
+        0.06561078114946574
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "dog",
+      "metric": "delta_bare",
+      "b200_point": 0.08295371097115986,
+      "b1000_point": 0.08295371097115986,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.013828473220941653,
+        0.24709491962407615
+      ],
+      "b1000_ci": [
+        0.016892976902491787,
+        0.2514233716240328
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "dog",
+      "metric": "delta_len",
+      "b200_point": 0.04252019867181536,
+      "b1000_point": 0.04252019867181536,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.007235889765284593,
+        0.14439396462907653
+      ],
+      "b1000_ci": [
+        0.009040967352344342,
+        0.16427744135372857
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "cat",
+      "metric": "delta_bare",
+      "b200_point": 0.15005361243668014,
+      "b1000_point": 0.15005361243668014,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.06831077600915607,
+        0.3100730501331235
+      ],
+      "b1000_ci": [
+        0.05936721820053758,
+        0.29391762755055467
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "cat",
+      "metric": "delta_len",
+      "b200_point": 0.0825669777960736,
+      "b1000_point": 0.0825669777960736,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.04275477317968194,
+        0.16806251175579673
+      ],
+      "b1000_ci": [
+        0.037550796395694135,
+        0.17211680362218357
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "chair",
+      "metric": "delta_bare",
+      "b200_point": 0.046356873230367655,
+      "b1000_point": 0.046356873230367655,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.02999505447692552,
+        0.0783706077941307
+      ],
+      "b1000_ci": [
+        0.02998370341496606,
+        0.07972352454312272
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "chair",
+      "metric": "delta_len",
+      "b200_point": 0.06542697600919836,
+      "b1000_point": 0.06542697600919836,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.04831525098912205,
+        0.09700683509458183
+      ],
+      "b1000_ci": [
+        0.04713086529226114,
+        0.09874637442301452
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "cup",
+      "metric": "delta_bare",
+      "b200_point": 0.17308607729230224,
+      "b1000_point": 0.17308607729230224,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.11999489564624263,
+        0.25502574475804685
+      ],
+      "b1000_ci": [
+        0.11648153787209918,
+        0.26071770883415213
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "cup",
+      "metric": "delta_len",
+      "b200_point": 0.15968344569133958,
+      "b1000_point": 0.15968344569133958,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.10383388545704587,
+        0.23307616533742648
+      ],
+      "b1000_ci": [
+        0.10385991437194125,
+        0.24140749844473317
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "bottle",
+      "metric": "delta_bare",
+      "b200_point": 0.044916140673976354,
+      "b1000_point": 0.044916140673976354,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.02629767009114361,
+        0.08639435527053288
+      ],
+      "b1000_ci": [
+        0.02603206815987359,
+        0.09034811466821147
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "bottle",
+      "metric": "delta_len",
+      "b200_point": 0.03432925136459772,
+      "b1000_point": 0.03432925136459772,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.01998221191225008,
+        0.061569354180918585
+      ],
+      "b1000_ci": [
+        0.02061513813483756,
+        0.06169812289640955
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "book",
+      "metric": "delta_bare",
+      "b200_point": 0.02630529795424883,
+      "b1000_point": 0.02630529795424883,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.005000484188162451,
+        0.06799628832140367
+      ],
+      "b1000_ci": [
+        0.005680981330951773,
+        0.06246230740635578
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GLIP",
+      "class": "book",
+      "metric": "delta_len",
+      "b200_point": 0.009788995856937259,
+      "b1000_point": 0.009788995856937259,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.004148563416622139,
+        0.03083784595735982
+      ],
+      "b1000_ci": [
+        0.0034813315977771037,
+        0.030971739837645715
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "person",
+      "metric": "delta_bare",
+      "b200_point": 0.5413552226461685,
+      "b1000_point": 0.5413552226461685,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.5069410738366622,
+        0.570681785159237
+      ],
+      "b1000_ci": [
+        0.5086049528776563,
+        0.5713075566284425
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "person",
+      "metric": "delta_len",
+      "b200_point": 0.4820929356644603,
+      "b1000_point": 0.4820929356644603,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.44819660037871256,
+        0.5097339442440205
+      ],
+      "b1000_ci": [
+        0.4519979146641802,
+        0.5093148669137703
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "car",
+      "metric": "delta_bare",
+      "b200_point": 0.5445424128135258,
+      "b1000_point": 0.5445424128135258,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.4632219760180745,
+        0.6363513906788917
+      ],
+      "b1000_ci": [
+        0.45830119805481645,
+        0.6350717451849812
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "car",
+      "metric": "delta_len",
+      "b200_point": 0.09359832766845155,
+      "b1000_point": 0.09359832766845155,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.06679245512021037,
+        0.13319748803140793
+      ],
+      "b1000_ci": [
+        0.06736929532819738,
+        0.12977454860117235
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "dog",
+      "metric": "delta_bare",
+      "b200_point": 0.48180077486211337,
+      "b1000_point": 0.48180077486211337,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.2989318403681989,
+        0.6759862428588821
+      ],
+      "b1000_ci": [
+        0.28806728355084876,
+        0.684176476796341
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "dog",
+      "metric": "delta_len",
+      "b200_point": 0.2512748127701613,
+      "b1000_point": 0.2512748127701613,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.09096820457113813,
+        0.4432550821544788
+      ],
+      "b1000_ci": [
+        0.09984357881687617,
+        0.44816916699559617
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "cat",
+      "metric": "delta_bare",
+      "b200_point": 0.6457127388820172,
+      "b1000_point": 0.6457127388820172,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.4910894875905057,
+        0.7370136924105595
+      ],
+      "b1000_ci": [
+        0.47221848380591475,
+        0.7398767243120007
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "cat",
+      "metric": "delta_len",
+      "b200_point": 0.25287857584917417,
+      "b1000_point": 0.25287857584917417,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.11268536913902401,
+        0.40229332391834866
+      ],
+      "b1000_ci": [
+        0.10927749064388302,
+        0.4326155933186203
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "chair",
+      "metric": "delta_bare",
+      "b200_point": 0.46973268615379465,
+      "b1000_point": 0.46973268615379465,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.38353955726024164,
+        0.5473089804811656
+      ],
+      "b1000_ci": [
+        0.3912790733600299,
+        0.5472700750399141
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "chair",
+      "metric": "delta_len",
+      "b200_point": 0.12398430440506752,
+      "b1000_point": 0.12398430440506752,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.09137196138923355,
+        0.16842844245820573
+      ],
+      "b1000_ci": [
+        0.091501916085838,
+        0.1664621418261312
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "cup",
+      "metric": "delta_bare",
+      "b200_point": 0.629244893653349,
+      "b1000_point": 0.629244893653349,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.5438374863613198,
+        0.7188326706915493
+      ],
+      "b1000_ci": [
+        0.534228399614078,
+        0.7193061069991098
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "cup",
+      "metric": "delta_len",
+      "b200_point": 0.19908392748919818,
+      "b1000_point": 0.19908392748919818,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.14517649912117747,
+        0.27331453793739735
+      ],
+      "b1000_ci": [
+        0.13952637562210904,
+        0.28135783590019214
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "bottle",
+      "metric": "delta_bare",
+      "b200_point": 0.5252814165781844,
+      "b1000_point": 0.5252814165781844,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.4369987258332399,
+        0.6124136569296872
+      ],
+      "b1000_ci": [
+        0.43177546535957373,
+        0.6168295340565828
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "bottle",
+      "metric": "delta_len",
+      "b200_point": 0.1433987178010206,
+      "b1000_point": 0.1433987178010206,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.10787966633771297,
+        0.20430083414217892
+      ],
+      "b1000_ci": [
+        0.10040835635388502,
+        0.20921946357710697
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "book",
+      "metric": "delta_bare",
+      "b200_point": 0.09186082118584868,
+      "b1000_point": 0.09186082118584868,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.042686729724218164,
+        0.15527495212861148
+      ],
+      "b1000_ci": [
+        0.04912541498121535,
+        0.1666816698544456
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "GDino",
+      "class": "book",
+      "metric": "delta_len",
+      "b200_point": 0.03296878487028909,
+      "b1000_point": 0.03296878487028909,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.010192454190246784,
+        0.06746615551395406
+      ],
+      "b1000_ci": [
+        0.009722506435503988,
+        0.07147035117262734
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "person",
+      "metric": "delta_bare",
+      "b200_point": 0.007370145484956736,
+      "b1000_point": 0.007370145484956736,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.006736679494382991,
+        0.019987321435748235
+      ],
+      "b1000_ci": [
+        -0.007293764308411235,
+        0.019640448043700697
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "person",
+      "metric": "delta_len",
+      "b200_point": -0.021539815553027974,
+      "b1000_point": -0.021539815553027974,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.03201516731860013,
+        -0.007828883085674062
+      ],
+      "b1000_ci": [
+        -0.0324210248290759,
+        -0.006851754275123787
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "car",
+      "metric": "delta_bare",
+      "b200_point": 0.04443420979383955,
+      "b1000_point": 0.04443420979383955,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.01756853353959493,
+        0.07152348989513134
+      ],
+      "b1000_ci": [
+        0.016260528584938667,
+        0.07011341376918113
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "car",
+      "metric": "delta_len",
+      "b200_point": 0.046779932261878876,
+      "b1000_point": 0.046779932261878876,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.019889877291494426,
+        0.07733454066827632
+      ],
+      "b1000_ci": [
+        0.017905769705652795,
+        0.07830615056233037
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "dog",
+      "metric": "delta_bare",
+      "b200_point": -0.00794661623789783,
+      "b1000_point": -0.00794661623789783,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.07456532466752135,
+        0.046234334689049125
+      ],
+      "b1000_ci": [
+        -0.09433352253815232,
+        0.04122531278525639
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "dog",
+      "metric": "delta_len",
+      "b200_point": 0.022658105991882893,
+      "b1000_point": 0.022658105991882893,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.016717140024824755,
+        0.10002170187859998
+      ],
+      "b1000_ci": [
+        -0.02066428160382334,
+        0.09740852447238596
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "cat",
+      "metric": "delta_bare",
+      "b200_point": 0.0019924747928294906,
+      "b1000_point": 0.0019924747928294906,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.012900334121287016,
+        0.01943518745370168
+      ],
+      "b1000_ci": [
+        -0.011217258849630806,
+        0.017875183245969962
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "cat",
+      "metric": "delta_len",
+      "b200_point": 0.007034868182786536,
+      "b1000_point": 0.007034868182786536,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.0,
+        0.02478327088791688
+      ],
+      "b1000_ci": [
+        0.0,
+        0.025355136038377902
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "chair",
+      "metric": "delta_bare",
+      "b200_point": -0.04146671060840629,
+      "b1000_point": -0.04146671060840629,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.07594614218086754,
+        -0.009853051434446652
+      ],
+      "b1000_ci": [
+        -0.07537818955134032,
+        -0.007944592731852926
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "chair",
+      "metric": "delta_len",
+      "b200_point": 0.02901369776635826,
+      "b1000_point": 0.02901369776635826,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.01146693141041964,
+        0.042575183991625
+      ],
+      "b1000_ci": [
+        0.009777987666381346,
+        0.04453707328106706
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "cup",
+      "metric": "delta_bare",
+      "b200_point": 0.03596082417464119,
+      "b1000_point": 0.03596082417464119,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.012036066223325844,
+        0.08973262416563994
+      ],
+      "b1000_ci": [
+        -0.01874652523987707,
+        0.08796661007219068
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "cup",
+      "metric": "delta_len",
+      "b200_point": 0.014369685980216595,
+      "b1000_point": 0.014369685980216595,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.008631792129066935,
+        0.034415535606263946
+      ],
+      "b1000_ci": [
+        -0.008557321929294176,
+        0.03439540689952192
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "bottle",
+      "metric": "delta_bare",
+      "b200_point": 0.004327564994238087,
+      "b1000_point": 0.004327564994238087,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.038474835689907456,
+        0.04637323241004163
+      ],
+      "b1000_ci": [
+        -0.041748389172699484,
+        0.049025544746632996
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "bottle",
+      "metric": "delta_len",
+      "b200_point": 0.03694451314186592,
+      "b1000_point": 0.03694451314186592,
+      "point_diff": 0.0,
+      "b200_ci": [
+        0.01018933120503002,
+        0.059228318436580114
+      ],
+      "b1000_ci": [
+        0.010203144033200606,
+        0.05880200333451451
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "book",
+      "metric": "delta_bare",
+      "b200_point": -0.03333349230880067,
+      "b1000_point": -0.03333349230880067,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.054443747768061074,
+        -0.008033160528542258
+      ],
+      "b1000_ci": [
+        -0.05755616338545476,
+        -0.005855630386101618
+      ],
+      "b200_sig": true,
+      "b1000_sig": true,
+      "significance_flip": false
+    },
+    {
+      "model": "OWLv2",
+      "class": "book",
+      "metric": "delta_len",
+      "b200_point": 0.002082372188811521,
+      "b1000_point": 0.002082372188811521,
+      "point_diff": 0.0,
+      "b200_ci": [
+        -0.008842347749179098,
+        0.017939003557375
+      ],
+      "b1000_ci": [
+        -0.009775955996325336,
+        0.018985862838968696
+      ],
+      "b200_sig": false,
+      "b1000_sig": false,
+      "significance_flip": false
+    }
+  ]
+}

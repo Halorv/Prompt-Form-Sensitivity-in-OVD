@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "bird",
+  "cat_id": 16,
+  "type": "NEW",
+  "n_gt": 47,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bird",
+      "ap50": 0.5470840743493538,
+      "n_detections": 24624
+    },
+    "template": {
+      "text": "a photo of a bird",
+      "ap50": 0.005075217684122636,
+      "n_detections": 49946
+    },
+    "there_is": {
+      "text": "there is a bird",
+      "ap50": 0.04696049343053162,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.5470840743493538,
+  "ap_template": 0.005075217684122636,
+  "ap_there_is": 0.04696049343053162,
+  "delta_bare": 0.5420088566652311,
+  "delta_len": 0.04188527574640899,
+  "ratio": 0.07727784376829695,
+  "inference_time_seconds": 151.59437322616577,
+  "timestamp": "2026-10-19T04:09:07"
+}

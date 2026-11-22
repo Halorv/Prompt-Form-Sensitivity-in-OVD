@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "bench",
+  "cat_id": 15,
+  "type": "NEW",
+  "n_gt": 57,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bench",
+      "ap50": 0.19147195019480473,
+      "n_detections": 44120
+    },
+    "template": {
+      "text": "a photo of a bench",
+      "ap50": 0.016181278092908195,
+      "n_detections": 49995
+    },
+    "there_is": {
+      "text": "there is a bench",
+      "ap50": 0.13237759141925545,
+      "n_detections": 49975
+    }
+  },
+  "ap_bare": 0.19147195019480473,
+  "ap_template": 0.016181278092908195,
+  "ap_there_is": 0.13237759141925545,
+  "delta_bare": 0.17529067210189653,
+  "delta_len": 0.11619631332634725,
+  "ratio": 0.6628779040723987,
+  "inference_time_seconds": 426.48943042755127,
+  "timestamp": "2026-10-19T03:45:30"
+}

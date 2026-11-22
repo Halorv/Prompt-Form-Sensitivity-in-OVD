@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "motorcycle",
+  "cat_id": 4,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "motorcycle",
+      "ap50": 0.7587132126113062,
+      "n_detections": 4140
+    },
+    "template": {
+      "text": "a photo of a motorcycle",
+      "ap50": 0.7741454808902863,
+      "n_detections": 4282
+    },
+    "there_is": {
+      "text": "there is a motorcycle",
+      "ap50": 0.7760813164448539,
+      "n_detections": 5628
+    }
+  },
+  "ap_bare": 0.7587132126113062,
+  "ap_template": 0.7741454808902863,
+  "ap_there_is": 0.7760813164448539,
+  "delta_bare": -0.015432268278980144,
+  "delta_len": 0.0019358355545675554,
+  "ratio": -0.12544076603465365,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4140,
+  "inference_time_seconds": 85.87338280677795,
+  "timestamp": "2026-10-19T09:45:33"
+}

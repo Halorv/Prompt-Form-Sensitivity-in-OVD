@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "chair",
+  "cat_id": 62,
+  "type": "ORIG8",
+  "n_gt": 241,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "chair",
+      "ap50": 0.06272984294363,
+      "n_detections": 23730
+    },
+    "template": {
+      "text": "a photo of a chair",
+      "ap50": 0.016372969713262346,
+      "n_detections": 3303
+    },
+    "there_is": {
+      "text": "there is a chair",
+      "ap50": 0.08179994572246072,
+      "n_detections": 5456
+    }
+  },
+  "ap_bare": 0.06272984294363,
+  "ap_template": 0.016372969713262346,
+  "ap_there_is": 0.08179994572246072,
+  "delta_bare": 0.046356873230367655,
+  "delta_len": 0.06542697600919836,
+  "ratio": 1.4113759503162129,
+  "inference_time_seconds": 304.05773878097534,
+  "timestamp": "2026-10-19T01:48:11"
+}

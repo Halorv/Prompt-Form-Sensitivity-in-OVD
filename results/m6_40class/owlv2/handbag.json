@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "handbag",
+  "cat_id": 31,
+  "type": "NEW",
+  "n_gt": 67,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "handbag",
+      "ap50": 0.3980553377529516,
+      "n_detections": 9968
+    },
+    "template": {
+      "text": "a photo of a handbag",
+      "ap50": 0.4188611267724108,
+      "n_detections": 11573
+    },
+    "there_is": {
+      "text": "there is a handbag",
+      "ap50": 0.4571872884610838,
+      "n_detections": 13525
+    }
+  },
+  "ap_bare": 0.3980553377529516,
+  "ap_template": 0.4188611267724108,
+  "ap_there_is": 0.4571872884610838,
+  "delta_bare": -0.020805789019459175,
+  "delta_len": 0.03832616168867303,
+  "ratio": -1.842091239742336,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 9968,
+  "inference_time_seconds": 85.29697823524475,
+  "timestamp": "2026-10-19T09:09:58"
+}

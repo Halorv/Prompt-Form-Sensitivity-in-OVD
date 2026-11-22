@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "handbag",
+  "cat_id": 31,
+  "type": "NEW",
+  "n_gt": 67,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "handbag",
+      "ap50": 0.28097505013981333,
+      "n_detections": 43110
+    },
+    "template": {
+      "text": "a photo of a handbag",
+      "ap50": 0.021449806787427972,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a handbag",
+      "ap50": 0.14377552521985845,
+      "n_detections": 49965
+    }
+  },
+  "ap_bare": 0.28097505013981333,
+  "ap_template": 0.021449806787427972,
+  "ap_there_is": 0.14377552521985845,
+  "delta_bare": 0.25952524335238536,
+  "delta_len": 0.12232571843243048,
+  "ratio": 0.4713442008657928,
+  "inference_time_seconds": 425.92599511146545,
+  "timestamp": "2026-10-19T03:10:00"
+}

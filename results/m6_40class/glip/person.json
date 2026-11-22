@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "person",
+  "cat_id": 1,
+  "type": "ORIG8",
+  "n_gt": 1520,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "person",
+      "ap50": 0.5380752748771541,
+      "n_detections": 21228
+    },
+    "template": {
+      "text": "a photo of a person",
+      "ap50": 0.19995977515658228,
+      "n_detections": 3151
+    },
+    "there_is": {
+      "text": "there is a person",
+      "ap50": 0.5516887101970266,
+      "n_detections": 7262
+    }
+  },
+  "ap_bare": 0.5380752748771541,
+  "ap_template": 0.19995977515658228,
+  "ap_there_is": 0.5516887101970266,
+  "delta_bare": 0.33811549972057187,
+  "delta_len": 0.35172893504044433,
+  "ratio": 1.040262677490748,
+  "inference_time_seconds": 141.98542642593384,
+  "timestamp": "2026-10-19T01:26:34"
+}

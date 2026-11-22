@@ -1,0 +1,28 @@
+{
+  "groups": 72,
+  "max_abs_diff": 9.13e-09,
+  "mean_abs_diff": 2.78e-10,
+  "threshold": 1e-06,
+  "passed": true,
+  "description": "Extended alignment: 3 models \u00d7 8 classes \u00d7 3 prompts = 72 groups. pycocotools COCOeval vs weighted_ap50 implementation.",
+  "models": [
+    "GDino",
+    "OWLv2",
+    "GLIP"
+  ],
+  "classes": [
+    "person",
+    "car",
+    "dog",
+    "cat",
+    "chair",
+    "cup",
+    "bottle",
+    "book"
+  ],
+  "prompts": [
+    "bare (idx=0)",
+    "template (idx=2)",
+    "there_is (idx=6)"
+  ]
+}

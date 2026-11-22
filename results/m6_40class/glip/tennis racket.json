@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "tennis racket",
+  "cat_id": 43,
+  "type": "NEW",
+  "n_gt": 38,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "tennis racket",
+      "ap50": 0.019126417941954237,
+      "n_detections": 10865
+    },
+    "template": {
+      "text": "a photo of a tennis racket",
+      "ap50": 0.01140139774197651,
+      "n_detections": 1621
+    },
+    "there_is": {
+      "text": "there is a tennis racket",
+      "ap50": 0.029986287280939994,
+      "n_detections": 6360
+    }
+  },
+  "ap_bare": 0.019126417941954237,
+  "ap_template": 0.01140139774197651,
+  "ap_there_is": 0.029986287280939994,
+  "delta_bare": 0.007725020199977726,
+  "delta_len": 0.018584889538963485,
+  "ratio": 2.4058046526554158,
+  "inference_time_seconds": 213.0054771900177,
+  "timestamp": "2026-10-19T03:12:27"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "laptop",
+  "cat_id": 73,
+  "type": "NEW",
+  "n_gt": 38,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "laptop",
+      "ap50": 0.3300179857280028,
+      "n_detections": 18439
+    },
+    "template": {
+      "text": "a photo of a laptop",
+      "ap50": 0.018232458466920506,
+      "n_detections": 1781
+    },
+    "there_is": {
+      "text": "there is a laptop",
+      "ap50": 0.11904574500113631,
+      "n_detections": 5694
+    }
+  },
+  "ap_bare": 0.3300179857280028,
+  "ap_template": 0.018232458466920506,
+  "ap_there_is": 0.11904574500113631,
+  "delta_bare": 0.3117855272610823,
+  "delta_len": 0.1008132865342158,
+  "ratio": 0.3233417773423363,
+  "inference_time_seconds": 213.32216501235962,
+  "timestamp": "2026-10-19T03:16:00"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "umbrella",
+  "cat_id": 28,
+  "type": "NEW",
+  "n_gt": 70,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "umbrella",
+      "ap50": 0.5357902851796167,
+      "n_detections": 40137
+    },
+    "template": {
+      "text": "a photo of a umbrella",
+      "ap50": 0.023851791641387177,
+      "n_detections": 49990
+    },
+    "there_is": {
+      "text": "there is a umbrella",
+      "ap50": 0.13108214842851118,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.5357902851796167,
+  "ap_template": 0.023851791641387177,
+  "ap_there_is": 0.13108214842851118,
+  "delta_bare": 0.5119384935382295,
+  "delta_len": 0.107230356787124,
+  "ratio": 0.20945945292374557,
+  "inference_time_seconds": 425.8564121723175,
+  "timestamp": "2026-10-19T03:02:54"
+}

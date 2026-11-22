@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "cup",
+  "cat_id": 47,
+  "type": "ORIG8",
+  "n_gt": 128,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "cup",
+      "ap50": 0.6954911089786298,
+      "n_detections": 7067
+    },
+    "template": {
+      "text": "a photo of a cup",
+      "ap50": 0.6595302848039886,
+      "n_detections": 10193
+    },
+    "there_is": {
+      "text": "there is a cup",
+      "ap50": 0.6738999707842052,
+      "n_detections": 12465
+    }
+  },
+  "ap_bare": 0.6954911089786298,
+  "ap_template": 0.6595302848039886,
+  "ap_there_is": 0.6738999707842052,
+  "delta_bare": 0.03596082417464119,
+  "delta_len": 0.014369685980216595,
+  "ratio": 0.39959278770784656,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 7067,
+  "inference_time_seconds": 81.75274062156677,
+  "timestamp": "2026-10-19T10:59:03"
+}

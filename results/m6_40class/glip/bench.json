@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "bench",
+  "cat_id": 15,
+  "type": "NEW",
+  "n_gt": 57,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "bench",
+      "ap50": 0.1023160078349401,
+      "n_detections": 23943
+    },
+    "template": {
+      "text": "a photo of a bench",
+      "ap50": 0.004812215163459169,
+      "n_detections": 2383
+    },
+    "there_is": {
+      "text": "there is a bench",
+      "ap50": 0.08854256423870642,
+      "n_detections": 5491
+    }
+  },
+  "ap_bare": 0.1023160078349401,
+  "ap_template": 0.004812215163459169,
+  "ap_there_is": 0.08854256423870642,
+  "delta_bare": 0.09750379267148093,
+  "delta_len": 0.08373034907524725,
+  "ratio": 0.8587394067568174,
+  "inference_time_seconds": 213.05220866203308,
+  "timestamp": "2026-10-19T02:33:21"
+}

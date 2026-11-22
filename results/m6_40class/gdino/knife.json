@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "knife",
+  "cat_id": 49,
+  "type": "NEW",
+  "n_gt": 32,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "knife",
+      "ap50": 0.27530290867725327,
+      "n_detections": 33919
+    },
+    "template": {
+      "text": "a photo of a knife",
+      "ap50": 0.037814211016521465,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a knife",
+      "ap50": 0.04113191475371087,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.27530290867725327,
+  "ap_template": 0.037814211016521465,
+  "ap_there_is": 0.04113191475371087,
+  "delta_bare": 0.2374886976607318,
+  "delta_len": 0.003317703737189405,
+  "ratio": 0.013969943706243076,
+  "inference_time_seconds": 151.07203030586243,
+  "timestamp": "2026-10-19T04:39:21"
+}

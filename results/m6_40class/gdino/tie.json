@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "tie",
+  "cat_id": 32,
+  "type": "NEW",
+  "n_gt": 33,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "tie",
+      "ap50": 0.5719989395181326,
+      "n_detections": 31900
+    },
+    "template": {
+      "text": "a photo of a tie",
+      "ap50": 0.05817904350209132,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a tie",
+      "ap50": 0.27124226593994805,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.5719989395181326,
+  "ap_template": 0.05817904350209132,
+  "ap_there_is": 0.27124226593994805,
+  "delta_bare": 0.5138198960160413,
+  "delta_len": 0.21306322243785672,
+  "ratio": 0.41466518538862684,
+  "inference_time_seconds": 150.85758304595947,
+  "timestamp": "2026-10-19T04:34:18"
+}

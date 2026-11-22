@@ -1,0 +1,1038 @@
+{
+  "analysis": "v7_static_vs_oracle_headroom",
+  "n_images": 500,
+  "n_classes": 8,
+  "n_prompts": 10,
+  "split": {
+    "protocol": "sort by image_id, first 250 = selection, last 250 = eval",
+    "n_selection": 250,
+    "n_eval": 250
+  },
+  "S0_default_prompt_idx": 2,
+  "S0_default_prompt_example": "a photo of a person",
+  "S0_eval": {
+    "person": 0.20344180626994526,
+    "car": 0.024651057010724002,
+    "dog": 0.028815545751676205,
+    "cat": 0.02246280482786435,
+    "chair": 0.011295608162227183,
+    "cup": 0.015250913844254232,
+    "bottle": 0.01625237520513815,
+    "book": 0.0025610772502866297
+  },
+  "S0_full": {
+    "person": 0.19648361922243696,
+    "car": 0.01937545961721363,
+    "dog": 0.014498498483363449,
+    "cat": 0.028594006839331214,
+    "chair": 0.016349016770009696,
+    "cup": 0.016518463205133786,
+    "bottle": 0.014108977922210029,
+    "book": 0.002305979851279719
+  },
+  "S1_eval": {
+    "person": 0.5385939725294767,
+    "car": 0.09444799170447718,
+    "dog": 0.11183794272214347,
+    "cat": 0.10605117304495368,
+    "chair": 0.08016358544037001,
+    "cup": 0.14674138281295945,
+    "bottle": 0.08042745243409244,
+    "book": 0.023767083035587243
+  },
+  "S1_hindsight": {
+    "person": 0.5487879727269415,
+    "car": 0.07356150944279996,
+    "dog": 0.09745220935525684,
+    "cat": 0.17864761913515406,
+    "chair": 0.09430197500601432,
+    "cup": 0.18960075344487073,
+    "bottle": 0.05892242147279052,
+    "book": 0.028595201109231756
+  },
+  "S1_selected_prompt_idx": {
+    "person": 8,
+    "car": 8,
+    "dog": 1,
+    "cat": 4,
+    "chair": 7,
+    "cup": 0,
+    "bottle": 0,
+    "book": 9
+  },
+  "S1_hindsight_prompt_idx": {
+    "person": 8,
+    "car": 8,
+    "dog": 0,
+    "cat": 0,
+    "chair": 7,
+    "cup": 0,
+    "bottle": 0,
+    "book": 0
+  },
+  "S2_defA_oracle": {
+    "person": 0.5647816057150734,
+    "car": 0.06579463965654347,
+    "dog": 0.09745220935525684,
+    "cat": 0.17864761913515406,
+    "chair": 0.06949012204365802,
+    "cup": 0.18960075344487073,
+    "bottle": 0.0603629409257677,
+    "book": 0.03034453286617293
+  },
+  "S2_defB_oracle": {
+    "person": 0.5926519519736713,
+    "car": 0.06315234103413579,
+    "dog": 0.09711662018867238,
+    "cat": 0.17898808211456865,
+    "chair": 0.07214964046251339,
+    "cup": 0.19747686578371265,
+    "bottle": 0.062418436039341156,
+    "book": 0.0276336689270093
+  },
+  "S3_global_prompt_idx": 0,
+  "S3_eval": {
+    "person": 0.5453402645579758,
+    "car": 0.09046338947924128,
+    "dog": 0.1398866257819459,
+    "cat": 0.1548190124758994,
+    "chair": 0.054170595452511475,
+    "cup": 0.14674138281295945,
+    "bottle": 0.08042745243409244,
+    "book": 0.03185991392714258
+  },
+  "S3_mean_eval": 0.15546357961522106,
+  "Gap_A_per_class": {
+    "person": 0.3351521662595315,
+    "car": 0.06979693469375317,
+    "dog": 0.08302239697046726,
+    "cat": 0.08358836821708933,
+    "chair": 0.06886797727814283,
+    "cup": 0.13149046896870523,
+    "bottle": 0.0641750772289543,
+    "book": 0.021206005785300613
+  },
+  "Gap_B_DefA_per_class": {
+    "person": 0.026187633185596693,
+    "car": -0.028653352047933706,
+    "dog": -0.01438573336688663,
+    "cat": 0.07259644609020038,
+    "chair": -0.01067346339671199,
+    "cup": 0.04285937063191128,
+    "bottle": -0.020064511508324737,
+    "book": 0.006577449830585686
+  },
+  "Gap_B_DefB_per_class": {
+    "person": 0.05405797944419455,
+    "car": -0.03129565067034139,
+    "dog": -0.014721322533471082,
+    "cat": 0.07293690906961497,
+    "chair": -0.008013944977856624,
+    "cup": 0.0507354829707532,
+    "bottle": -0.018009016394751283,
+    "book": 0.0038665858914220565
+  },
+  "Gap_C_per_class": {
+    "person": 0.010194000197464748,
+    "car": -0.02088648226167722,
+    "dog": -0.01438573336688663,
+    "cat": 0.07259644609020038,
+    "chair": 0.01413838956564431,
+    "cup": 0.04285937063191128,
+    "bottle": -0.02150503096130192,
+    "book": 0.004828118073644513
+  },
+  "mean_Gap_A": 0.10716242442524301,
+  "mean_Gap_B_DefA": 0.009305479927304622,
+  "mean_Gap_B_DefB": 0.01369462784994555,
+  "mean_Gap_C": 0.010979884746124933,
+  "conservative_Gap_B": 0.009305479927304622,
+  "decision": "ABANDON PROMPTVETO (Gap_B = 0.9 pts < 2: per-image method infeasible)",
+  "token_table": {
+    "person": [
+      {
+        "prompt_idx": 0,
+        "prompt": "person",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "person"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a person",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "person"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a person",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "person"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a person in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "person",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "people",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "people"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "human",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "human"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a person",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "person"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a human standing",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "human",
+          "standing"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "an individual person",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "an",
+          "individual",
+          "person"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a pedestrian",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "pedestrian"
+        ]
+      }
+    ],
+    "car": [
+      {
+        "prompt_idx": 0,
+        "prompt": "car",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "car"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a car",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "car"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a car",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "car"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a car in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "car",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "vehicle",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "vehicle"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "automobile",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "automobile"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a car",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "car"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a car parked",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "car",
+          "parked"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a sedan",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "sedan"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a motorcar",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "motor",
+          "##car"
+        ]
+      }
+    ],
+    "dog": [
+      {
+        "prompt_idx": 0,
+        "prompt": "dog",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "dog"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a dog",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "dog"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a dog",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "dog"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a dog in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "dog",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "puppy",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "puppy"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "canine",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "canine"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a dog",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "dog"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a dog standing",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "dog",
+          "standing"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a pet dog",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "pet",
+          "dog"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a dog running",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "dog",
+          "running"
+        ]
+      }
+    ],
+    "cat": [
+      {
+        "prompt_idx": 0,
+        "prompt": "cat",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "cat"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a cat",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "cat"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a cat",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "cat"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a cat in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "cat",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "kitten",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "kitten"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "feline",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "fe",
+          "##line"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a cat",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "cat"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a cat sitting",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "cat",
+          "sitting"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a pet cat",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "pet",
+          "cat"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a cat lying down",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "a",
+          "cat",
+          "lying",
+          "down"
+        ]
+      }
+    ],
+    "chair": [
+      {
+        "prompt_idx": 0,
+        "prompt": "chair",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a chair",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a chair",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a chair in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "chair",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "seat",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "seat"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "furniture",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "furniture"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a chair",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a wooden chair",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "wooden",
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "an empty chair",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "an",
+          "empty",
+          "chair"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a chair nearby",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "chair",
+          "nearby"
+        ]
+      }
+    ],
+    "cup": [
+      {
+        "prompt_idx": 0,
+        "prompt": "cup",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "cup"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a cup",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "cup"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a cup",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "cup"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a cup in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "cup",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "mug",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "mug"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "drinking cup",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "drinking",
+          "cup"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a cup",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "cup"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a cup on the table",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "cup",
+          "on",
+          "the",
+          "table"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a teacup",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "tea",
+          "##cup"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a coffee cup",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "coffee",
+          "cup"
+        ]
+      }
+    ],
+    "bottle": [
+      {
+        "prompt_idx": 0,
+        "prompt": "bottle",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a bottle",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a bottle",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a bottle in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "bottle",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "flask",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "fl",
+          "##ask"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "container",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "container"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a bottle",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a glass bottle",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "glass",
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a water bottle",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "water",
+          "bottle"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a plastic bottle",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "plastic",
+          "bottle"
+        ]
+      }
+    ],
+    "book": [
+      {
+        "prompt_idx": 0,
+        "prompt": "book",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "book"
+        ]
+      },
+      {
+        "prompt_idx": 1,
+        "prompt": "a book",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "book"
+        ]
+      },
+      {
+        "prompt_idx": 2,
+        "prompt": "a photo of a book",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "photo",
+          "of",
+          "a",
+          "book"
+        ]
+      },
+      {
+        "prompt_idx": 3,
+        "prompt": "a book in the scene",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "book",
+          "in",
+          "the",
+          "scene"
+        ]
+      },
+      {
+        "prompt_idx": 4,
+        "prompt": "volume",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "volume"
+        ]
+      },
+      {
+        "prompt_idx": 5,
+        "prompt": "publication",
+        "n_word_tokens": 1,
+        "n_tokens_with_special": 3,
+        "tokens": [
+          "publication"
+        ]
+      },
+      {
+        "prompt_idx": 6,
+        "prompt": "there is a book",
+        "n_word_tokens": 4,
+        "n_tokens_with_special": 6,
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "book"
+        ]
+      },
+      {
+        "prompt_idx": 7,
+        "prompt": "a book on the shelf",
+        "n_word_tokens": 5,
+        "n_tokens_with_special": 7,
+        "tokens": [
+          "a",
+          "book",
+          "on",
+          "the",
+          "shelf"
+        ]
+      },
+      {
+        "prompt_idx": 8,
+        "prompt": "a paperback",
+        "n_word_tokens": 2,
+        "n_tokens_with_special": 4,
+        "tokens": [
+          "a",
+          "paperback"
+        ]
+      },
+      {
+        "prompt_idx": 9,
+        "prompt": "a hardcover book",
+        "n_word_tokens": 3,
+        "n_tokens_with_special": 5,
+        "tokens": [
+          "a",
+          "hardcover",
+          "book"
+        ]
+      }
+    ]
+  }
+}

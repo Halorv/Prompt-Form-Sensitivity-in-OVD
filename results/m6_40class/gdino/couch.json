@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "couch",
+  "cat_id": 63,
+  "type": "NEW",
+  "n_gt": 35,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "couch",
+      "ap50": 0.5387160419716565,
+      "n_detections": 25606
+    },
+    "template": {
+      "text": "a photo of a couch",
+      "ap50": 0.03941051974520092,
+      "n_detections": 49958
+    },
+    "there_is": {
+      "text": "there is a couch",
+      "ap50": 0.21488116262884246,
+      "n_detections": 49925
+    }
+  },
+  "ap_bare": 0.5387160419716565,
+  "ap_template": 0.03941051974520092,
+  "ap_there_is": 0.21488116262884246,
+  "delta_bare": 0.4993055222264555,
+  "delta_len": 0.17547064288364156,
+  "ratio": 0.35142940558958696,
+  "inference_time_seconds": 151.03457903862,
+  "timestamp": "2026-10-19T04:31:47"
+}

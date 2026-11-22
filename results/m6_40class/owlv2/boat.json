@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "boat",
+  "cat_id": 9,
+  "type": "NEW",
+  "n_gt": 39,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "boat",
+      "ap50": 0.17994316804017818,
+      "n_detections": 4268
+    },
+    "template": {
+      "text": "a photo of a boat",
+      "ap50": 0.21057327788637745,
+      "n_detections": 4680
+    },
+    "there_is": {
+      "text": "there is a boat",
+      "ap50": 0.24804983196731284,
+      "n_detections": 5473
+    }
+  },
+  "ap_bare": 0.17994316804017818,
+  "ap_template": 0.21057327788637745,
+  "ap_there_is": 0.24804983196731284,
+  "delta_bare": -0.030630109846199266,
+  "delta_len": 0.03747655408093539,
+  "ratio": -1.2235200679695135,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4268,
+  "inference_time_seconds": 85.17299890518188,
+  "timestamp": "2026-10-19T09:29:53"
+}

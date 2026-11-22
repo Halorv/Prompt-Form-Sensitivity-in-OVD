@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "baseball bat",
+  "cat_id": 39,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "baseball bat",
+      "ap50": 0.05794766031412956,
+      "n_detections": 33120
+    },
+    "template": {
+      "text": "a photo of a baseball bat",
+      "ap50": 0.005361047827068768,
+      "n_detections": 3031
+    },
+    "there_is": {
+      "text": "there is a baseball bat",
+      "ap50": 0.02594356881382263,
+      "n_detections": 12523
+    }
+  },
+  "ap_bare": 0.05794766031412956,
+  "ap_template": 0.005361047827068768,
+  "ap_there_is": 0.02594356881382263,
+  "delta_bare": 0.05258661248706079,
+  "delta_len": 0.020582520986753863,
+  "ratio": 0.391402298290621,
+  "inference_time_seconds": 213.31112432479858,
+  "timestamp": "2026-10-19T03:48:00"
+}

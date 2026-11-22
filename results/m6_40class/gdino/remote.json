@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "remote",
+  "cat_id": 75,
+  "type": "NEW",
+  "n_gt": 62,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "remote",
+      "ap50": 0.26210501858224483,
+      "n_detections": 30929
+    },
+    "template": {
+      "text": "a photo of a remote",
+      "ap50": 0.0025398838198053227,
+      "n_detections": 49991
+    },
+    "there_is": {
+      "text": "there is a remote",
+      "ap50": 0.026801915961670836,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.26210501858224483,
+  "ap_template": 0.0025398838198053227,
+  "ap_there_is": 0.026801915961670836,
+  "delta_bare": 0.25956513476243953,
+  "delta_len": 0.024262032141865512,
+  "ratio": 0.09347184537734902,
+  "inference_time_seconds": 425.59368872642517,
+  "timestamp": "2026-10-19T03:17:06"
+}

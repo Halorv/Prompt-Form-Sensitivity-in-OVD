@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "sports ball",
+  "cat_id": 37,
+  "type": "NEW",
+  "n_gt": 41,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "sports ball",
+      "ap50": 0.5359350225579379,
+      "n_detections": 18793
+    },
+    "template": {
+      "text": "a photo of a sports ball",
+      "ap50": 0.0039624476818825765,
+      "n_detections": 49967
+    },
+    "there_is": {
+      "text": "there is a sports ball",
+      "ap50": 0.07182106356794643,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.5359350225579379,
+  "ap_template": 0.0039624476818825765,
+  "ap_there_is": 0.07182106356794643,
+  "delta_bare": 0.5319725748760553,
+  "delta_len": 0.06785861588606386,
+  "ratio": 0.12756036512196947,
+  "inference_time_seconds": 151.090975522995,
+  "timestamp": "2026-10-19T04:14:09"
+}

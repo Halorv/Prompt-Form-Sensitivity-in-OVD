@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "traffic light",
+  "cat_id": 10,
+  "type": "NEW",
+  "n_gt": 49,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "traffic light",
+      "ap50": 0.41131979016892345,
+      "n_detections": 6803
+    },
+    "template": {
+      "text": "a photo of a traffic light",
+      "ap50": 0.4002318704534726,
+      "n_detections": 8745
+    },
+    "there_is": {
+      "text": "there is a traffic light",
+      "ap50": 0.4210836693384453,
+      "n_detections": 10339
+    }
+  },
+  "ap_bare": 0.41131979016892345,
+  "ap_template": 0.4002318704534726,
+  "ap_there_is": 0.4210836693384453,
+  "delta_bare": 0.011087919715450867,
+  "delta_len": 0.02085179888497274,
+  "ratio": 1.880587109222665,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 6803,
+  "inference_time_seconds": 85.26537799835205,
+  "timestamp": "2026-10-19T09:24:12"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "cake",
+  "cat_id": 61,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "cake",
+      "ap50": 0.007424521426672135,
+      "n_detections": 14362
+    },
+    "template": {
+      "text": "a photo of a cake",
+      "ap50": 0.001924280155627979,
+      "n_detections": 1905
+    },
+    "there_is": {
+      "text": "there is a cake",
+      "ap50": 0.008214790396553227,
+      "n_detections": 4752
+    }
+  },
+  "ap_bare": 0.007424521426672135,
+  "ap_template": 0.001924280155627979,
+  "ap_there_is": 0.008214790396553227,
+  "delta_bare": 0.005500241271044156,
+  "delta_len": 0.0062905102409252485,
+  "ratio": 1.1436789644195133,
+  "inference_time_seconds": 213.48722958564758,
+  "timestamp": "2026-10-19T02:26:14"
+}

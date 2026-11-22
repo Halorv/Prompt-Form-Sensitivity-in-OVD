@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "book",
+  "cat_id": 84,
+  "type": "ORIG8",
+  "n_gt": 154,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "book",
+      "ap50": 0.13619889293506454,
+      "n_detections": 4725
+    },
+    "template": {
+      "text": "a photo of a book",
+      "ap50": 0.1695323852438652,
+      "n_detections": 7933
+    },
+    "there_is": {
+      "text": "there is a book",
+      "ap50": 0.17161475743267673,
+      "n_detections": 10441
+    }
+  },
+  "ap_bare": 0.13619889293506454,
+  "ap_template": 0.1695323852438652,
+  "ap_there_is": 0.17161475743267673,
+  "delta_bare": -0.03333349230880067,
+  "delta_len": 0.002082372188811521,
+  "ratio": -0.06247086772428388,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4725,
+  "inference_time_seconds": 81.51586127281189,
+  "timestamp": "2026-10-19T11:01:47"
+}

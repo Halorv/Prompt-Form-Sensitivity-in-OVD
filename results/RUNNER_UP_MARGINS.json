@@ -1,0 +1,851 @@
+{
+  "schema": "runner_up_margins_v1",
+  "description": "Per-class AP50 of the CLIP template and of the runner-up prompt, used by the ordinal 'worst prompt form' claim (Appendix A.5). Derived from the same per-prompt AP50 table as PER_PROMPT_AP50.json.",
+  "sources": {
+    "GLIP": "results/glip_8class_ap50_summary.json",
+    "GDino": "results/archive_superseded/gdino_v11_summary.json"
+  },
+  "models": {
+    "GLIP": {
+      "model": "GLIP-T",
+      "n_classes": 8,
+      "n_template_worst": 7,
+      "classes_where_template_worst": [
+        "person",
+        "car",
+        "dog",
+        "cat",
+        "chair",
+        "cup",
+        "book"
+      ],
+      "n_tied_within_0.003": 2,
+      "classes_tied_within_0.003": [
+        "chair",
+        "book"
+      ],
+      "min_margin_among_worst": 0.0019716527438052374,
+      "per_class": {
+        "person": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.19995977515658228,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.09121749226526074,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a person",
+              0.19995977515658228
+            ],
+            [
+              "people",
+              0.291177267421843
+            ],
+            [
+              "a pedestrian",
+              0.4729168520356858
+            ],
+            [
+              "a person in the scene",
+              0.5051384284423517
+            ],
+            [
+              "human",
+              0.5099061982936096
+            ],
+            [
+              "a human standing",
+              0.5183952277570456
+            ],
+            [
+              "a person",
+              0.5218127688805284
+            ],
+            [
+              "person",
+              0.5380752748771541
+            ],
+            [
+              "there is a person",
+              0.5516887101970266
+            ],
+            [
+              "an individual person",
+              0.5689307110910701
+            ]
+          ]
+        },
+        "car": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.019375459617356487,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.017743006228694982,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a car",
+              0.019375459617356487
+            ],
+            [
+              "vehicle",
+              0.03711846584605147
+            ],
+            [
+              "a motorcar",
+              0.03946018642220717
+            ],
+            [
+              "a car in the scene",
+              0.04101628677814143
+            ],
+            [
+              "automobile",
+              0.060103780183473725
+            ],
+            [
+              "there is a car",
+              0.06027462134813545
+            ],
+            [
+              "a car",
+              0.061088000523853034
+            ],
+            [
+              "car",
+              0.06493788230206686
+            ],
+            [
+              "a car parked",
+              0.06513344020444391
+            ],
+            [
+              "a sedan",
+              0.0735618094063089
+            ]
+          ]
+        },
+        "dog": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.014498498483543638,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.038721441764152736,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a dog",
+              0.014498498483543638
+            ],
+            [
+              "a dog in the scene",
+              0.05321994024769638
+            ],
+            [
+              "puppy",
+              0.055773253623041065
+            ],
+            [
+              "there is a dog",
+              0.057018697155359
+            ],
+            [
+              "a dog running",
+              0.07382870915894404
+            ],
+            [
+              "a dog standing",
+              0.074986975555248
+            ],
+            [
+              "a pet dog",
+              0.08070444538472633
+            ],
+            [
+              "a dog",
+              0.08563072826217048
+            ],
+            [
+              "canine",
+              0.09022940480715838
+            ],
+            [
+              "dog",
+              0.0974522094547035
+            ]
+          ]
+        },
+        "cat": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.02859400684010926,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.03421822491323823,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a cat",
+              0.02859400684010926
+            ],
+            [
+              "feline",
+              0.06281223175334749
+            ],
+            [
+              "a cat in the scene",
+              0.10133327897825767
+            ],
+            [
+              "there is a cat",
+              0.11116098463618286
+            ],
+            [
+              "a cat lying down",
+              0.11727083281257937
+            ],
+            [
+              "a pet cat",
+              0.1565571033604877
+            ],
+            [
+              "kitten",
+              0.15934862023856544
+            ],
+            [
+              "a cat sitting",
+              0.16028657192454832
+            ],
+            [
+              "a cat",
+              0.16885709201801827
+            ],
+            [
+              "cat",
+              0.1786476192767894
+            ]
+          ]
+        },
+        "chair": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.016372969713262346,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.0024598559020860278,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a chair",
+              0.016372969713262346
+            ],
+            [
+              "furniture",
+              0.018832825615348374
+            ],
+            [
+              "seat",
+              0.032562044279223205
+            ],
+            [
+              "a chair in the scene",
+              0.061314186620780115
+            ],
+            [
+              "chair",
+              0.06272984294363
+            ],
+            [
+              "an empty chair",
+              0.07646991562728042
+            ],
+            [
+              "a chair",
+              0.08143482087228401
+            ],
+            [
+              "there is a chair",
+              0.08179994572246072
+            ],
+            [
+              "a chair nearby",
+              0.0919019120581547
+            ],
+            [
+              "a wooden chair",
+              0.0943507889045899
+            ]
+          ],
+          "tied_with_runner_up": true
+        },
+        "cup": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.01651846320524243,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.04919414313779372,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a cup",
+              0.01651846320524243
+            ],
+            [
+              "a teacup",
+              0.06571260634303615
+            ],
+            [
+              "drinking cup",
+              0.06795716816086846
+            ],
+            [
+              "a cup in the scene",
+              0.10589151015395928
+            ],
+            [
+              "a cup on the table",
+              0.10802587401952551
+            ],
+            [
+              "a coffee cup",
+              0.13269624651206136
+            ],
+            [
+              "mug",
+              0.1683030059007027
+            ],
+            [
+              "a cup",
+              0.17389932099889102
+            ],
+            [
+              "there is a cup",
+              0.176201908896582
+            ],
+            [
+              "cup",
+              0.1896045404975447
+            ]
+          ]
+        },
+        "bottle": {
+          "rank": 3,
+          "n_prompts": 10,
+          "template_ap50": 0.014139023118425766,
+          "template_is_worst": false,
+          "gap_to_second_worst": null,
+          "gap_to_next_worse": 0.0005125980023601342,
+          "sorted_prompts_ascending": [
+            [
+              "container",
+              0.007180406832884518
+            ],
+            [
+              "flask",
+              0.013626425116065632
+            ],
+            [
+              "a photo of a bottle",
+              0.014139023118425766
+            ],
+            [
+              "a glass bottle",
+              0.03746760010381851
+            ],
+            [
+              "a bottle in the scene",
+              0.039739835992288954
+            ],
+            [
+              "a water bottle",
+              0.04223029168886111
+            ],
+            [
+              "there is a bottle",
+              0.04846827448302349
+            ],
+            [
+              "a bottle",
+              0.05153281431069388
+            ],
+            [
+              "a plastic bottle",
+              0.05780079850976553
+            ],
+            [
+              "bottle",
+              0.05905516379240212
+            ]
+          ]
+        },
+        "book": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.00231631113155586,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.0019716527438052374,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a book",
+              0.00231631113155586
+            ],
+            [
+              "volume",
+              0.0042879638753610975
+            ],
+            [
+              "publication",
+              0.004896669361058693
+            ],
+            [
+              "a book in the scene",
+              0.007579463642470241
+            ],
+            [
+              "there is a book",
+              0.012105306988493119
+            ],
+            [
+              "a book",
+              0.014428157057433765
+            ],
+            [
+              "a book on the shelf",
+              0.01646581863533023
+            ],
+            [
+              "a paperback",
+              0.017365141993868207
+            ],
+            [
+              "a hardcover book",
+              0.02690601018998739
+            ],
+            [
+              "book",
+              0.02862159995231262
+            ]
+          ],
+          "tied_with_runner_up": true
+        }
+      }
+    },
+    "GDino": {
+      "model": "Grounding DINO",
+      "n_classes": 8,
+      "n_template_worst": 5,
+      "classes_where_template_worst": [
+        "person",
+        "dog",
+        "cat",
+        "chair",
+        "cup"
+      ],
+      "n_tied_within_0.003": 0,
+      "classes_tied_within_0.003": [],
+      "min_margin_among_worst": 0.03702069786845688,
+      "per_class": {
+        "person": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.21968465867913142,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.19752696501123698,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a person",
+              0.21968465867913142
+            ],
+            [
+              "a human standing",
+              0.4172116236903684
+            ],
+            [
+              "a pedestrian",
+              0.5387583181511495
+            ],
+            [
+              "human",
+              0.573408449097261
+            ],
+            [
+              "an individual person",
+              0.5882268362850587
+            ],
+            [
+              "a person in the scene",
+              0.5947996462752702
+            ],
+            [
+              "people",
+              0.6208554873055909
+            ],
+            [
+              "a person",
+              0.6527525779991956
+            ],
+            [
+              "there is a person",
+              0.7017775943435918
+            ],
+            [
+              "person",
+              0.7610398813253
+            ]
+          ]
+        },
+        "car": {
+          "rank": 2,
+          "n_prompts": 10,
+          "template_ap50": 0.03218069176020304,
+          "template_is_worst": false,
+          "gap_to_second_worst": null,
+          "gap_to_next_worse": 0.004722381347112264,
+          "sorted_prompts_ascending": [
+            [
+              "a motorcar",
+              0.027458310413090773
+            ],
+            [
+              "a photo of a car",
+              0.03218069176020304
+            ],
+            [
+              "vehicle",
+              0.042869114986706494
+            ],
+            [
+              "a sedan",
+              0.08090438226163814
+            ],
+            [
+              "automobile",
+              0.08961557815431846
+            ],
+            [
+              "a car in the scene",
+              0.11548354105598833
+            ],
+            [
+              "a car",
+              0.11650989000464729
+            ],
+            [
+              "there is a car",
+              0.12577902461084162
+            ],
+            [
+              "a car parked",
+              0.13322174507973852
+            ],
+            [
+              "car",
+              0.5767231097559159
+            ]
+          ]
+        },
+        "dog": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.167822495148469,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.03702069786845688,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a dog",
+              0.167822495148469
+            ],
+            [
+              "canine",
+              0.20484319301692588
+            ],
+            [
+              "puppy",
+              0.22862711766417934
+            ],
+            [
+              "a dog",
+              0.262505796898451
+            ],
+            [
+              "a pet dog",
+              0.27395428084816714
+            ],
+            [
+              "a dog standing",
+              0.28735800219851126
+            ],
+            [
+              "a dog running",
+              0.34047981562761354
+            ],
+            [
+              "a dog in the scene",
+              0.3723881147999978
+            ],
+            [
+              "there is a dog",
+              0.4190973079186303
+            ],
+            [
+              "dog",
+              0.6496232700105824
+            ]
+          ]
+        },
+        "cat": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.1886717825194317,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.15360159541089743,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a cat",
+              0.1886717825194317
+            ],
+            [
+              "a cat",
+              0.34227337793032914
+            ],
+            [
+              "a pet cat",
+              0.3477581614422176
+            ],
+            [
+              "a cat in the scene",
+              0.3981895740606541
+            ],
+            [
+              "feline",
+              0.4154256669821758
+            ],
+            [
+              "there is a cat",
+              0.4415503583686059
+            ],
+            [
+              "a cat sitting",
+              0.4554218240536751
+            ],
+            [
+              "a cat lying down",
+              0.48101127571100355
+            ],
+            [
+              "kitten",
+              0.5526711395141873
+            ],
+            [
+              "cat",
+              0.8343845214014489
+            ]
+          ]
+        },
+        "chair": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.039569868143257976,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.05224749616295115,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a chair",
+              0.039569868143257976
+            ],
+            [
+              "furniture",
+              0.09181736430620913
+            ],
+            [
+              "seat",
+              0.13969043438798204
+            ],
+            [
+              "a chair in the scene",
+              0.14794511052285245
+            ],
+            [
+              "a wooden chair",
+              0.1493679587372926
+            ],
+            [
+              "a chair",
+              0.15081164162856317
+            ],
+            [
+              "there is a chair",
+              0.1635541725483255
+            ],
+            [
+              "an empty chair",
+              0.16777904690491416
+            ],
+            [
+              "a chair nearby",
+              0.1723257142168523
+            ],
+            [
+              "chair",
+              0.5093025542970526
+            ]
+          ]
+        },
+        "cup": {
+          "rank": 1,
+          "n_prompts": 10,
+          "template_ap50": 0.05849153771930304,
+          "template_is_worst": true,
+          "gap_to_second_worst": -0.14733196793207518,
+          "gap_to_next_worse": null,
+          "sorted_prompts_ascending": [
+            [
+              "a photo of a cup",
+              0.05849153771930304
+            ],
+            [
+              "a coffee cup",
+              0.20582350565137822
+            ],
+            [
+              "a teacup",
+              0.21379472787787127
+            ],
+            [
+              "a cup on the table",
+              0.22203788702077115
+            ],
+            [
+              "a cup in the scene",
+              0.24145255930162543
+            ],
+            [
+              "a cup",
+              0.25242037509849824
+            ],
+            [
+              "there is a cup",
+              0.2575754652085012
+            ],
+            [
+              "drinking cup",
+              0.29977270783080323
+            ],
+            [
+              "cup",
+              0.6877364313726521
+            ],
+            [
+              "mug",
+              0.6929616144818034
+            ]
+          ]
+        },
+        "bottle": {
+          "rank": 3,
+          "n_prompts": 10,
+          "template_ap50": 0.05770112926700429,
+          "template_is_worst": false,
+          "gap_to_second_worst": null,
+          "gap_to_next_worse": 0.03858603193664689,
+          "sorted_prompts_ascending": [
+            [
+              "flask",
+              0.001202518881242779
+            ],
+            [
+              "container",
+              0.0191150973303574
+            ],
+            [
+              "a photo of a bottle",
+              0.05770112926700429
+            ],
+            [
+              "a bottle in the scene",
+              0.15890948259675278
+            ],
+            [
+              "a water bottle",
+              0.16936166973207217
+            ],
+            [
+              "a plastic bottle",
+              0.18445259881971265
+            ],
+            [
+              "a glass bottle",
+              0.19313634607728203
+            ],
+            [
+              "there is a bottle",
+              0.2010998470680249
+            ],
+            [
+              "a bottle",
+              0.2162042015582502
+            ],
+            [
+              "bottle",
+              0.5829825458451887
+            ]
+          ]
+        },
+        "book": {
+          "rank": 3,
+          "n_prompts": 10,
+          "template_ap50": 0.003914607279051703,
+          "template_is_worst": false,
+          "gap_to_second_worst": null,
+          "gap_to_next_worse": 9.532581874705567e-06,
+          "sorted_prompts_ascending": [
+            [
+              "publication",
+              0.0014671153997119683
+            ],
+            [
+              "a paperback",
+              0.0039050746971769977
+            ],
+            [
+              "a photo of a book",
+              0.003914607279051703
+            ],
+            [
+              "volume",
+              0.004847842337675996
+            ],
+            [
+              "a book in the scene",
+              0.028605763168552352
+            ],
+            [
+              "a book",
+              0.033559877294427116
+            ],
+            [
+              "a hardcover book",
+              0.035359938389940136
+            ],
+            [
+              "there is a book",
+              0.03688338641712335
+            ],
+            [
+              "a book on the shelf",
+              0.04085823061627243
+            ],
+            [
+              "book",
+              0.09577542273268294
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

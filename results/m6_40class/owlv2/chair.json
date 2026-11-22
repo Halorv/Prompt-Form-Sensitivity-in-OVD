@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "chair",
+  "cat_id": 62,
+  "type": "ORIG8",
+  "n_gt": 241,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "chair",
+      "ap50": 0.45194384273454213,
+      "n_detections": 9159
+    },
+    "template": {
+      "text": "a photo of a chair",
+      "ap50": 0.4934105533429484,
+      "n_detections": 14294
+    },
+    "there_is": {
+      "text": "there is a chair",
+      "ap50": 0.5224242511093067,
+      "n_detections": 16597
+    }
+  },
+  "ap_bare": 0.45194384273454213,
+  "ap_template": 0.4934105533429484,
+  "ap_there_is": 0.5224242511093067,
+  "delta_bare": -0.04146671060840629,
+  "delta_len": 0.02901369776635826,
+  "ratio": -0.6996865037198415,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 9159,
+  "inference_time_seconds": 81.7938551902771,
+  "timestamp": "2026-10-19T10:57:41"
+}

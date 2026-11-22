@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "truck",
+  "cat_id": 8,
+  "type": "NEW",
+  "n_gt": 53,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "truck",
+      "ap50": 0.26793558178981536,
+      "n_detections": 34031
+    },
+    "template": {
+      "text": "a photo of a truck",
+      "ap50": 0.0298906075679535,
+      "n_detections": 49986
+    },
+    "there_is": {
+      "text": "there is a truck",
+      "ap50": 0.15218202915636517,
+      "n_detections": 49956
+    }
+  },
+  "ap_bare": 0.26793558178981536,
+  "ap_template": 0.0298906075679535,
+  "ap_there_is": 0.15218202915636517,
+  "delta_bare": 0.23804497422186185,
+  "delta_len": 0.12229142158841166,
+  "ratio": 0.5137324238336325,
+  "inference_time_seconds": 385.5512957572937,
+  "timestamp": "2026-10-19T03:59:02"
+}

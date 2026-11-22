@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "motorcycle",
+  "cat_id": 4,
+  "type": "NEW",
+  "n_gt": 31,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "motorcycle",
+      "ap50": 0.6224240801667047,
+      "n_detections": 14704
+    },
+    "template": {
+      "text": "a photo of a motorcycle",
+      "ap50": 0.02651653817502611,
+      "n_detections": 49934
+    },
+    "there_is": {
+      "text": "there is a motorcycle",
+      "ap50": 0.09266320822721831,
+      "n_detections": 49938
+    }
+  },
+  "ap_bare": 0.6224240801667047,
+  "ap_template": 0.02651653817502611,
+  "ap_there_is": 0.09266320822721831,
+  "delta_bare": 0.5959075419916786,
+  "delta_len": 0.0661466700521922,
+  "ratio": 0.11100156549640697,
+  "inference_time_seconds": 150.77615189552307,
+  "timestamp": "2026-10-19T04:44:23"
+}

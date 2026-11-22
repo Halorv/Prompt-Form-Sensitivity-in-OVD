@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "suitcase",
+  "cat_id": 33,
+  "type": "LOW_N_NEW",
+  "n_gt": 29,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "suitcase",
+      "ap50": 0.5512451189674051,
+      "n_detections": 5982
+    },
+    "template": {
+      "text": "a photo of a suitcase",
+      "ap50": 0.5988599567414964,
+      "n_detections": 9903
+    },
+    "there_is": {
+      "text": "there is a suitcase",
+      "ap50": 0.6251885025516364,
+      "n_detections": 12626
+    }
+  },
+  "ap_bare": 0.5512451189674051,
+  "ap_template": 0.5988599567414964,
+  "ap_there_is": 0.6251885025516364,
+  "delta_bare": -0.047614837774091257,
+  "delta_len": 0.02632854581013999,
+  "ratio": -0.5529483463758893,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 5982,
+  "inference_time_seconds": 85.24734473228455,
+  "timestamp": "2026-10-19T09:49:50"
+}

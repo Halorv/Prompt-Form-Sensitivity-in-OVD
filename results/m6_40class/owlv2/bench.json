@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bench",
+  "cat_id": 15,
+  "type": "NEW",
+  "n_gt": 57,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bench",
+      "ap50": 0.17836870360171314,
+      "n_detections": 12207
+    },
+    "template": {
+      "text": "a photo of a bench",
+      "ap50": 0.17520462169729734,
+      "n_detections": 18168
+    },
+    "there_is": {
+      "text": "there is a bench",
+      "ap50": 0.18579639699385742,
+      "n_detections": 21387
+    }
+  },
+  "ap_bare": 0.17836870360171314,
+  "ap_template": 0.17520462169729734,
+  "ap_there_is": 0.18579639699385742,
+  "delta_bare": 0.0031640819044158053,
+  "delta_len": 0.01059177529656008,
+  "ratio": 3.3475035149305574,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 12207,
+  "inference_time_seconds": 85.54538702964783,
+  "timestamp": "2026-10-19T09:17:05"
+}

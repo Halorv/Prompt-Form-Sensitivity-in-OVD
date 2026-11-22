@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "remote",
+  "cat_id": 75,
+  "type": "NEW",
+  "n_gt": 62,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "remote",
+      "ap50": 0.025135645225142958,
+      "n_detections": 22834
+    },
+    "template": {
+      "text": "a photo of a remote",
+      "ap50": 0.0,
+      "n_detections": 1041
+    },
+    "there_is": {
+      "text": "there is a remote",
+      "ap50": 0.006133584046328872,
+      "n_detections": 8974
+    }
+  },
+  "ap_bare": 0.025135645225142958,
+  "ap_template": 0.0,
+  "ap_there_is": 0.006133584046328872,
+  "delta_bare": 0.025135645225142958,
+  "delta_len": 0.006133584046328872,
+  "ratio": 0.2440193594152699,
+  "inference_time_seconds": 213.04787874221802,
+  "timestamp": "2026-10-19T02:19:07"
+}

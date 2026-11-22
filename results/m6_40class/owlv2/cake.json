@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "cake",
+  "cat_id": 61,
+  "type": "NEW",
+  "n_gt": 59,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "cake",
+      "ap50": 0.729188234376207,
+      "n_detections": 2547
+    },
+    "template": {
+      "text": "a photo of a cake",
+      "ap50": 0.763096421519597,
+      "n_detections": 3097
+    },
+    "there_is": {
+      "text": "there is a cake",
+      "ap50": 0.7737493815332936,
+      "n_detections": 3986
+    }
+  },
+  "ap_bare": 0.729188234376207,
+  "ap_template": 0.763096421519597,
+  "ap_there_is": 0.7737493815332936,
+  "delta_bare": -0.033908187143390056,
+  "delta_len": 0.010652960013696644,
+  "ratio": -0.31417073312258437,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2547,
+  "inference_time_seconds": 85.55304598808289,
+  "timestamp": "2026-10-19T09:14:14"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "backpack",
+  "cat_id": 27,
+  "type": "NEW",
+  "n_gt": 58,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "backpack",
+      "ap50": 0.3408765689869395,
+      "n_detections": 31555
+    },
+    "template": {
+      "text": "a photo of a backpack",
+      "ap50": 0.01379915946958956,
+      "n_detections": 50000
+    },
+    "there_is": {
+      "text": "there is a backpack",
+      "ap50": 0.09122341671592869,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.3408765689869395,
+  "ap_template": 0.01379915946958956,
+  "ap_there_is": 0.09122341671592869,
+  "delta_bare": 0.32707740951735,
+  "delta_len": 0.07742425724633914,
+  "ratio": 0.23671539211647122,
+  "inference_time_seconds": 425.96466088294983,
+  "timestamp": "2026-10-19T03:38:24"
+}

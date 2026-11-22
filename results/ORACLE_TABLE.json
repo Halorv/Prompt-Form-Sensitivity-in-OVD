@@ -1,0 +1,101 @@
+{
+  "schema": "oracle_table_v1",
+  "description": "Explicit aggregates for paper Table 2 (oracle upper bound). Values are the unweighted mean of the per-class AP50 dicts stored in m1_v2_v7_analysis.json, matching that script's own S3_mean_eval rule.",
+  "source": "results/m1_v2_v7_analysis.json",
+  "aggregation": "unweighted mean over the 8 COCO classes",
+  "split": {
+    "protocol": "sort by image_id, first 250 = selection, last 250 = eval",
+    "n_selection": 250,
+    "n_eval": 250
+  },
+  "strategies": {
+    "S0": {
+      "description": "Default CLIP template 'a photo of a X'",
+      "source_field": "S0_eval",
+      "mean_ap50": 0.0405913985402645,
+      "n_classes": 8
+    },
+    "S1": {
+      "description": "Per-class best static prompt (selection split, hindsight)",
+      "source_field": "S1_eval",
+      "mean_ap50": 0.14775382296550751,
+      "n_classes": 8
+    },
+    "S2_DefA": {
+      "description": "Per-image oracle, strict definition",
+      "source_field": "S2_defA_oracle",
+      "mean_ap50": 0.15705930289281214,
+      "n_classes": 8
+    },
+    "S2_DefB": {
+      "description": "Per-image oracle, loose definition",
+      "source_field": "S2_defB_oracle",
+      "mean_ap50": 0.1614484508154531,
+      "n_classes": 8
+    },
+    "S3": {
+      "description": "Global bare class name",
+      "source_field": "S3_eval",
+      "mean_ap50": 0.15546357961522103,
+      "n_classes": 8
+    }
+  },
+  "gaps": {
+    "S2_DefB_minus_S3": 0.005984871200232056,
+    "S2_DefA_minus_S3": 0.00159572327759111,
+    "S2_DefB_minus_S1": 0.013694627849945573,
+    "S3_minus_S1": 0.007709756649713517
+  },
+  "per_class": {
+    "S0": {
+      "person": 0.20344180626994526,
+      "car": 0.024651057010724002,
+      "dog": 0.028815545751676205,
+      "cat": 0.02246280482786435,
+      "chair": 0.011295608162227183,
+      "cup": 0.015250913844254232,
+      "bottle": 0.01625237520513815,
+      "book": 0.0025610772502866297
+    },
+    "S1": {
+      "person": 0.5385939725294767,
+      "car": 0.09444799170447718,
+      "dog": 0.11183794272214347,
+      "cat": 0.10605117304495368,
+      "chair": 0.08016358544037001,
+      "cup": 0.14674138281295945,
+      "bottle": 0.08042745243409244,
+      "book": 0.023767083035587243
+    },
+    "S2_DefA": {
+      "person": 0.5647816057150734,
+      "car": 0.06579463965654347,
+      "dog": 0.09745220935525684,
+      "cat": 0.17864761913515406,
+      "chair": 0.06949012204365802,
+      "cup": 0.18960075344487073,
+      "bottle": 0.0603629409257677,
+      "book": 0.03034453286617293
+    },
+    "S2_DefB": {
+      "person": 0.5926519519736713,
+      "car": 0.06315234103413579,
+      "dog": 0.09711662018867238,
+      "cat": 0.17898808211456865,
+      "chair": 0.07214964046251339,
+      "cup": 0.19747686578371265,
+      "bottle": 0.062418436039341156,
+      "book": 0.0276336689270093
+    },
+    "S3": {
+      "person": 0.5453402645579758,
+      "car": 0.09046338947924128,
+      "dog": 0.1398866257819459,
+      "cat": 0.1548190124758994,
+      "chair": 0.054170595452511475,
+      "cup": 0.14674138281295945,
+      "bottle": 0.08042745243409244,
+      "book": 0.03185991392714258
+    }
+  }
+}

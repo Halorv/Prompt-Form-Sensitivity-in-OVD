@@ -1,0 +1,34 @@
+{
+  "model": "glip",
+  "class": "dog",
+  "cat_id": 18,
+  "type": "ORIG8",
+  "n_gt": 20,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "dog",
+      "ap50": 0.0974522094547035,
+      "n_detections": 16733
+    },
+    "template": {
+      "text": "a photo of a dog",
+      "ap50": 0.014498498483543638,
+      "n_detections": 3147
+    },
+    "there_is": {
+      "text": "there is a dog",
+      "ap50": 0.057018697155359,
+      "n_detections": 5014
+    }
+  },
+  "ap_bare": 0.0974522094547035,
+  "ap_template": 0.014498498483543638,
+  "ap_there_is": 0.057018697155359,
+  "delta_bare": 0.08295371097115986,
+  "delta_len": 0.04252019867181536,
+  "ratio": 0.5125774142473043,
+  "inference_time_seconds": 319.9860417842865,
+  "timestamp": "2026-10-19T01:37:49"
+}

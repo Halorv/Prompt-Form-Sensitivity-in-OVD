@@ -1,0 +1,34 @@
+{
+  "model": "gdino",
+  "class": "wine glass",
+  "cat_id": 46,
+  "type": "NEW",
+  "n_gt": 51,
+  "num_images": 500,
+  "seed": 42,
+  "prompts": {
+    "bare": {
+      "text": "wine glass",
+      "ap50": 0.6110132219006476,
+      "n_detections": 24648
+    },
+    "template": {
+      "text": "a photo of a wine glass",
+      "ap50": 0.004799148753222862,
+      "n_detections": 49968
+    },
+    "there_is": {
+      "text": "there is a wine glass",
+      "ap50": 0.1628842396659185,
+      "n_detections": 50000
+    }
+  },
+  "ap_bare": 0.6110132219006476,
+  "ap_template": 0.004799148753222862,
+  "ap_there_is": 0.1628842396659185,
+  "delta_bare": 0.6062140731474247,
+  "delta_len": 0.15808509091269562,
+  "ratio": 0.26077436654007047,
+  "inference_time_seconds": 151.1302831172943,
+  "timestamp": "2026-10-19T04:04:04"
+}

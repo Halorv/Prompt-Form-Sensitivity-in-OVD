@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "kite",
+  "cat_id": 38,
+  "type": "NEW",
+  "n_gt": 53,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "kite",
+      "ap50": 0.8011760478788963,
+      "n_detections": 4982
+    },
+    "template": {
+      "text": "a photo of a kite",
+      "ap50": 0.799520414332067,
+      "n_detections": 5530
+    },
+    "there_is": {
+      "text": "there is a kite",
+      "ap50": 0.7907188632722499,
+      "n_detections": 7878
+    }
+  },
+  "ap_bare": 0.8011760478788963,
+  "ap_template": 0.799520414332067,
+  "ap_there_is": 0.7907188632722499,
+  "delta_bare": 0.0016556335468292938,
+  "delta_len": -0.008801551059817059,
+  "ratio": -5.316122687096382,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4982,
+  "inference_time_seconds": 85.13467741012573,
+  "timestamp": "2026-10-19T09:21:21"
+}

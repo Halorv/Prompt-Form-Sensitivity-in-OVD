@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "couch",
+  "cat_id": 63,
+  "type": "NEW",
+  "n_gt": 35,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "couch",
+      "ap50": 0.5786328523623778,
+      "n_detections": 2431
+    },
+    "template": {
+      "text": "a photo of a couch",
+      "ap50": 0.6099648743801994,
+      "n_detections": 4466
+    },
+    "there_is": {
+      "text": "there is a couch",
+      "ap50": 0.6117953521353634,
+      "n_detections": 5991
+    }
+  },
+  "ap_bare": 0.5786328523623778,
+  "ap_template": 0.6099648743801994,
+  "ap_there_is": 0.6117953521353634,
+  "delta_bare": -0.03133202201782159,
+  "delta_len": 0.001830477755163984,
+  "ratio": -0.0584219478118205,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 2431,
+  "inference_time_seconds": 85.54114055633545,
+  "timestamp": "2026-10-19T09:38:25"
+}

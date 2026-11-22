@@ -1,0 +1,39 @@
+{
+  "model": "owlv2",
+  "class": "bird",
+  "cat_id": 16,
+  "type": "NEW",
+  "n_gt": 47,
+  "num_images": 500,
+  "seed": 42,
+  "protocol": "single_query",
+  "num_text_queries": 1,
+  "vision_feature_cache": true,
+  "prompts": {
+    "bare": {
+      "text": "bird",
+      "ap50": 0.4776173780611211,
+      "n_detections": 4458
+    },
+    "template": {
+      "text": "a photo of a bird",
+      "ap50": 0.48277235000605284,
+      "n_detections": 4616
+    },
+    "there_is": {
+      "text": "there is a bird",
+      "ap50": 0.47520906727131323,
+      "n_detections": 7017
+    }
+  },
+  "ap_bare": 0.4776173780611211,
+  "ap_template": 0.48277235000605284,
+  "ap_there_is": 0.47520906727131323,
+  "delta_bare": -0.005154971944931752,
+  "delta_len": -0.007563282734739607,
+  "ratio": 1.4671821331977664,
+  "n_detections_80query_reference": 15470,
+  "n_detections_single_query": 4458,
+  "inference_time_seconds": 85.39405632019043,
+  "timestamp": "2026-10-19T09:25:38"
+}
